@@ -1,0 +1,103 @@
+(footprint "bc337"
+		(placed yes)
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005775977b")
+		(at 136.25 93.26 90)
+		(property "Reference" "T1"
+			(at 0.508 3.556 90)
+			(layer "F.SilkS")
+			(uuid "2fa03c11-d716-42ef-9d51-4d039525e74f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "BC817-40"
+			(at 0 -3.302 90)
+			(layer "F.Fab")
+			(uuid "50d1af3d-8039-424c-af1f-c80b1edd3ff2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b509a93-d9c8-4041-8990-de6da5098956")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7847c68-57aa-4542-9336-35c8f0d91fd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000057758aac")
+		(attr through_hole)
+		(fp_line
+			(start -2.032 1.27)
+			(end 2.032 1.27)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "69f4c791-b2da-4b1a-a7f4-14a3f9e2c10f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2.032 1.27)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "dad411bd-01bc-44b3-9aa7-3fe2df007c85")
+		)
+		(pad "1" thru_hole circle
+			(at -2.286 0 90)
+			(size 1.524 1.524)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 87 "Net-(R13-Pad2)")
+			(uuid "d99195de-8c92-4909-8def-4f7001254d75")
+		)
+		(pad "2" thru_hole circle
+			(at 2.286 0 90)
+			(size 1.524 1.524)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "60b4542e-1df3-4b2b-907f-f6cea6877d44")
+		)
+		(pad "3" thru_hole circle
+			(at 0 0 90)
+			(size 1.524 1.524)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 75 "Net-(J15A1-Pad2)")
+			(uuid "24b15f6f-14b6-457d-ac10-e3e5b7466790")
+		)
+		(embedded_fonts no)
+	)

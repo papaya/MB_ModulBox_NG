@@ -1,0 +1,238 @@
+** Drc report for Core32F4.kicad_pcb **
+** Created on 2026-10-18T15:01:31+0200 **
+
+** Found 65 DRC violations **
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(69.1600 mm, 32.0700 mm): Segment de J10A1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(69.6600 mm, 33.0700 mm): Segment de J10A1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(81.0000 mm, 119.7200 mm): Segment de J4B1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(81.5000 mm, 120.7200 mm): Segment de J4B1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(124.0000 mm, 119.7200 mm): Segment de J4A1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(124.5000 mm, 120.7200 mm): Segment de J4A1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(90.6600 mm, 32.0700 mm): Segment de J16 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(91.1600 mm, 33.0700 mm): Segment de J16 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(112.1600 mm, 32.0700 mm): Segment de J5B1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(112.6600 mm, 33.0700 mm): Segment de J5B1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(133.6600 mm, 32.0700 mm): Segment de J5A1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.0000 mm, 33.0000 mm): Rectangle sur Edge.Cuts
+    @(134.1600 mm, 33.0700 mm): Segment de J5A1 sur F.Silkscreen
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'CORE32'.
+    Forçage local; warning
+    @(149.5013 mm, 73.5006 mm): Empreinte P1
+[lib_footprint_mismatch]: L’empreinte 'C_Disc_D3.8mm_W2.6mm_P2.50mm' ne correspond pas à la copie en librairie 'Capacitor_THT'.
+    Forçage local; warning
+    @(122.0000 mm, 53.0000 mm): Empreinte C15
+[lib_footprint_mismatch]: L’empreinte 'PinHeader_1x02_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'Connector_PinHeader_2.54mm'.
+    Forçage local; warning
+    @(146.7250 mm, 45.0000 mm): Empreinte J17
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'CORE32'.
+    Forçage local; warning
+    @(140.0000 mm, 73.5000 mm): Empreinte P2
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(123.0000 mm, 108.0000 mm): Empreinte R7a1
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(70.5000 mm, 108.5000 mm): Empreinte R8b1
+[lib_footprint_mismatch]: L’empreinte 'R_Array_SIP5' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(122.0000 mm, 96.5000 mm): Empreinte R33
+[lib_footprint_mismatch]: L’empreinte 'DIP-16_W7.62mm_LongPads' ne correspond pas à la copie en librairie 'Package_DIP'.
+    Forçage local; warning
+    @(135.0000 mm, 98.0000 mm): Empreinte IC2
+[lib_footprint_mismatch]: L’empreinte 'DIP-20_W7.62mm_LongPads' ne correspond pas à la copie en librairie 'Package_DIP'.
+    Forçage local; warning
+    @(110.3800 mm, 50.5000 mm): Empreinte ic1
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(115.7850 mm, 102.0000 mm): Empreinte R11
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(80.1900 mm, 108.5000 mm): Empreinte R7b1
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(113.1900 mm, 108.0000 mm): Empreinte R8a1
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'CORE32'.
+    Forçage local; warning
+    @(88.7900 mm, 76.4900 mm): Empreinte IC4
+[lib_footprint_mismatch]: L’empreinte 'C_Disc_D3.8mm_W2.6mm_P2.50mm' ne correspond pas à la copie en librairie 'Capacitor_THT'.
+    Forçage local; warning
+    @(133.5000 mm, 77.0000 mm): Empreinte C14
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(137.0000 mm, 74.0000 mm): Empreinte R13
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'CORE32'.
+    Forçage local; warning
+    @(57.7500 mm, 76.9500 mm): Empreinte J1
+[lib_footprint_mismatch]: L’empreinte 'PinHeader_1x02_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'Connector_PinHeader_2.54mm'.
+    Forçage local; warning
+    @(142.9600 mm, 118.0000 mm): Empreinte J18
+[lib_footprint_mismatch]: L’empreinte 'PinHeader_1x02_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'Connector_PinHeader_2.54mm'.
+    Forçage local; warning
+    @(142.7250 mm, 40.5000 mm): Empreinte J2
+[lib_footprint_mismatch]: L’empreinte 'R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal' ne correspond pas à la copie en librairie 'Resistor_THT'.
+    Forçage local; warning
+    @(129.1900 mm, 71.0000 mm): Empreinte R12
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'CORE32'.
+    Forçage local; warning
+    @(114.9195 mm, 105.0000 mm): Empreinte D1
+[lib_footprint_mismatch]: L’empreinte 'PinHeader_1x03_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'Connector_PinHeader_2.54mm'.
+    Forçage local; warning
+    @(141.9200 mm, 112.5000 mm): Empreinte J15S1
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(69.5000 mm, 109.8200 mm): Segment de J11E1 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(70.0000 mm, 108.8200 mm): Segment de J11E1 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(125.2860 mm, 75.5720 mm): Pad métallisé 1 [Net-(T1-B)] de T1
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(125.2860 mm, 71.0000 mm): Pad métallisé 2 [GND] de T1
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(125.2860 mm, 73.2860 mm): Pad métallisé 3 [Net-(J15A1-P2)] de T1
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(125.2860 mm, 73.2860 mm): Cercle de T1 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(137.3500 mm, 43.4900 mm): Segment de IC4 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(137.3500 mm, 72.9900 mm): Segment de IC4 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(139.0000 mm, 72.9900 mm): Segment de IC4 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(114.9200 mm, 104.9975 mm): Pad métallisé 1 [/PD1] de D1
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(125.0800 mm, 104.9975 mm): Pad métallisé 2 [/PD0] de D1
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(137.3500 mm, 80.6900 mm): Segment de IC4 sur F.Silkscreen
+    @(136.7800 mm, 86.5000 mm): Segment de J15A1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(137.7800 mm, 86.0000 mm): Segment de J15A1 sur F.Silkscreen
+    @(137.3500 mm, 80.6900 mm): Segment de IC4 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(112.1200 mm, 108.8200 mm): Segment de J10B1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(112.6200 mm, 109.8200 mm): Segment de J10B1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(139.0000 mm, 72.9900 mm): Segment de IC4 sur F.Silkscreen
+    @(138.1700 mm, 80.7900 mm): Segment de J15A1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(137.3500 mm, 80.6900 mm): Segment de IC4 sur F.Silkscreen
+    @(138.1700 mm, 80.7900 mm): Segment de J15A1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(138.1700 mm, 108.9900 mm): Segment de J15A1 sur F.Silkscreen
+    @(137.3500 mm, 80.6900 mm): Segment de IC4 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(148.6700 mm, 71.3700 mm): Segment de J8J9 sur F.Silkscreen
+    @(148.1800 mm, 66.1600 mm): Segment de J19 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(148.6700 mm, 71.3700 mm): Segment de J8J9 sur F.Silkscreen
+    @(149.1800 mm, 65.6600 mm): Segment de J19 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(147.1200 mm, 86.5000 mm): Segment de J15B1 sur F.Silkscreen
+    @(147.2900 mm, 80.7900 mm): Segment de J15A1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(147.2900 mm, 80.7900 mm): Segment de J15A1 sur F.Silkscreen
+    @(148.1200 mm, 86.0000 mm): Segment de J15B1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(125.2860 mm, 73.2860 mm): Cercle de T1 sur F.Silkscreen
+    @(125.2860 mm, 71.0000 mm): Pad métallisé 2 [GND] de T1
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(125.2860 mm, 75.5720 mm): Pad métallisé 1 [Net-(T1-B)] de T1
+    @(125.2860 mm, 73.2860 mm): Cercle de T1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(72.3900 mm, 107.5800 mm): Segment de R8b1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(69.0000 mm, 108.8200 mm): Segment de J11E1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(69.5000 mm, 109.8200 mm): Segment de J11E1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(72.3900 mm, 109.4200 mm): Segment de R8b1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(76.2300 mm, 109.4200 mm): Segment de R8b1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(82.0800 mm, 107.5800 mm): Segment de R7b1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(82.0800 mm, 109.4200 mm): Segment de R7b1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(40.3500 mm, 109.4900 mm): Segment de IC4 sur F.Silkscreen
+    @(85.9200 mm, 109.4200 mm): Segment de R7b1 sur F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

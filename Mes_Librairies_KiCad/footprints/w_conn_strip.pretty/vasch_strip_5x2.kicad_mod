@@ -1,0 +1,248 @@
+(footprint "vasch_strip_5x2"
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005775967a")
+		(at 135.25 141.26)
+		(descr "Box header 5x2pin 2.54mm")
+		(tags "CONN DEV")
+		(property "Reference" "J4A1"
+			(at 0.01 5.93 0)
+			(layer "F.SilkS")
+			(uuid "7c1370ae-61f7-46a4-86bb-59b7c6df68d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.2032)
+				)
+			)
+		)
+		(property "Value" "CONN_02X05"
+			(at 0.15 7.82 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "347a9752-dbb8-4acd-9041-8cb56a310a15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.2032)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbd9d388-0f5e-4332-8a83-997545a752be")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe403617-1dbe-45af-ba71-2228c23ea279")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00005774aecb")
+		(attr through_hole)
+		(fp_line
+			(start -10.4 -4.7)
+			(end -10.4 4.7)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0eb1084b-e019-46cb-9113-7f2fcd3895b2")
+		)
+		(fp_line
+			(start -10.4 4.7)
+			(end 10.4 4.7)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96a79d06-4930-4a96-ac78-586806c152e7")
+		)
+		(fp_line
+			(start -2.3 3.3)
+			(end -2.3 4.7)
+			(stroke
+				(width 0.29972)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5d6cb069-2787-40e1-9f8d-30f232756aaa")
+		)
+		(fp_line
+			(start 2.3 3.3)
+			(end -2.3 3.3)
+			(stroke
+				(width 0.29972)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e483655d-30b1-4674-adf2-d1f725685158")
+		)
+		(fp_line
+			(start 2.3 4.7)
+			(end 2.3 3.3)
+			(stroke
+				(width 0.29972)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6ae26b5e-ef3a-4b6a-9ae0-c710d16bc803")
+		)
+		(fp_line
+			(start 10.4 -4.7)
+			(end -10.4 -4.7)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9a9e2c72-9604-45e1-9de3-e28aeee9731a")
+		)
+		(fp_line
+			(start 10.4 -4.7)
+			(end 10.4 4.7)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bfeca0c5-bbd5-4f1e-8de7-486ae3b1e3b3")
+		)
+		(pad "1" thru_hole rect
+			(at -5.08 1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "28550c2b-fb6f-4d9b-9dfd-635538715f26")
+		)
+		(pad "2" thru_hole oval
+			(at -5.08 -1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 -0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "1a652d4c-f8ad-4bbb-b6e2-8c013c456115")
+		)
+		(pad "3" thru_hole oval
+			(at -2.54 1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "b450944d-07eb-40b0-b0e2-cfb911ce152b")
+		)
+		(pad "4" thru_hole oval
+			(at -2.54 -1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 -0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "92762318-f406-44dc-9b09-62248230bf7e")
+		)
+		(pad "5" thru_hole oval
+			(at 0 1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "285e31ca-01fc-4ec8-b34a-5d450f8aa320")
+		)
+		(pad "6" thru_hole oval
+			(at 0 -1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 -0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 35 "/PB10")
+			(uuid "f70ad38f-afb1-4867-adbd-6e881e2d3881")
+		)
+		(pad "7" thru_hole oval
+			(at 2.54 1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "d3853c3c-db4a-41fc-b8bb-04efc05c4bee")
+		)
+		(pad "8" thru_hole oval
+			(at 2.54 -1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 -0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 36 "/PB11")
+			(uuid "5adc834a-bed4-4870-9d1d-22135dd8a6e7")
+		)
+		(pad "9" thru_hole oval
+			(at 5.08 1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "455a274b-952a-418f-9b4a-b4626c538af1")
+		)
+		(pad "10" thru_hole oval
+			(at 5.08 -1.27)
+			(size 1.5 2)
+			(drill 1
+				(offset 0 -0.25)
+			)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 3 "+5V")
+			(uuid "25cb04f3-3102-4e10-ac66-b382b2c4e76f")
+		)
+		(embedded_fonts no)
+		(model "walter/conn_strip/vasch_strip_5x2.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)

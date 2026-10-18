@@ -1,0 +1,176 @@
+(footprint "Diode_DO-35_SOD27_Horizontal_RM10"
+		(placed yes)
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005775963a")
+		(at 122.08948 128.26254)
+		(descr "Diode, DO-35,  SOD27, Horizontal, RM 10mm")
+		(tags "Diode, DO-35, SOD27, Horizontal, RM 10mm, 1N4148,")
+		(property "Reference" "D1"
+			(at 5.16052 -0.00254 0)
+			(layer "F.SilkS")
+			(uuid "daec7075-aee7-48c9-8743-c86f9ef15181")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 3.16052 -0.00254 0)
+			(layer "F.Fab")
+			(uuid "8950bba7-490f-4d97-bfcf-6ff6ed095e63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6982612-a3d1-4bae-a688-a9a69148d639")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d29aca2-5992-4540-b903-529e9e94f167")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-00005774f5f8")
+		(attr through_hole)
+		(fp_line
+			(start 2.79452 -0.76454)
+			(end 2.79452 -0.00254)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bb1d8c3c-c080-4d0b-9e2f-ab2e07c4a17e")
+		)
+		(fp_line
+			(start 2.79452 -0.00254)
+			(end 2.79452 0.75946)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cf034d79-7836-47a9-8358-e2fec08b5465")
+		)
+		(fp_line
+			(start 2.79452 0.75946)
+			(end 7.36652 0.75946)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ff6a3287-6f57-4edf-853e-78940aa1f2f3")
+		)
+		(fp_line
+			(start 2.92152 -0.00254)
+			(end 1.39752 -0.00254)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "577a1ebf-88ed-437f-bdc2-35ee52667f6a")
+		)
+		(fp_line
+			(start 3.04852 -0.76454)
+			(end 3.04852 0.75946)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e6ec0c41-f4ec-4134-9cdb-8bd8b60e6cd6")
+		)
+		(fp_line
+			(start 3.30252 -0.76454)
+			(end 3.30252 0.75946)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0074e8b8-bc61-4170-8128-a667d92c5ce4")
+		)
+		(fp_line
+			(start 7.36652 -0.76454)
+			(end 2.79452 -0.76454)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9810b937-5846-4143-b893-cec0fe749314")
+		)
+		(fp_line
+			(start 7.36652 -0.00254)
+			(end 8.76352 -0.00254)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8d37ce27-6e02-4fec-a5ed-9771e8943027")
+		)
+		(fp_line
+			(start 7.36652 0.75946)
+			(end 7.36652 -0.76454)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6e3fbae4-44ff-4fd6-9dc7-0d37ee56cb55")
+		)
+		(pad "1" thru_hole rect
+			(at 0.00052 -0.00254 180)
+			(size 1.69926 1.69926)
+			(drill 0.70104)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 5 "/PD1")
+			(uuid "6c2bc309-9acd-427a-9bf1-c350247a4f16")
+		)
+		(pad "2" thru_hole circle
+			(at 10.16052 -0.00254 180)
+			(size 1.69926 1.69926)
+			(drill 0.70104)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 4 "/PD0")
+			(uuid "6f60f1fc-7f48-481e-bc59-878a542ba44d")
+		)
+		(embedded_fonts no)
+		(model "Diodes_ThroughHole.3dshapes/Diode_DO-35_SOD27_Horizontal_RM10.wrl"
+			(offset
+				(xyz 5.079999924 0 0)
+			)
+			(scale
+				(xyz 0.4 0.4 0.4)
+			)
+			(rotate
+				(xyz 0 0 180)
+			)
+		)
+	)

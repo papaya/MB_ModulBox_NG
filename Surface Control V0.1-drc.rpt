@@ -1,0 +1,183 @@
+** Drc report for Surface Control V0.1.kicad_pcb **
+** Created on 2026-10-18T15:02:56+0200 **
+
+** Found 27 DRC violations **
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(487.5000 mm, 62.5000 mm): Empreinte SWc2
+    @(496.2000 mm, 53.8000 mm): Empreinte H2
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(412.5000 mm, 62.5000 mm): Empreinte SWc5
+    @(404.0000 mm, 53.8000 mm): Empreinte H1
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(404.0000 mm, 96.0000 mm): Empreinte H3
+    @(412.4200 mm, 87.5000 mm): Empreinte SWc1
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(487.4200 mm, 87.5000 mm): Empreinte SWc6
+    @(496.0000 mm, 96.0000 mm): Empreinte H4
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(447.5000 mm, 94.1750 mm): Empreinte ENC1
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(462.5000 mm, 62.5000 mm): Empreinte SWc3
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(487.5000 mm, 62.5000 mm): Empreinte SWc2
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(412.5000 mm, 62.5000 mm): Empreinte SWc5
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(487.4200 mm, 87.5000 mm): Empreinte SWc6
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(412.4200 mm, 87.5000 mm): Empreinte SWc1
+[lib_footprint_issues]: La configuration actuelle n'inclut pas la librairie d'empreintes 'ksir 2022'.
+    Forçage local; warning
+    @(437.5000 mm, 62.5000 mm): Empreinte SWc4
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(455.5150 mm, 55.5150 mm): Segment de SWc3 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(470.3500 mm, 56.0000 mm): Segment de SWc3 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(480.5150 mm, 55.5150 mm): Segment de SWc2 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(495.3500 mm, 56.0000 mm): Segment de SWc2 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(405.5150 mm, 55.5150 mm): Segment de SWc5 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(420.3500 mm, 56.0000 mm): Segment de SWc5 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(480.4350 mm, 80.5150 mm): Segment de SWc6 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(495.2700 mm, 81.0000 mm): Segment de SWc6 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(405.4350 mm, 80.5150 mm): Segment de SWc1 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(420.2700 mm, 81.0000 mm): Segment de SWc1 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(430.5150 mm, 55.5150 mm): Segment de SWc4 sur F.Silkscreen
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(445.3500 mm, 56.0000 mm): Segment de SWc4 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(460.5000 mm, 86.5000 mm): Texte PCB 'D4' surB.Silkscreen
+    @(460.2100 mm, 77.2900 mm): Segment de J2 sur B.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(460.5000 mm, 89.0000 mm): Texte PCB 'D2' surB.Silkscreen
+    @(460.2100 mm, 77.2900 mm): Segment de J2 sur B.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(460.5000 mm, 84.0000 mm): Texte PCB 'D6' surB.Silkscreen
+    @(460.2100 mm, 77.2900 mm): Segment de J2 sur B.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(460.5000 mm, 91.5000 mm): Texte PCB 'D0' surB.Silkscreen
+    @(460.2100 mm, 77.2900 mm): Segment de J2 sur B.Silkscreen
+
+** Found 21 unconnected pads **
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(489.9200 mm, 82.7500 mm): Pad métallisé 1 [GND] de SWc6
+    @(487.4200 mm, 81.2500 mm): Pad métallisé 1 [GND] de SWc6
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(437.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc4
+    @(440.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(462.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc3
+    @(465.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc3
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(490.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc2
+    @(487.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(415.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc5
+    @(412.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc5
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(412.4200 mm, 81.2500 mm): Pad métallisé 1 [GND] de SWc1
+    @(414.9200 mm, 82.7500 mm): Pad métallisé 1 [GND] de SWc1
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(450.0000 mm, 94.1750 mm): Pad métallisé 2 [GND] de ENC1
+    @(466.0400 mm, 82.5000 mm): Pad métallisé 1 [GND] de J2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(466.0400 mm, 82.5000 mm): Pad métallisé 1 [GND] de J2
+    @(487.4200 mm, 81.2500 mm): Pad métallisé 1 [GND] de SWc6
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(462.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc3
+    @(440.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(487.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc2
+    @(465.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc3
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(415.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc5
+    @(437.5000 mm, 56.2500 mm): Pad métallisé 1 [GND] de SWc4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(415.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc5
+    @(412.4200 mm, 81.2500 mm): Pad métallisé 1 [GND] de SWc1
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(487.4200 mm, 81.2500 mm): Pad métallisé 1 [GND] de SWc6
+    @(490.0000 mm, 57.7500 mm): Pad métallisé 1 [GND] de SWc2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(447.5000 mm, 94.1750 mm): Pad métallisé 1 [Net-(J2-D7)] de ENC1
+    @(466.0400 mm, 85.0400 mm): Pad métallisé 3 [Net-(J2-D7)] de J2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(452.5000 mm, 94.1750 mm): Pad métallisé 3 [Net-(J2-D6)] de ENC1
+    @(463.5000 mm, 85.0400 mm): Pad métallisé 4 [Net-(J2-D6)] de J2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(466.0400 mm, 87.5800 mm): Pad métallisé 5 [Net-(J2-D5)] de J2
+    @(483.4500 mm, 84.6100 mm): Pad métallisé 2 [Net-(J2-D5)] de SWc6
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(463.5000 mm, 87.5800 mm): Pad métallisé 6 [Net-(J2-D4)] de J2
+    @(410.0000 mm, 58.5000 mm): Pad métallisé 2 [Net-(J2-D4)] de SWc5
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(466.0400 mm, 90.1200 mm): Pad métallisé 7 [Net-(J2-D3)] de J2
+    @(435.0000 mm, 58.5000 mm): Pad métallisé 2 [Net-(J2-D3)] de SWc4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(458.5300 mm, 59.6100 mm): Pad métallisé 2 [Net-(J2-D2)] de SWc3
+    @(463.5000 mm, 90.1200 mm): Pad métallisé 8 [Net-(J2-D2)] de J2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(483.5300 mm, 59.6100 mm): Pad métallisé 2 [Net-(J2-D1)] de SWc2
+    @(466.0400 mm, 92.6600 mm): Pad métallisé 9 [Net-(J2-D1)] de J2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(463.5000 mm, 92.6600 mm): Pad métallisé 10 [Net-(J2-D0)] de J2
+    @(409.9200 mm, 83.5000 mm): Pad métallisé 2 [Net-(J2-D0)] de SWc1
+
+** Found 0 Footprint errors **
+
+** End of Report **

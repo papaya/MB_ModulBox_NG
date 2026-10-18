@@ -1,0 +1,164 @@
+(footprint "r-sil_5"
+		(placed yes)
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-000057759774")
+		(at 132.25 115.26 90)
+		(descr "R-net, sil package, 5pin")
+		(tags "CONN DEV")
+		(property "Reference" "R33"
+			(at 0 -2.159 90)
+			(layer "F.SilkS")
+			(uuid "a778011e-7818-4730-9ad8-55d29692a935")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.2032)
+				)
+			)
+		)
+		(property "Value" "R-SIL_4"
+			(at 0.254 -3.556 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8134c29c-dab7-411d-b5cd-5e53285c60a6")
+			(effects
+				(font
+					(size 1.016 0.889)
+					(thickness 0.2032)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9ae73eb-2762-4e5e-9137-e66f8163b922")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "958fa666-ddc5-4214-b2b6-ba46c3985028")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000057742ce6")
+		(attr through_hole)
+		(fp_line
+			(start 6.35 -1.27)
+			(end 6.35 1.27)
+			(stroke
+				(width 0.3175)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a4046692-bb6f-48e3-9fe1-a2546bb3189a")
+		)
+		(fp_line
+			(start -3.81 -1.27)
+			(end -3.81 1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e7f366b7-0c75-4c62-925f-d989a849be99")
+		)
+		(fp_line
+			(start -6.35 -1.27)
+			(end 6.35 -1.27)
+			(stroke
+				(width 0.3175)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "688c96a8-8502-4e63-be58-1089e9e82312")
+		)
+		(fp_line
+			(start 6.35 1.27)
+			(end -6.35 1.27)
+			(stroke
+				(width 0.3175)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6a12a88a-edf5-46fb-901f-355190c54177")
+		)
+		(fp_line
+			(start -6.35 1.27)
+			(end -6.35 -1.27)
+			(stroke
+				(width 0.3048)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ac6b6b5a-f15b-448c-a273-83c89778fcb6")
+		)
+		(pad "1" thru_hole rect
+			(at -5.08 0 90)
+			(size 1.524 2.19964)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 1 "Net-(C1-Pad1)")
+			(uuid "fe81161f-82ba-40a0-b2fa-d1bcaf436505")
+		)
+		(pad "2" thru_hole oval
+			(at -2.54 0 90)
+			(size 1.524 2.19964)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 33 "/PA8")
+			(uuid "78bd347c-50a8-4037-b196-91d8f7eced6b")
+		)
+		(pad "3" thru_hole oval
+			(at 0 0 90)
+			(size 1.524 2.19964)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 76 "/PC8")
+			(uuid "07e54541-fb83-418a-a864-d607acbed6d7")
+		)
+		(pad "4" thru_hole oval
+			(at 2.54 0 90)
+			(size 1.524 2.19964)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 78 "/PC9")
+			(uuid "8be29e4a-587e-4fbb-8f70-144fdf764802")
+		)
+		(pad "5" thru_hole oval
+			(at 5.08 0 90)
+			(size 1.524 2.19964)
+			(drill 0.8001)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 32 "/PC11")
+			(uuid "a6945bd0-d64d-49d1-912e-a0591805b433")
+		)
+		(embedded_fonts no)
+		(model "walter/pth_resistors/r-sil_5.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)

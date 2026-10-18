@@ -1,0 +1,21 @@
+# KiCad
+*.kicad_prl
+*.kicad_lock
+fp-info-cache
+__autosave*
+_autosave*
+#auto_saved_files#
+*.bak
+*-backups/
+
+# macOS
+._*
+.DS_Store
+
+# ZIP exports
+*.zip
+*.rar
+
+# Cache
+__pycache__/
+*.pyc

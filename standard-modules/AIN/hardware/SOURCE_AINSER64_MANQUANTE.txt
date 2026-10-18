@@ -1,0 +1,9 @@
+DOSSIER AIN VIDE - Source AINSER64 introuvable
+================================================
+Le dossier MB Hardware/AINSER64/ ne contient aucun fichier KiCad
+(.kicad_pro, .kicad_sch, .kicad_pcb). Il est totalement vide.
+
+ACTION REQUISE : Localiser les sources KiCad de AINSER64 et les placer
+dans ce dossier (standard-modules/AIN/hardware/).
+
+Alternative : créer un nouveau module AIN depuis zéro.

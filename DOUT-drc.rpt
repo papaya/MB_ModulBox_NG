@@ -1,0 +1,367 @@
+** Drc report for DOUT.kicad_pcb **
+** Created on 2026-10-18T15:01:32+0200 **
+
+** Found 74 DRC violations **
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[isolated_copper]: Zones cuivre isolées
+    Forçage local; warning
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(143.5000 mm, 86.5000 mm): Empreinte H3
+    @(142.2600 mm, 67.6000 mm): Empreinte J1
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(229.9540 mm, 65.0000 mm): Empreinte IC4
+    @(209.3800 mm, 65.0000 mm): Empreinte IC3
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(167.9780 mm, 65.0000 mm): Empreinte IC1
+    @(188.6390 mm, 65.0000 mm): Empreinte IC2
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(235.2040 mm, 67.8180 mm): Empreinte J2
+    @(236.5000 mm, 86.5000 mm): Empreinte H4
+[courtyards_overlap]: Zones d'occupation d'empreintes chevauchantes
+    Règle: configuration des contraintes des zones d'occupation; error
+    @(209.3800 mm, 65.0000 mm): Empreinte IC3
+    @(188.6390 mm, 65.0000 mm): Empreinte IC2
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(240.0000 mm, 90.0000 mm): Polygone sur Edge.Cuts
+    @(231.9140 mm, 62.6080 mm): Segment de J2 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(240.0000 mm, 90.0000 mm): Polygone sur Edge.Cuts
+    @(241.0340 mm, 83.1880 mm): Segment de J2 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(240.0000 mm, 90.0000 mm): Polygone sur Edge.Cuts
+    @(138.9700 mm, 62.3900 mm): Segment de J1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(240.0000 mm, 90.0000 mm): Polygone sur Edge.Cuts
+    @(138.9700 mm, 70.6300 mm): Segment de J1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(240.0000 mm, 90.0000 mm): Polygone sur Edge.Cuts
+    @(140.2800 mm, 74.7300 mm): Segment de J1 sur F.Silkscreen
+[silk_edge_clearance]: Sérigraphie tronquée par bord de PCB
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(240.0000 mm, 90.0000 mm): Polygone sur Edge.Cuts
+    @(148.0900 mm, 82.9700 mm): Segment de J1 sur F.Silkscreen
+[lib_footprint_mismatch]: L’empreinte 'C_Disc_D3.8mm_W2.6mm_P2.50mm' ne correspond pas à la copie en librairie 'Capacitor_THT'.
+    Forçage local; warning
+    @(155.3000 mm, 75.8000 mm): Empreinte C1
+[lib_footprint_mismatch]: L’empreinte 'C_Disc_D3.8mm_W2.6mm_P2.50mm' ne correspond pas à la copie en librairie 'Capacitor_THT'.
+    Forçage local; warning
+    @(217.1973 mm, 75.8000 mm): Empreinte C4
+[lib_footprint_issues]: Empreinte 'DIP-16_W7.62mm_LongPads' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(232.5800 mm, 52.4000 mm): Empreinte R4
+[lib_footprint_issues]: Empreinte 'DIP-16_74h595' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(229.9540 mm, 65.0000 mm): Empreinte IC4
+[lib_footprint_issues]: Empreinte 'DIP-16_74h595' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(167.9780 mm, 65.0000 mm): Empreinte IC1
+[lib_footprint_mismatch]: L’empreinte 'C_Disc_D3.8mm_W2.6mm_P2.50mm' ne correspond pas à la copie en librairie 'Capacitor_THT'.
+    Forçage local; warning
+    @(196.0307 mm, 75.8000 mm): Empreinte C3
+[lib_footprint_issues]: Empreinte 'DIP-16_W7.62mm_LongPads' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(187.8000 mm, 52.4000 mm): Empreinte R2
+[lib_footprint_issues]: Empreinte 'DIP-16_W7.62mm_LongPads' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(210.1800 mm, 52.4000 mm): Empreinte R3
+[lib_footprint_issues]: Empreinte 'IDC-Header_2x05_P2.54mm_Vertical_ksr_TO_J8_J9' introuvable dans la librairie 'lib 2022 ksir'.
+    Forçage local; warning
+    @(235.2040 mm, 67.8180 mm): Empreinte J2
+[lib_footprint_issues]: Empreinte 'DIP-16_74h595' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(209.3800 mm, 65.0000 mm): Empreinte IC3
+[lib_footprint_mismatch]: L’empreinte 'C_Disc_D3.8mm_W2.6mm_P2.50mm' ne correspond pas à la copie en librairie 'Capacitor_THT'.
+    Forçage local; warning
+    @(175.9000 mm, 75.8000 mm): Empreinte C2
+[lib_footprint_issues]: Empreinte 'IDC-Header_2x05_P2.54mm_Vertical_ksr_TO_J8_J9' introuvable dans la librairie 'lib 2022 ksir'.
+    Forçage local; warning
+    @(142.2600 mm, 67.6000 mm): Empreinte J1
+[lib_footprint_issues]: Empreinte 'DIP-16_74h595' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(188.6390 mm, 65.0000 mm): Empreinte IC2
+[lib_footprint_issues]: Empreinte 'DIP-16_R220_network' introuvable dans la librairie 'ksir 2022'.
+    Forçage local; warning
+    @(165.6000 mm, 52.4000 mm): Empreinte R1
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(174.1600 mm, 46.3400 mm): Pad métallisé 1 [GND] de J4
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(217.1973 mm, 75.8000 mm): Pad métallisé 1 [GND] de C4
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(152.6400 mm, 46.3400 mm): Pad métallisé 1 [GND] de J3
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche B.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(217.1973 mm, 75.8000 mm): Pad métallisé 1 [GND] de C4
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(196.0307 mm, 75.8000 mm): Pad métallisé 1 [GND] de C3
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(195.6800 mm, 46.3400 mm): Pad métallisé 1 [GND] de J5
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche B.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(196.0307 mm, 75.8000 mm): Pad métallisé 1 [GND] de C3
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(191.6000 mm, 65.0000 mm): Pad métallisé 8 [GND] de IC3
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(201.7600 mm, 72.6200 mm): Pad métallisé 13 [GND] de IC3
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(175.9000 mm, 75.8000 mm): Pad métallisé 1 [GND] de C2
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(170.8590 mm, 65.0000 mm): Pad métallisé 8 [GND] de IC2
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(181.0190 mm, 72.6200 mm): Pad métallisé 13 [GND] de IC2
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche F.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(217.2000 mm, 46.3400 mm): Pad métallisé 1 [GND] de J6
+[starved_thermal]: Connexion de frein thermique à la zone incomplète (couche B.Cu ; zone nbre min de rayons 2 ; réel 1)
+    Forçage local; error
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+    @(175.9000 mm, 75.8000 mm): Pad métallisé 1 [GND] de C2
+[silk_over_copper]: Sérigraphie tronquée par masque de soudure
+    Forçage local; warning
+    @(231.6020 mm, 50.8620 mm): Champ référence de J6
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.9140 mm, 62.6080 mm): Segment de J2 sur F.Silkscreen
+    @(233.0100 mm, 62.5200 mm): Champ référence de R4
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.2840 mm, 67.8100 mm): Segment de IC4 sur F.Silkscreen
+    @(230.5240 mm, 68.3180 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.2840 mm, 67.8100 mm): Segment de IC4 sur F.Silkscreen
+    @(231.5240 mm, 67.8180 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(230.5240 mm, 67.3180 mm): Segment de J2 sur F.Silkscreen
+    @(231.2840 mm, 68.8100 mm): Arc de IC4 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.2840 mm, 68.8100 mm): Arc de IC4 sur F.Silkscreen
+    @(230.5240 mm, 68.3180 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.5240 mm, 67.8180 mm): Segment de J2 sur F.Silkscreen
+    @(231.2840 mm, 68.8100 mm): Arc de IC4 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.9140 mm, 83.1880 mm): Segment de J2 sur F.Silkscreen
+    @(231.6000 mm, 79.2000 mm): Texte empreinte de J2 (RC)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.9140 mm, 83.1880 mm): Segment de J2 sur F.Silkscreen
+    @(231.2000 mm, 70.8000 mm): Texte empreinte de J2 (VDD)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.6000 mm, 79.2000 mm): Texte empreinte de J2 (RC)
+    @(233.2240 mm, 81.8880 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(231.8000 mm, 76.6000 mm): Texte empreinte de J2 (SC)
+    @(233.2240 mm, 81.8880 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(238.6000 mm, 65.0000 mm): Texte empreinte de J2 (GND)
+    @(239.7240 mm, 63.9080 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(238.6000 mm, 68.8480 mm): Texte empreinte de J2 (VDD)
+    @(239.7240 mm, 63.9080 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(238.6000 mm, 75.1480 mm): Texte empreinte de J2 (SC)
+    @(239.7240 mm, 63.9080 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(238.6000 mm, 72.3660 mm): Texte empreinte de J2 (S0)
+    @(239.7240 mm, 63.9080 mm): Segment de J2 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(239.7240 mm, 63.9080 mm): Segment de J2 sur F.Silkscreen
+    @(238.6000 mm, 78.4480 mm): Texte empreinte de J2 (RC)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(233.2240 mm, 70.8480 mm): Segment de J2 sur F.Silkscreen
+    @(232.0000 mm, 65.0000 mm): Texte empreinte de J2 (GND)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(146.5660 mm, 78.8360 mm): Texte empreinte de J1 (RC)
+    @(148.0900 mm, 62.3900 mm): Segment de J1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(146.3660 mm, 73.4360 mm): Texte empreinte de J1 (S0)
+    @(148.0900 mm, 62.3900 mm): Segment de J1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(148.0900 mm, 62.3900 mm): Segment de J1 sur F.Silkscreen
+    @(146.5660 mm, 76.0360 mm): Texte empreinte de J1 (SC)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(141.4000 mm, 76.2360 mm): Texte empreinte de J1 (SC)
+    @(140.2800 mm, 74.7300 mm): Segment de J1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(140.2800 mm, 74.7300 mm): Segment de J1 sur F.Silkscreen
+    @(141.4000 mm, 76.2360 mm): Texte empreinte de J1 (SC)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(141.4000 mm, 76.2360 mm): Texte empreinte de J1 (SC)
+    @(140.2800 mm, 81.6700 mm): Segment de J1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(140.2800 mm, 81.6700 mm): Segment de J1 sur F.Silkscreen
+    @(141.4000 mm, 78.6740 mm): Texte empreinte de J1 (RC)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(146.5660 mm, 78.8360 mm): Texte empreinte de J1 (RC)
+    @(146.7800 mm, 63.6900 mm): Segment de J1 sur F.Silkscreen
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(146.7800 mm, 63.6900 mm): Segment de J1 sur F.Silkscreen
+    @(146.3660 mm, 73.4360 mm): Texte empreinte de J1 (S0)
+[silk_overlap]: Recouvrement de sérigraphie
+    Règle: configuration des contraintes de la sérigraphie; warning
+    @(146.7800 mm, 63.6900 mm): Segment de J1 sur F.Silkscreen
+    @(146.5660 mm, 76.0360 mm): Texte empreinte de J1 (SC)
+
+** Found 21 unconnected pads **
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(173.3990 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC2
+    @(173.4000 mm, 75.8000 mm): Pad métallisé 2 [+5V] de C2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(214.7140 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC4
+    @(214.6973 mm, 75.8000 mm): Pad métallisé 2 [+5V] de C4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(194.1400 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC3
+    @(193.5307 mm, 75.8000 mm): Pad métallisé 2 [+5V] de C3
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(209.3800 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC3
+    @(214.7140 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(167.9780 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC1
+    @(173.3990 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(194.1400 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC3
+    @(188.6390 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(229.9540 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC4
+    @(152.8000 mm, 70.1400 mm): Piste [+5V] sur F.Cu, long. 82.1860 mm
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(188.6390 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC2
+    @(173.3990 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(152.7380 mm, 72.6200 mm): Piste [+5V] sur F.Cu, long. 3.1180 mm
+    @(167.9780 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC1
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(229.9540 mm, 72.6200 mm): Pad métallisé 16 [+5V] de IC4
+    @(214.7140 mm, 72.6200 mm): Pad métallisé 10 [+5V] de IC4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(155.3000 mm, 75.8000 mm): Pad métallisé 1 [GND] de C1
+    @(239.8000 mm, 89.1500 mm): Zone [GND] sur F.Cu et B.Cu
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(212.1740 mm, 72.6200 mm): Pad métallisé 9 [Net-(IC4-QH_2)] de IC4
+    @(237.7440 mm, 72.8980 mm): Pad métallisé 6 [Net-(IC4-QH_2)] de J2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(228.7920 mm, 81.8500 mm): Piste [/DOUT_SC] sur F.Cu, long. 77.3620 mm
+    @(217.2540 mm, 72.6200 mm): Pad métallisé 11 [/DOUT_SC] de IC4
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(156.7000 mm, 74.0420 mm): Piste [/DOUT_SC] sur B.Cu, long. 2.5380 mm
+    @(175.9390 mm, 72.6200 mm): Pad métallisé 11 [/DOUT_SC] de IC2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(217.2540 mm, 72.6200 mm): Pad métallisé 11 [/DOUT_SC] de IC4
+    @(196.6800 mm, 72.6200 mm): Pad métallisé 11 [/DOUT_SC] de IC3
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(219.7940 mm, 72.6200 mm): Pad métallisé 12 [/DOUT_RC] de IC4
+    @(152.2100 mm, 85.0200 mm): Piste [/DOUT_RC] sur F.Cu, long. 75.9520 mm
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(219.7940 mm, 72.6200 mm): Pad métallisé 12 [/DOUT_RC] de IC4
+    @(199.2200 mm, 72.6200 mm): Pad métallisé 12 [/DOUT_RC] de IC3
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(178.4790 mm, 72.6200 mm): Pad métallisé 12 [/DOUT_RC] de IC2
+    @(157.8180 mm, 72.6200 mm): Piste [/DOUT_RC] sur B.Cu, long. 6.7920 mm
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(150.1980 mm, 72.6200 mm): Pad métallisé 9 [Net-(IC1-QH_2)] de IC1
+    @(183.5590 mm, 72.6200 mm): Pad métallisé 14 [Net-(IC1-QH_2)] de IC2
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(170.8590 mm, 72.6200 mm): Pad métallisé 9 [Net-(IC2-QH_2)] de IC2
+    @(204.3000 mm, 72.6200 mm): Pad métallisé 14 [Net-(IC2-QH_2)] de IC3
+[unconnected_items]: Connexion manquante entre les éléments
+    Forçage local; error
+    @(191.6000 mm, 72.6200 mm): Pad métallisé 9 [Net-(IC3-QH_2)] de IC3
+    @(224.8740 mm, 72.6200 mm): Pad métallisé 14 [Net-(IC3-QH_2)] de IC4
+
+** Found 0 Footprint errors **
+
+** End of Report **

@@ -1,0 +1,154 @@
+(footprint "Potentiometer_VishaySpectrol-Econtrim-Type36T"
+		(placed yes)
+		(layer "F.Cu")
+		(uuid "00000000-0000-0000-0000-00005775973a")
+		(at 170.25 100.26)
+		(descr "Potentiometer, Trimmer, Spectrol Type 36T, Econtrim, Rev A, 02 Aug 2010,")
+		(tags "Potentiometer, Trimmer, Spectrol Type 36T, Econtrim, Rev A, 02 Aug 2010,")
+		(property "Reference" "p1"
+			(at 2.68 1.87 0)
+			(layer "F.SilkS")
+			(uuid "56dddd2e-d5ce-4ec6-9ccc-cc4835aac5bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "POT"
+			(at 2.684808 -0.758182 0)
+			(layer "F.Fab")
+			(uuid "1ae4276f-b884-4f04-a702-b258d1a4b181")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73a79040-cac0-401a-9ba8-0b15f4b4df0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed380611-47c0-4d20-b4d5-051352a218ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/00000000-0000-0000-0000-000057759134")
+		(attr through_hole)
+		(fp_line
+			(start -0.50038 -4.19862)
+			(end -0.50038 -1.69926)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c3fd591e-6008-4aa9-9fb0-7ba3f785f866")
+		)
+		(fp_line
+			(start 0.89916 -5.75056)
+			(end -0.50038 -4.19862)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a2171f6c-72b1-431c-a885-8fa3e016209c")
+		)
+		(fp_line
+			(start 1.6002 0.75184)
+			(end 3.39852 0.75184)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a821b524-2f3a-44cf-804d-a65890d28053")
+		)
+		(fp_line
+			(start 1.79832 -2.49936)
+			(end 3.2004 -2.49936)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4dcd34ec-61ef-4245-a7f3-3f8e5ba9e23f")
+		)
+		(fp_line
+			(start 2.49936 -1.79832)
+			(end 2.49936 -3.2004)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "48723c7e-372f-4fb1-9c78-24af8d279ed8")
+		)
+		(fp_line
+			(start 4.09956 -5.75056)
+			(end 5.4991 -4.19862)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "412bd882-2d36-4a96-b3b3-b1ae4a8680b7")
+		)
+		(fp_line
+			(start 5.4991 -4.19862)
+			(end 5.4991 -1.69926)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "79c4fe23-397a-4c45-b927-a3cd95dc820f")
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.49936 2.49936)
+			(drill 1.19888)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 3 "+5V")
+			(uuid "2a1ddbb5-9ad4-4245-9d5a-bb4921d8fd11")
+		)
+		(pad "2" thru_hole circle
+			(at 2.49936 -4.99872)
+			(size 2.49936 2.49936)
+			(drill 1.19888)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 86 "Net-(R13-Pad1)")
+			(uuid "7546857c-1278-43c1-aafb-9bd8393b4aa9")
+		)
+		(pad "3" thru_hole circle
+			(at 4.99872 0)
+			(size 2.49936 2.49936)
+			(drill 1.19888)
+			(layers "*.Cu" "*.Mask" "F.SilkS")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(uuid "3822c5d8-f09e-465e-a8ed-b26ec57fd1db")
+		)
+		(embedded_fonts no)
+	)
