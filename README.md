@@ -20,11 +20,11 @@ Le projet est séparé en deux grands ensembles :
 **Articles par carte :**
 | Carte | Article du blog | Dossier |
 |-------|----------------|---------|
-| 4X2-POTS-v0.2 | Potentiomètres rotatifs | `custom-frontends/8x-pots/` |
-| 4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2 | Faders / glissières | `custom-frontends/4x-faders/` |
-| 4x2-BPL-v0.2 | Boutons poussoirs | `custom-frontends/8x-buttons/` |
-| 4X2-PADS-RGB | Pads rétroéclairés RGB WS2812 | `custom-frontends/pad-rgb/` |
-| 4X2 ENC-SW-16-LED-RING-RGB (PEC16) | Encodeurs avec anneau LED RGB | `custom-frontends/encoders-led-rgb/` |
+| 4X2-POTS-v0.2 | Potentiomètres rotatifs | [`8x-pots`](custom-frontends/8x-pots/README.md) |
+| 4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2 | Faders / glissières | [`4x-faders`](custom-frontends/4x-faders/README.md) |
+| 4x2-BPL-v0.2 | Boutons poussoirs | [`8x-buttons`](custom-frontends/8x-buttons/README.md) |
+| 4X2-PADS-RGB | Pads rétroéclairés RGB WS2812 | [`pad-rgb`](custom-frontends/pad-rgb/README.md) |
+| 4X2 ENC-SW-16-LED-RING-RGB (PEC16) | Encodeurs avec anneau LED RGB | [`encoders-led-rgb`](custom-frontends/encoders-led-rgb/README.md) |
 
 > ⚠️ L'article *"4X2 ENC-SW-16-LED-RING-RGB (PEC16)"* est marqué comme **"non terminé, ne fonctionne pas"** sur le blog. Les sources sont néanmoins disponibles pour référence.
 
@@ -77,38 +77,40 @@ MB_ModulBox_NG/
 
 ## Table des matières des front-ends
 
-| Front-end | Bus | Rôle | Dossier |
-|-----------|-----|------|---------|
-| 4x-faders | AIN | Glissières / faders | `custom-frontends/4x-faders/` |
-| 8x-pots | AIN | 8 potentiomètres rotatifs | `custom-frontends/8x-pots/` |
-| 8x-buttons | DIN | 8 boutons poussoirs | `custom-frontends/8x-buttons/` |
-| encoders-led-rgb | DIN + DOUT | Encodeurs avec anneau LED RGB | `custom-frontends/encoders-led-rgb/` |
-| pad-rgb | DIN + DOUT | Pads rétroéclairés RGB WS2812 | `custom-frontends/pad-rgb/` |
-| oled-128x64 | I2C / SPI | Afficheur OLED 128x64 | `custom-frontends/oled-128x64/` |
-| keysw-4x2 | DIN | Clavier matricé 4x2 touches | `custom-frontends/keysw-4x2/` |
-| carte-puissance | — | Alimentation / distribution | `custom-frontends/carte-puissance/` |
-| surface-control | DIN + DOUT + AIN | Surface de contrôle globale (V0.1) | `custom-frontends/surface-control/` |
+| Front-end | Bus | Rôle | Détail |
+|-----------|-----|------|--------|
+| 4x-faders | AIN | Glissières / faders | [📄 README](custom-frontends/4x-faders/README.md) |
+| 8x-pots | AIN | 8 potentiomètres rotatifs | [📄 README](custom-frontends/8x-pots/README.md) |
+| 8x-buttons | DIN | 8 boutons poussoirs | [📄 README](custom-frontends/8x-buttons/README.md) |
+| encoders-led-rgb | DIN + DOUT | Encodeurs avec anneau LED RGB | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
+| pad-rgb | DIN + DOUT | Pads rétroéclairés RGB WS2812 | [📄 README](custom-frontends/pad-rgb/README.md) |
+| oled-128x64 | I2C / SPI | Afficheur OLED 128x64 | [📄 README](custom-frontends/oled-128x64/README.md) |
+| keysw-4x2 | DIN | Clavier matricé 4x2 touches | [📄 README](custom-frontends/keysw-4x2/README.md) |
+| carte-puissance | — | Alimentation / distribution | [📄 README](custom-frontends/carte-puissance/README.md) |
+| surface-control | DIN + DOUT + AIN | Surface de contrôle globale (V0.1) | [📄 README](custom-frontends/surface-control/README.md) |
 
 ---
 
 ## Modules standards MIDIbox
 
-| Module | Bus | Rôle | Dossier |
-|--------|-----|------|---------|
-| AIN | AIN | Entrées analogiques (64 voies) | `standard-modules/AIN/` |
-| DIN | DIN | Entrées digitales (DIN4_R5_KS) | `standard-modules/DIN/` |
-| DOUT | DOUT | Sorties digitales | `standard-modules/DOUT/` |
-| Core | — | Cœur STM32F4 (Core32F4) | `standard-modules/Core/` |
-| IO | MIDI | Interface MIDI IN/OUT | `standard-modules/IO/` |
+| Module | Bus | Rôle | Détail |
+|--------|-----|------|--------|
+| AIN | AIN | Entrées analogiques (64 voies) | [📄 README](standard-modules/AIN/README.md) |
+| DIN | DIN | Entrées digitales (DIN4_R5_KS) | [📄 README](standard-modules/DIN/README.md) |
+| DOUT | DOUT | Sorties digitales | [📄 README](standard-modules/DOUT/README.md) |
+| Core | — | Cœur STM32F4 (Core32F4) | [📄 README](standard-modules/Core/README.md) |
+| IO | MIDI | Interface MIDI IN/OUT | [📄 README](standard-modules/IO/README.md) |
 
 ---
 
 ## Documentation
 
-- `common-docs/bus-midibox-ng.md` — Schéma de principe des bus AIN, DIN et DOUT de MIDIbox NG
-- `common-docs/connecteurs/` — Brochage détaillé des connecteurs de bus
-- Chaque front-end possède son propre `README.md` avec son brochage et ses notes d'assemblage
-- `docs/assets/` — Rendus 3D des PCB (vues top et isométrique)
+- 📄 [`common-docs/README.md`](common-docs/README.md) — Hub de la documentation générale
+- 📄 [`common-docs/bus-midibox-ng.md`](common-docs/bus-midibox-ng.md) — Schéma de principe des bus AIN, DIN et DOUT de MIDIbox NG
+- 📁 [`common-docs/connecteurs/`](common-docs/connecteurs/) — Brochage détaillé des connecteurs de bus
+- Chaque front-end possède son propre [`README.md`](custom-frontends/) avec son brochage et ses notes d'assemblage
+- 🖼️ [`docs/assets/`](docs/assets/) — Rendus 3D des PCB (vues top et isométrique)
+- 🗺️ [`PLAN.md`](PLAN.md) — Feuille de route complète du projet (phases 0-10)
 
 ---
 
