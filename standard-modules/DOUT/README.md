@@ -3,6 +3,8 @@
 ## Description
 Module de base DOUT (Digital Output) de l'écosystème MIDIbox NG. Fournit des sorties digitales pour piloter LEDs, afficheurs, relais. Se connecte aux front-ends DOUT (encoders-led-rgb, pad-rgb, surface-control, etc.).
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

@@ -3,6 +3,8 @@
 ## Description
 Module de base DIN (Digital Input) de l'écosystème MIDIbox NG. Fournit la lecture d'entrées digitales pour boutons, switchs, encodeurs. Se connecte aux front-ends DIN (8x-buttons, keysw-4x2, surface-control, etc.).
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

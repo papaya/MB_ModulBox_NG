@@ -3,6 +3,8 @@
 ## Description
 Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d'informations MIDI (nom de piste, valeur de paramètre, menu, etc.). L'afficheur est piloté via un bus série (I2C ou SPI) connecté au module de base MIDIbox.
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

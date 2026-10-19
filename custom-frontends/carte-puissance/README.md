@@ -3,6 +3,8 @@
 ## Description
 Carte de distribution d'alimentation pour l'écosystème MIDIbox NG. Elle fournit les tensions nécessaires aux modules AIN, DIN, DOUT et aux front-ends connectés sur les bus.
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

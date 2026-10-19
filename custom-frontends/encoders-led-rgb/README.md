@@ -3,6 +3,8 @@
 ## Description
 Carte de front-end intégrant des encodeurs rotatifs avec anneau LED RGB pour le contrôle de paramètres MIDI avec retour visuel (position, valeur, mode, etc.). Chaque encodeur génère des événements MIDI sur le bus DIN, et l'anneau LED est piloté via le bus DOUT.
 
+📖 **Article de référence :** [4X2 ENC-SW-16-LED-RING-RGB (PEC16)](https://ksir-diy.blogspot.com/) sur le blog Ksir DIY'S — modèles PEC16 et P el12T. ⚠️ Marqué « non terminé, ne fonctionne pas » sur le blog.
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

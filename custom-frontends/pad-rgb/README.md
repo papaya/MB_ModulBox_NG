@@ -3,6 +3,8 @@
 ## Description
 Carte de front-end intégrant des pads (boutons sensibles) rétroéclairés RGB (WS2812) pour le déclenchement d'événements MIDI avec retour visuel couleur. Chaque pad génère un événement MIDI sur le bus DIN, et l'éclairage RGB est piloté via le bus DOUT.
 
+📖 **Article de référence :** [4X2-PADS-RGB](https://ksir-diy.blogspot.com/) sur le blog Ksir DIY'S — modèle PAD4X2.
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

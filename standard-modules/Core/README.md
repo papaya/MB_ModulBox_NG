@@ -3,6 +3,8 @@
 ## Description
 Cœur de contrôle du contrôleur MIDIbox NG. Basé sur STM32F4, il gère le multiplexage des bus AIN, DIN et DOUT, ainsi que la communication USB/MIDI. Version de référence : Core32f4_V0.1.
 
+📖 **Article de référence :** [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) sur le blog Ksir DIY'S.
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

@@ -169,11 +169,43 @@ Supprimer uniquement après avoir copié/déplacé les sources essentielles :
 ### Phase 8 — Documentation du bus MIDIbox NG ✅ (18/10/2026)
 - [x] `common-docs/bus-midibox-ng.md` : Schéma de principe AIN/DIN/DOUT, brochage des connecteurs, mapping des front-ends
 
-### Phase 9 — Archivage et revue finale
-- [ ] Déplacer tout ce qui reste d'inutilisé dans `archive/` (KICAD_6, TEST_NOT_WORKING, doublons confirmés)
-- [ ] Revue croisée de l'arborescence finale vs cible
-- [ ] Commit de l'état propre (si Git)
-- [ ] Livrable : projet prêt à être documenté ou publié
+### Phase 9 — Archivage et revue finale (✅ 18/10/2026)
+- [x] Déplacer tout ce qui reste d'inutilisé dans `archive/` — `MB Hardware/` (59M) et `MB MODULBOX NG/` (2,8G) déplacés vers `archive/sources/` ; rapports DRC déplacés vers `archive/drc-reports/` ; fichiers AppleDouble nettoyés
+- [x] `.gitignore` étendu : fichiers binaires lourds de `archive/sources/` (SolidWorks, Blender, STEP — 2,8 Go non versionnés) + fichiers `*.lck` KiCad
+- [x] Revue croisée de l'arborescence finale vs cible — tous les dossiers présents et README vérifiés
+- [x] Commit de l'état propre (Git)
+- [x] Livrable : projet prêt à être documenté ou publié
+
+**Écarts assumés par rapport à l'arborescence cible (§2) :**
+- `global-libs/` n'a pas été créé : les bibliothèques partagées sont dans `Mes_Librairies_KiCad/` (symbols/, footprints/, 3d/ — voir §8), déjà liées aux projets via `${KIPRJMOD}`
+- `docs/` ajouté en plus de la cible (assets 3D + guides)
+- `archive/` enrichi : `sources/`, `drc-reports/`, `pre-refill-2026-10-18/`, `superseded-*`
+
+### Phase 10 — Documentation enrichie depuis le blog ksir-diy.blogspot.com (✅ 18/10/2026)
+- [x] Explorer le blog ksir-diy.blogspot.com et identifier les articles par carte (terminé 18/10/2026)
+- [ ] Récupérer les images et schémas du blog vers docs/assets/
+- [x] Rédiger/enrichir README.md de chaque front-end (format user-friendly + réf. blog) — 9/9 terminés (8x-pots ✅, 8x-buttons ✅, 4x-faders ✅, encoders-led-rgb ✅, pad-rgb ✅, oled-128x64 ✅, keysw-4x2 ✅, carte-puissance ✅, surface-control ✅)
+- [x] Rédiger/enrichir README.md de chaque standard-module — 5/5 terminés (AIN ✅, DIN ✅, DOUT ✅, Core ✅, IO ✅)
+- [x] Rédiger le README principal à la racine (vitrine du projet avec lien blog) ✅
+- [x] Lien vers les articles de blog pertinents dans chaque README ✅
+
+**Détail des références blog associées :**
+| Module | Article blog |
+|--------|-------------|
+| 8x-pots | [4X2-POTS-v0.2](https://ksir-diy.blogspot.com/) — modèle PotX2 |
+| 4x-faders | [4X1-FAD-1/2-v0.2](https://ksir-diy.blogspot.com/) — modèle FAD4X1 et FAD4X1_1 |
+| 8x-buttons | [4x2-BPL-v0.2](https://ksir-diy.blogspot.com/) — modèle BP4X2 |
+| encoders-led-rgb | [4X2 ENC-SW-16-LED-RING-RGB](https://ksir-diy.blogspot.com/) — modèle PEC16 (non terminé ⚠️) |
+| pad-rgb | [4X2-PADS-RGB](https://ksir-diy.blogspot.com/) — modèle PAD4X2 |
+| oled-128x64 | Aucun article dédié → [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| keysw-4x2 | Aucun article dédié → [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| carte-puissance | Aucun article dédié → [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| surface-control | Aucun article dédié → [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| AIN | Aucun article dédié → [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| DIN | [4X2-BPL-v0.2](https://ksir-diy.blogspot.com/) + [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| DOUT | [4X2-PADS-RGB](https://ksir-diy.blogspot.com/) + [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| Core | [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
+| IO | [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
 
 ## 5. Outils et commandes prévus (mode ACT)
 

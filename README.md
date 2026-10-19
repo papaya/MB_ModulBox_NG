@@ -1,9 +1,32 @@
 # MB_ModulBox_NG — Contrôleur MIDI Modulaire (Écosystème MIDIbox NG)
 
-Projet open-source hardware de contrôleur MIDI modulaire basé sur l'écosystème **MIDIbox NG**. Le projet est séparé en deux grands ensembles :
+Projet open-source hardware de contrôleur MIDI modulaire basé sur l'écosystème **MIDIbox NG**.  
+Ce projet est développé et documenté sur le blog **[Ksir DIY'S](https://ksir-diy.blogspot.com/)** — article principal : *"ModulBox V2" (mai 2023)*.
+
+Le projet est séparé en deux grands ensembles :
 
 1. **Modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) — référence centrale dans `standard-modules/`
 2. **Cartes additionnelles / front-ends spécifiques** — plaques de contrôle physiques dans `custom-frontends/`
+
+---
+
+## 📖 Articles et ressources du blog ksir-diy.blogspot.com
+
+| Article du blog | Thème | Lien |
+|-----------------|-------|------|
+| [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) | Présentation globale du projet (mai 2023) | [Voir sur le blog](https://ksir-diy.blogspot.com/) |
+| [ALL FILES — Archive complète](https://drive.google.com/drive/folders/1vpTdcTHLqAW1HyvYF8Y5nkU0c3LeNErb?usp=sharing) | Tous les fichiers de fabrication, schémas, Gerbers | [Google Drive](https://drive.google.com/drive/folders/1vpTdcTHLqAW1HyvYF8Y5nkU0c3LeNErb?usp=sharing) |
+
+**Articles par carte :**
+| Carte | Article du blog | Dossier |
+|-------|----------------|---------|
+| 4X2-POTS-v0.2 | Potentiomètres rotatifs | `custom-frontends/8x-pots/` |
+| 4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2 | Faders / glissières | `custom-frontends/4x-faders/` |
+| 4x2-BPL-v0.2 | Boutons poussoirs | `custom-frontends/8x-buttons/` |
+| 4X2-PADS-RGB | Pads rétroéclairés RGB WS2812 | `custom-frontends/pad-rgb/` |
+| 4X2 ENC-SW-16-LED-RING-RGB (PEC16) | Encodeurs avec anneau LED RGB | `custom-frontends/encoders-led-rgb/` |
+
+> ⚠️ L'article *"4X2 ENC-SW-16-LED-RING-RGB (PEC16)"* est marqué comme **"non terminé, ne fonctionne pas"** sur le blog. Les sources sont néanmoins disponibles pour référence.
 
 ---
 

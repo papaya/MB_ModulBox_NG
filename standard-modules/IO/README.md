@@ -3,6 +3,8 @@
 ## Description
 Module de base IO (Interface MIDI) de l'écosystème MIDIbox NG. Fournit les entrées/sorties MIDI physiques (IN/OUT) pour connecter le contrôleur à d'autres équipements MIDI.
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

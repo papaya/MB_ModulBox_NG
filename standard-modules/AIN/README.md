@@ -3,6 +3,8 @@
 ## Description
 Module de base AIN (Analog Input) de l'écosystème MIDIbox NG. Fournit la lecture de voies analogiques pour potentiomètres, faders, capteurs, etc. Se connecte aux front-ends AIN (8x-pots, 4x-faders, etc.).
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Interfaçage MIDIbox
 - **Type de bus :** AIN (Analog Input)
 - **Connecteur :** Header mâle vers bus AIN

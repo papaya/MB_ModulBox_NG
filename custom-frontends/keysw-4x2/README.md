@@ -3,6 +3,8 @@
 ## Description
 Carte de front-end intégrant un clavier matricé 4x2 (8 touches) pour l'envoi d'événements MIDI (notes, CC, etc.). Chaque touche est lue sur une entrée digitale du bus DIN de l'écosystème MIDIbox NG.
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|

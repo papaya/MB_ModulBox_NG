@@ -3,6 +3,8 @@
 ## Description
 Carte de surface de contrôle combinant plusieurs interfaces (boutons, encodeurs, afficheur) sur une seule PCB. Version V0.1 du prototype global de contrôleur MIDIbox NG.
 
+📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
 ## Assets de visualisation
 | Type | Fichier | Description |
 |------|---------|-------------|
