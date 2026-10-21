@@ -16,6 +16,7 @@ _autosave*
 # ZIP exports
 *.zip
 *.rar
+*.7z
 
 # Cache
 __pycache__/
@@ -34,3 +35,40 @@ __pycache__/
 *.IGS
 *.blend
 *.blend1
+
+# —— Fichiers CAO 3D volumineux : exclus du dépôt Git (trop lourds) ——
+# Ils restent présents en local et sont disponibles via l'archive Google Drive
+# (cf. README § « Articles et ressources »). Utiles uniquement au rendu 3D.
+*.wrl
+*.WRL
+*.stl
+*.STL
+*.fcstd
+*.FCStd
+*.fcstd1
+*.FCStd1
+*.3dm
+*.x_t
+*.x_b
+*.dwg
+*.dxf
+*.DXF
+
+# Dossiers de rendu 3D (contenu purement visuel, reconstructible)
+**/3D/
+**/3d/
+**/shapes3D/
+**/Blender/
+**/FreeCAD/
+**/BLENDER/
+
+# —— Sources brutes originales : non versionnées (2,9 Go, doublons) ——
+# archive/sources/ est une copie brute de sauvegarde ; les versions maîtresses
+# pertinentes sont dans standard-modules/ et custom-frontends/
+archive/sources/
+
+# —— Exports de fabrication non nécessaires au dépôt (régénérables via kicad-cli) ——
+# Les gerbers de production des cartes courantes sont conservés dans
+# custom-frontends/*/production/ ; les exports bruts d'archive sont ici exclus.
+archive/**/production/
+
