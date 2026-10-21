@@ -1,9 +1,42 @@
 # PLAN.md — Réorganisation du projet hardware MB_ModulBox_NG
 
 ---
-**Statut :** Plan de rangement — ÉTAPES 1-5 TERMINÉES + RÉCONCILIATION MODULES STANDARDS (mode ACT exécuté)  
-**Dernière mise à jour :** 18/10/2026  
-**Résumé :** Arborescence créée, fichiers parasites supprimés, modules standards réconciliés (versions maîtresses identifiées), 9 front-ends déplacés et documentés, README principal rédigé, assets 3D générés, doc bus rédigée.
+**Statut :** Plan de rangement — ÉTAPES 1-5 TERMINÉES + RÉCONCILIATION MODULES STANDARDS + **PUBLICATION GITHUB (allègement du dépôt)**  
+**Dernière mise à jour :** 21/10/2026  
+**Résumé :** Arborescence créée, fichiers parasites supprimés, modules standards réconciliés (versions maîtresses identifiées), 9 front-ends déplacés et documentés, README principal rédigé, assets 3D générés, doc bus rédigée. **Avertissement « non professionnel » ajouté au README. Dépôt Git allégé (CAO 3D + `archive/sources/` exclus) et historique purgé : `.git` 3,9 Go → 24 Mo.**
+
+---
+
+## 10. PUBLICATION GITHUB — Allègement du dépôt (TERMINÉ ✅)
+
+Date : 21/10/2026. Objectif : publier le projet sur GitHub sans dépasser les limites de taille de GitHub (100 Mo/fichier, 5 Go/dépôt).
+
+### 10.1 Diagnostic
+| Élément | Avant | Après |
+|---------|-------|-------|
+| Taille de `.git` | **3,9 Go** (1,39 Go d'objets loose + 2 072 sidecars macOS `._*`) | **24 Mo** |
+| Pack Git | 640 Mo | **8,5 Mo** |
+| Fichiers suivis | 1 439 | **295** |
+| Taille de l'index | ~700 Mo | **29,7 Mo** |
+| Plus gros fichier | 203 Mo (`Assemblage2.SLDASM`) | **2,93 Mo** (`Core32F4.kicad_sch`) |
+
+### 10.2 Actions effectuées
+- [x] `.gitignore` étendu : `*.wrl`, `*.stl`, `*.step`, `*.FCStd`, `*.dxf`, `*.blend`, `*.sldprt/sldasm`, `archive/sources/`, `archive/**/production/`, `*.zip`
+- [x] Retrait de l'index de la CAO 3D et des copies brutes (fichiers **conservés sur le disque**, uniquement non versionnés)
+- [x] Purge de l'historique avec `git-filter-repo` (`--invert-paths` sur `archive/sources`, `MB MODULBOX NG`, `MB Hardware` + `--path-glob` sur toutes les extensions CAO)
+- [x] Nettoyage des sidecars AppleDouble `._*` (le volume exFAT en recrée → `git gc` échouait avec « non-monotonic index »)
+- [x] `core.fileMode false` (exFAT force le bit exécutable → 295 fichiers faussement « modifiés »)
+- [x] Vérification bit-à-bit : les 295 fichiers suivis sont identiques entre le dépôt filtré et le working tree
+- [x] Contrôle GitHub : aucun fichier > 50 Mo (limite 100 Mo) ✅
+- [x] README : avertissement « non professionnel / aucune garantie » + section « Contenu de ce dépôt Git (et ce qui n'y est pas) »
+- [x] Push `origin/main` (force-push : l'historique distant « Add files via upload » n'avait aucun ancêtre commun et ne contenait que 55 fichiers, tous déjà présents en local)
+
+### 10.3 Contenu conservé dans le dépôt
+Schémas + PCB KiCad (`.kicad_sch`, `.kicad_pro`, `.kicad_pcb`), gerbers/perçages de production, `Mes_Librairies_KiCad/` (symboles + empreintes), documentation (`README.md`, `PLAN.md`, `common-docs/`, `docs/assets/` en PNG), `tools/`.
+
+### 10.4 Contenu exclu (récupérable via Google Drive)
+CAO 3D (SolidWorks / Blender / FreeCAD / Wrl / STL / STEP), `archive/sources/` (copie brute de sauvegarde, 2,9 Go), archives ZIP de fabrication, caches KiCad.
+→ Archive : https://drive.google.com/drive/folders/1vpTdcTHLqAW1HyvYF8Y5nkU0c3LeNErb?usp=sharing
 
 ---
 

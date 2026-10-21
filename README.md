@@ -24,6 +24,32 @@ Le projet est séparé en deux grands ensembles :
 
 ---
 
+## 📦 Contenu de ce dépôt Git (et ce qui n'y est pas)
+
+Ce dépôt est **allégé** pour rester léger et rapide à cloner. Sont versionnés :
+
+| ✅ Inclus | Détail |
+|---------|--------|
+| Schémas KiCad | `.kicad_sch`, `.kicad_pro` (sources de conception) |
+| PCB KiCad | `.kicad_pcb` (fichiers de routage) |
+| Gerbers / perçages | `custom-frontends/*/production/` (fichiers de fabrication des cartes courantes) |
+| Bibliothèques partagées | `Mes_Librairies_KiCad/` (symboles `.kicad_sym` + empreintes `.pretty`) |
+| Documentation & rendus | `README.md`, `PLAN.md`, `common-docs/`, `docs/assets/` (vues 3D en PNG) |
+| Outils | `tools/` (scripts de nettoyage, extraction, validation) |
+
+| ❌ Non versionné | Raison |
+|------------------|--------|
+| `*.wrl`, `*.stl`, `*.step`, `*.FCStd`, `*.dxf` | **CAO 3D volumineuse** (fichiers SolidWorks / Blender / FreeCAD / Wrl) — inutile pour KIcad, mais dépasse la limite de taille de GitHub |
+| `archive/sources/` | **Copie brute de sauvegarde** (2,9 Go) des sources d'origine, en doublon — les versions maîtresses sont dans `standard-modules/` et `custom-frontends/` |
+| `*.zip` | Archives de fabrication compressées — contenu identique aux gerbers présents |
+| Fichiers de cache KiCad | `.kicad_prl`, `.bak`, `__pycache__` — régénérables |
+
+> 📥 **Les fichiers 3D et les sources complètes** sont disponibles via l'archive Google Drive : [ALL FILES — Archive complète](https://drive.google.com/drive/folders/1vpTdcTHLqAW1HyvYF8Y5nkU0c3LeNErb?usp=sharing)
+>
+> Les modèles 3D manquants peuvent aussi être récupérés via **kicad-cli / KiCad 3D Viewer** directement depuis les bibliothèques officielles (kicad-footprints, kicad-symbols).
+
+---
+
 ## 📖 Articles et ressources du blog ksir-diy.blogspot.com
 
 | Article du blog | Thème | Lien |
@@ -76,6 +102,7 @@ MB_ModulBox_NG/
 │   ├── carte-puissance/      # Alimentation / distribution
 │   └── surface-control/      # Surface de contrôle globale (prototype V0.1)
 ├── archive/                  # Versions figées (KICAD_6, doublons, tests)
+    │   └── …                  # ⚠️ `archive/sources/` (2,9 Go) n'est PAS versionné (voir § Contenu du dépôt)
 │   ├── 2023-KICAD-6/
 │   ├── 2023-KICAD-7-doublons/
 │   └── experimental/
