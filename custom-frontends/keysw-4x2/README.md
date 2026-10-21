@@ -43,4 +43,10 @@ Carte de front-end intégrant un clavier matricé 4x2 (8 touches) pour l'envoi d
 
 ---
 
+## Conception & Compatibilité
+
+Carte d'interface originale conçue pour le système **MB MODULBOX NG**, compatible avec les bus et modules du système MIDIbox NG.
+
+> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial.
+
 **Rétro-ingénierie par l'équipe — GPL-3.0**

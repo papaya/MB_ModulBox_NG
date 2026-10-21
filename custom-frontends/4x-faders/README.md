@@ -45,4 +45,10 @@ Article de reference : [4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2](https://ksir-diy.blogsp
 
 ---
 
+## Conception & Compatibilité
+
+Carte d'interface originale conçue pour le système **MB MODULBOX NG**, compatible avec les bus et modules du système MIDIbox NG.
+
+> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial.
+
 Retro-ingenierie par l'equipe — GPL-3.0

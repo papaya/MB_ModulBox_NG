@@ -45,4 +45,10 @@ Cœur de contrôle du contrôleur MIDIbox NG. Basé sur STM32F4, il gère le mul
 
 ---
 
+## Crédits & Origine
+
+Ce module est une ré-implémentation sous KiCad basée sur les schémas originaux de la plateforme **MIDIbox (MBHP)** conçue par **Thorsten Klose / [ucapps.de](http://www.ucapps.de/)**.
+
+> **Licence & Usage :** Ce matériel est fourni sous licence Open Hardware à but strictement personnel, éducatif et DIY (**Non-Commercial**). Toute utilisation commerciale est exclue.
+
 **Référence MIDIbox NG — GPL-3.0**

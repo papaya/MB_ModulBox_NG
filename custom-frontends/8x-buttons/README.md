@@ -48,4 +48,10 @@ Article de reference : [4x2-BPL-v0.2](https://ksir-diy.blogspot.com/) sur le blo
 
 ---
 
+## Conception & Compatibilité
+
+Carte d'interface originale conçue pour le système **MB MODULBOX NG**, compatible avec les bus et modules du système MIDIbox NG.
+
+> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial.
+
 **Retro-ingenierie par l'equipe — GPL-3.0**

@@ -17,4 +17,10 @@ Module de base AIN (Analog Input) de l'écosystème MIDIbox NG. Fournit la lectu
 
 ---
 
+## Crédits & Origine
+
+Ce module est une ré-implémentation sous KiCad basée sur les schémas originaux de la plateforme **MIDIbox (MBHP)** conçue par **Thorsten Klose / [ucapps.de](http://www.ucapps.de/)**.
+
+> **Licence & Usage :** Ce matériel est fourni sous licence Open Hardware à but strictement personnel, éducatif et DIY (**Non-Commercial**). Toute utilisation commerciale est exclue.
+
 **Référence MIDIbox NG — GPL-3.0**

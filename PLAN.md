@@ -240,6 +240,14 @@ Supprimer uniquement après avoir copié/déplacé les sources essentielles :
 | Core | [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
 | IO | [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html) |
 
+---
+
+**Mentions de licence, d'attribution et de crédits — appliquées ✅ (19/10/2026)**
+
+- `standard-modules/{AIN,DIN,DOUT,Core,IO}/README.md` : section **Crédits & Origine** ajoutée — crédits **Thorsten Klose / ucapps.de** (schémas MBHP originaux), usage strictement DIY et non-commercial.
+- `custom-frontends/{4x-faders,8x-pots,8x-buttons,encoders-led-rgb,pad-rgb,oled-128x64,keysw-4x2,carte-puissance,surface-control}/README.md` : section **Conception & Compatibilité** ajoutée — création originale compatible MB MODULBOX NG, licence Open-Source Hardware, usage DIY / non-commercial.
+- `README.md` (racine) : synthèse de la distinction entre modules standards ré-implémentés (crédits ucapps.de / Thorsten Klose) et modules d'extension sur mesure, avec conditions d'utilisation non-commerciales.
+
 ## 5. Outils et commandes prévus (mode ACT)
 
 | Tâche | Outil |

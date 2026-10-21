@@ -144,6 +144,23 @@ MB_ModulBox_NG/
 
 ---
 
+## Licences, crédits et conditions d'utilisation
+
+Ce dépôt contient deux catégories de matériel distinctes :
+
+### 1. Modules standards officiels (`standard-modules/`)
+**Core, AIN, DIN, DOUT, IO** — Ces modules sont des ré-implémentations sous KiCad basées sur les schémas originaux de la plateforme **MIDIbox (MBHP)** conçue par **Thorsten Klose / ucapps.de**.  
+Crédits : Thorsten Klose & ucapps.de.  
+Usage : strictement personnel, éducatif et DIY — **Non-Commercial**.
+
+### 2. Modules et front-ends originaux (`custom-frontends/`)
+**4x-faders, 8x-pots, 8x-buttons, encoders-led-rgb, pad-rgb, keysw-4x2, carte-puissance, surface-control** — Cartes d'interface originales conçues sur mesure pour l'écosystème **MB MODULBOX NG**, compatibles avec les bus et modules du système MIDIbox NG.  
+Usage : Open-Source Hardware pour un usage DIY / personnel / non-commercial.
+
+> Tous les fichiers de ce dépôt sont fournis à titre documentaire et pédagogique, sans garantie ni support technique. Voir l'avertissement en tête de ce fichier.
+
+---
+
 ## Documentation
 
 - 📄 [`common-docs/README.md`](common-docs/README.md) — Hub de la documentation générale
