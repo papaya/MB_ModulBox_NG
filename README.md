@@ -10,6 +10,20 @@ Le projet est séparé en deux grands ensembles :
 
 ---
 
+## ⚠️ Avertissement
+
+> **Ce projet n'est pas réalisé par un professionnel.** Les fichiers schématiques, PCB, gerbers et documentations publiés ici sont issus d'un travail amateur, réalisé sur mon temps libre, à des fins personnelles et pédagogiques uniquement.
+>
+> **L'utilisation de ces fichiers ne m'engage à rien.** Aucune garantie de conformité, de sécurité, de fonctionnalité n'est donnée, ni implicitement ni explicitement.
+>
+> **Il peut y avoir des erreurs** : schématiques incomplètes, erreurs de routage, valeurs de composants inadaptées, impédances non respectées, alimentation insuffisante, isolation électrique non garantie, défauts de sérigraphie, etc. Certaines cartes listées ici sont explicitement marquées comme **non fonctionnelles** ou non testées.
+>
+> **À vos risques et périls.** Vous êtes seul responsable de la fabrication, de l'assemblage, de la mise sous tension et de l'utilisation des fichiers de ce dépôt. Vérifiez systématiquement les schémas, les contraintes de fabrication (épaisseurs de cuivre, empilages, clearances), les chaînages de masse et les tensions avant de fabriquer.
+>
+> Ce dépôt est partagé à titre documentaire et open-source (GPL-3.0) dans l'esprit de l'écosystème MIDIbox NG, mais **n'est pas un support technique, ni un service de conception, ni une référence industrielle**.
+
+---
+
 ## 📖 Articles et ressources du blog ksir-diy.blogspot.com
 
 | Article du blog | Thème | Lien |
