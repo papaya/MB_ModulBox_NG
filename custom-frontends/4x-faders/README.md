@@ -1,5 +1,5 @@
 # 4x-faders — Carte faders / glissieres (AIN)
-
+![3D quart](assets/3d%203quart.png)
 ## Description
 Carte de front-end integrant des faders (glissieres) pour le controle continu de parametres MIDI (volume, filtre, effets, etc.). Chaque fader est lu sur une voie analogique independante via le bus AIN de l'ecosysteme MIDIbox NG.
 
@@ -14,7 +14,7 @@ Article de reference : [4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2](https://ksir-diy.blogsp
 
 ![3D top](assets/Fad_1.png)
 ![3D iso](assets/Fad_2.png)
-![3D quart](assets/3d%203quart.png)
+
 
 ## Specifications techniques
 - Faders (glissieres) pour controle continu MIDI

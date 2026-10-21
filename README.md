@@ -1,28 +1,36 @@
 # MB_ModulBox_NG — Contrôleur MIDI Modulaire (Écosystème MIDIbox NG)
 
+![3D quart](docs/assets/system/bandeau.jpg)
+
 Projet open-source hardware de contrôleur MIDI modulaire basé sur l'écosystème **MIDIbox NG**.  
-Ce projet est développé et documenté sur le blog **[Ksir DIY'S](https://ksir-diy.blogspot.com/)** — article principal : *"ModulBox V2" (mai 2023)*.
+
+---
+
+## LISTE DES MODULES DISPONIBLES
+
+| Front-end | Bus | Rôle | Détail |
+|-----------|-----|------|--------|
+| encoders-led-rgb | DIN + DOUT | Encodeurs avec anneau LED RGB | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
+| keysw-4x2 | DIN | Clavier matricé 4x2 touches | [📄 README](custom-frontends/keysw-4x2/README.md) |
+| 4x-faders | AIN | Glissières / faders | [📄 README](custom-frontends/4x-faders/README.md) |
+| 8x-pots | AIN | 8 potentiomètres rotatifs | [📄 README](custom-frontends/8x-pots/README.md) |
+| 8x-buttons | DIN | 8 boutons poussoirs | [📄 README](custom-frontends/8x-buttons/README.md) |
+| pad-rgb | DIN + DOUT | Pads rétroéclairés RGB WS2812 | [📄 README](custom-frontends/pad-rgb/README.md) |
+| oled-128x64 | I2C / SPI | Afficheur OLED 128x64 | [📄 README](custom-frontends/oled-128x64/README.md) |
+| carte-puissance | — | Alimentation / distribution | [📄 README](custom-frontends/carte-puissance/README.md) |
+| surface-control | DIN + DOUT + AIN | Surface de contrôle globale (V0.1) | [📄 README](custom-frontends/surface-control/README.md) |
+
+---
+
 
 Le projet est séparé en deux grands ensembles :
-
-1. **Modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) — référence centrale dans `standard-modules/`
-2. **Cartes additionnelles / front-ends spécifiques** — plaques de contrôle physiques dans `custom-frontends/`
-
----
-
-## ⚠️ Avertissement
-
-> **Ce projet n'est pas réalisé par un professionnel.** Les fichiers schématiques, PCB, gerbers et documentations publiés ici sont issus d'un travail amateur, réalisé sur mon temps libre, à des fins personnelles et pédagogiques uniquement.
->
-> **L'utilisation de ces fichiers ne m'engage à rien.** Aucune garantie de conformité, de sécurité, de fonctionnalité n'est donnée, ni implicitement ni explicitement.
->
-> **Il peut y avoir des erreurs** : schématiques incomplètes, erreurs de routage, valeurs de composants inadaptées, impédances non respectées, alimentation insuffisante, isolation électrique non garantie, défauts de sérigraphie, etc. Certaines cartes listées ici sont explicitement marquées comme **non fonctionnelles** ou non testées.
->
-> **À vos risques et périls.** Vous êtes seul responsable de la fabrication, de l'assemblage, de la mise sous tension et de l'utilisation des fichiers de ce dépôt. Vérifiez systématiquement les schémas, les contraintes de fabrication (épaisseurs de cuivre, empilages, clearances), les chaînages de masse et les tensions avant de fabriquer.
->
-> Ce dépôt est partagé à titre documentaire et open-source (GPL-3.0) dans l'esprit de l'écosystème MIDIbox NG, mais **n'est pas un support technique, ni un service de conception, ni une référence industrielle**.
+Le dossier essentiel est:
+1. **Cartes additionnelles / front-ends spécifiques** — plaques de contrôle physiques dans `custom-frontends/`
+2. **Modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) — référence centrale dans `standard-modules/`
 
 ---
+![3D quart](docs/assets/system/vue%20ensemble.jpg)
+
 
 ## 📦 Contenu de ce dépôt Git (et ce qui n'y est pas)
 
@@ -47,7 +55,8 @@ Ce dépôt est **allégé** pour rester léger et rapide à cloner. Sont version
 > 📥 **Les fichiers 3D et les sources complètes** sont disponibles via l'archive Google Drive : [ALL FILES — Archive complète](https://drive.google.com/drive/folders/1vpTdcTHLqAW1HyvYF8Y5nkU0c3LeNErb?usp=sharing)
 >
 > Les modèles 3D manquants peuvent aussi être récupérés via **kicad-cli / KiCad 3D Viewer** directement depuis les bibliothèques officielles (kicad-footprints, kicad-symbols).
-
+---
+![3D quart](docs/assets/system/WIP.jpg)
 ---
 
 ## 📖 Articles et ressources du blog ksir-diy.blogspot.com
@@ -114,23 +123,7 @@ MB_ModulBox_NG/
 └── tools/                    # Scripts de nettoyage / validation
 ```
 
----
 
-## Table des matières des front-ends
-
-| Front-end | Bus | Rôle | Détail |
-|-----------|-----|------|--------|
-| 4x-faders | AIN | Glissières / faders | [📄 README](custom-frontends/4x-faders/README.md) |
-| 8x-pots | AIN | 8 potentiomètres rotatifs | [📄 README](custom-frontends/8x-pots/README.md) |
-| 8x-buttons | DIN | 8 boutons poussoirs | [📄 README](custom-frontends/8x-buttons/README.md) |
-| encoders-led-rgb | DIN + DOUT | Encodeurs avec anneau LED RGB | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
-| pad-rgb | DIN + DOUT | Pads rétroéclairés RGB WS2812 | [📄 README](custom-frontends/pad-rgb/README.md) |
-| oled-128x64 | I2C / SPI | Afficheur OLED 128x64 | [📄 README](custom-frontends/oled-128x64/README.md) |
-| keysw-4x2 | DIN | Clavier matricé 4x2 touches | [📄 README](custom-frontends/keysw-4x2/README.md) |
-| carte-puissance | — | Alimentation / distribution | [📄 README](custom-frontends/carte-puissance/README.md) |
-| surface-control | DIN + DOUT + AIN | Surface de contrôle globale (V0.1) | [📄 README](custom-frontends/surface-control/README.md) |
-
----
 
 ## Modules standards MIDIbox
 
@@ -169,6 +162,25 @@ Usage : Open-Source Hardware pour un usage DIY / personnel / non-commercial.
 - Chaque front-end possède son propre [`README.md`](custom-frontends/) avec son brochage et ses notes d'assemblage
 - 🖼️ [`docs/assets/`](docs/assets/) — Rendus 3D des PCB (vues top et isométrique)
 - 🗺️ [`PLAN.md`](PLAN.md) — Feuille de route complète du projet (phases 0-10)
+---
+Retrouvez plus de photos sur **[Ksir DIY'S](https://ksir-diy.blogspot.com/)** — article principal : *"ModulBox V2" (mai 2023)*.
+
+---
+![3D quart](docs/assets/system/pied%20de%20page.jpg)
+---
+
+
+## ⚠️ Avertissement
+
+> **Ce projet n'est pas réalisé par un professionnel.** Les fichiers schématiques, PCB, gerbers et documentations publiés ici sont issus d'un travail amateur, réalisé sur mon temps libre, à des fins personnelles et pédagogiques uniquement.
+>
+> **L'utilisation de ces fichiers ne m'engage à rien.** Aucune garantie de conformité, de sécurité, de fonctionnalité n'est donnée, ni implicitement ni explicitement.
+>
+> **Il peut y avoir des erreurs** : schématiques incomplètes, erreurs de routage, valeurs de composants inadaptées, impédances non respectées, alimentation insuffisante, isolation électrique non garantie, défauts de sérigraphie, etc. Certaines cartes listées ici sont explicitement marquées comme **non fonctionnelles** ou non testées.
+>
+> **À vos risques et périls.** Vous êtes seul responsable de la fabrication, de l'assemblage, de la mise sous tension et de l'utilisation des fichiers de ce dépôt. Vérifiez systématiquement les schémas, les contraintes de fabrication (épaisseurs de cuivre, empilages, clearances), les chaînages de masse et les tensions avant de fabriquer.
+>
+> Ce dépôt est partagé à titre documentaire et open-source (GPL-3.0) dans l'esprit de l'écosystème MIDIbox NG, mais **n'est pas un support technique, ni un service de conception, ni une référence industrielle**.
 
 ---
 
