@@ -10,7 +10,7 @@ Article de reference : [4x2-BPL-v0.2](https://ksir-diy.blogspot.com/) sur le blo
 |------|---------|-------------|
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 
-![3D top](docs/assets/frontends/8x-buttons/BP.png)
+![3D top](assets/BP.png)
 
 ## Specifications techniques
 - 8 boutons poussoirs tactiles ou mecano

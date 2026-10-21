@@ -10,7 +10,7 @@ Cœur de contrôle du contrôleur MIDIbox NG. Basé sur STM32F4, il gère le mul
 |------|---------|-------------|
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 
-![3D top](docs/assets/standard-modules/Core-Core32F4.png)
+![3D top](assets/Core-Core32F4.png)
 
 ## Spécifications techniques
 - Microcontrôleur STM32F4 (Core32F4)

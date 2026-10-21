@@ -11,8 +11,8 @@ Article de reference : [4X2-POTS-v0.2](https://ksir-diy.blogspot.com/) sur le bl
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isometrique avec composants |
 
-![3D top](docs/assets/frontends/8x-pots/Pot.png)
-![3D iso](docs/assets/frontends/8x-pots/Pot-X2.png)
+![3D top](assets/Pot.png)
+![3D iso](assets/Pot-X2.png)
 
 ## Specifications techniques
 - 8 potentiometres rotatifs (10 kOhm)

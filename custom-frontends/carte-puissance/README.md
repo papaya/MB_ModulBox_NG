@@ -11,7 +11,7 @@ Carte de distribution d'alimentation pour l'écosystème MIDIbox NG. Elle fourni
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
 
-![3D top](docs/assets/frontends/carte-puissance/Carte_puissance.png)
+![3D top](assets/Carte_puissance.png)
 
 ## Spécifications techniques
 - Distribution des rails +5V, +3.3V, GND

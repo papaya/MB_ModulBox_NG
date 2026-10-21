@@ -10,7 +10,7 @@ Module de base IO (Interface MIDI) de l'écosystème MIDIbox NG. Fournit les ent
 |------|---------|-------------|
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 
-![3D top](docs/assets/standard-modules/IO-Midi_V0.1.png)
+![3D top](assets/IO-Midi_V0.1.png)
 
 ## Spécifications techniques
 - Entrées MIDI IN (x2)

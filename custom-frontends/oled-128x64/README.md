@@ -11,7 +11,7 @@ Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
 
-![3D top](docs/assets/frontends/oled-128x64/Oled_1309_x1_V0.0.png)
+![3D top](assets/Oled_1309_x1_V0.0.png)
 
 ## Spécifications techniques
 - Afficheur OLED 128x64 pixels

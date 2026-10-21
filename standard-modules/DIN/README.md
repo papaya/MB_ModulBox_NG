@@ -10,7 +10,7 @@ Module de base DIN (Digital Input) de l'écosystème MIDIbox NG. Fournit la lect
 |------|---------|-------------|
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 
-![3D top](docs/assets/standard-modules/DIN-DIN4_R5_KS.png)
+![3D top](assets/DIN-DIN4_R5_KS.png)
 
 ## Spécifications techniques
 - Entrées digitales pour boutons et switchs

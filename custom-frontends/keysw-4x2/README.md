@@ -11,7 +11,7 @@ Carte de front-end intégrant un clavier matricé 4x2 (8 touches) pour l'envoi d
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
 
-![3D top](docs/assets/frontends/keysw-4x2/MB-KeySW_4x2_V0.3.png)
+![3D top](assets/MB-KeySW_4x2_V0.3.png)
 
 ## Spécifications techniques
 - Clavier matricé 4x2 (8 touches)

@@ -10,7 +10,7 @@ Module de base DOUT (Digital Output) de l'écosystème MIDIbox NG. Fournit des s
 |------|---------|-------------|
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 
-![3D top](docs/assets/standard-modules/DOUT-DOUT.png)
+![3D top](assets/DOUT-DOUT.png)
 
 ## Spécifications techniques
 - Sorties digitales pour LEDs et composants

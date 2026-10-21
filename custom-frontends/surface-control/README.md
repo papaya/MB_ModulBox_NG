@@ -11,7 +11,7 @@ Carte de surface de contrôle combinant plusieurs interfaces (boutons, encodeurs
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
 
-![3D top](docs/assets/frontends/surface-control/Surface Control V0.1.png)
+![3D top](assets/Surface Control V0.1.png)
 
 ## Spécifications techniques
 - Interface DIN (lecture boutons et encodeurs)

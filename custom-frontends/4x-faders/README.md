@@ -11,8 +11,8 @@ Article de reference : [4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2](https://ksir-diy.blogsp
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isometrique avec composants |
 
-![3D top](docs/assets/frontends/4x-faders/Fad_1.png)
-![3D iso](docs/assets/frontends/4x-faders/Fad_2.png)
+![3D top](assets/Fad_1.png)
+![3D iso](assets/Fad_2.png)
 
 ## Specifications techniques
 - Faders (glissieres) pour controle continu MIDI

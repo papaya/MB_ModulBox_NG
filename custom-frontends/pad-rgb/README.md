@@ -11,7 +11,7 @@ Carte de front-end intégrant des pads (boutons sensibles) rétroéclairés RGB 
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
 
-![3D top](docs/assets/frontends/pad-rgb/Pad.png)
+![3D top](assets/Pad.png)
 
 ## Spécifications techniques
 - Pads tactiles (boutons sensibles)
