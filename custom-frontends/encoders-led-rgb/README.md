@@ -10,8 +10,10 @@ Carte de front-end intégrant des encodeurs rotatifs avec anneau LED RGB pour le
 |------|---------|-------------|
 | Top view | `3d-top.png` | Vue de dessus du PCB |
 | Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
+| Screenshot | `Screenshot%202023-05-19%20175512.png` | Capture d'écran du design |
 
 ![3D top](assets/PEC_16_V0.2.png)
+![Screenshot](assets/Screenshot%202023-05-19%20175512.png)
 
 ## Spécifications techniques
 - Encodeurs rotatifs avec poussoir intégré (type PEC16R ou équivalent)
