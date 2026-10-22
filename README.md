@@ -24,12 +24,14 @@ Les **modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) sont fournis en **b
 | 4x-faders | ![Faders](custom-frontends/4x-faders/assets/Fad_1.png) | AIN | Glissières / faders | ✅ Terminé | [📄 README](custom-frontends/4x-faders/README.md) |
 | 8x-pots | ![Pots](custom-frontends/8x-pots/assets/Pot.png) | AIN | 8 potentiomètres rotatifs | ✅ Terminé | [📄 README](custom-frontends/8x-pots/README.md) |
 | 8x-buttons | ![Boutons](custom-frontends/8x-buttons/assets/BP.png) | DIN | 8 boutons poussoirs | ✅ Terminé | [📄 README](custom-frontends/8x-buttons/README.md) |
-| encoders-led-rgb | ![Encodeurs](custom-frontends/encoders-led-rgb/assets/PEC_16_V0.2.png) | DIN + DOUT | Encodeurs avec anneau LED RGB | 🟠 En cours | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
-| pad-rgb | ![Pads](custom-frontends/pad-rgb/assets/Pad.png) | DIN + DOUT | Pads rétroéclairés RGB WS2812 | ✅ Terminé | [📄 README](custom-frontends/pad-rgb/README.md) |
+| encoders-led-rgb | ![Encodeurs](custom-frontends/encoders-led-rgb/assets/PEC_16_V0.2.png) | DIN + WS2812 (J4B.SC) | Encodeurs avec anneau LED RGB | 🟠 En cours | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
+| pad-rgb | ![Pads](custom-frontends/pad-rgb/assets/Pad.png) | DIN + WS2812 (J4B.SC) | Pads rétroéclairés RGB WS2812 | ✅ Terminé | [📄 README](custom-frontends/pad-rgb/README.md) |
 | oled-128x64 | ![OLED](custom-frontends/oled-128x64/assets/Oled_1309_x1_V0.0.png) | I2C / SPI | Afficheur OLED 128x64 | ✅ Terminé | [📄 README](custom-frontends/oled-128x64/README.md) |
 | keysw-4x2 | ![Clavier](custom-frontends/keysw-4x2/assets/MB-KeySW_4x2_V0.3.png) | DIN | Clavier matricé 4x2 touches | ✅ Terminé | [📄 README](custom-frontends/keysw-4x2/README.md) |
 | carte-puissance | ![Alim](custom-frontends/carte-puissance/assets/Carte_puissance.png) | — | Alimentation / distribution | ✅ Terminé | [📄 README](custom-frontends/carte-puissance/README.md) |
 | surface-control | ![Surface](custom-frontends/surface-control/assets/Surface%20Control%20V0.1.png) | DIN + DOUT + AIN | Surface de contrôle globale | 🟡 Prototype V0.1 | [📄 README](custom-frontends/surface-control/README.md) |
+
+> ⚠️ **Note importante sur les LEDs RGB WS2812/WS2812B :** Les cartes `encoders-led-rgb` et `pad-rgb` utilisent des LEDs adressables qui se connectent en **1 fil de données sur J4B.SC (PB6 / TIM4)** du Core STM32F4 — **PAS** sur le bus DOUT (74HC595). Voir les README respectifs et [spécifications WS2812 MIOS32](https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html).
 
 ---
 ## 🚀 Démarrage rapide

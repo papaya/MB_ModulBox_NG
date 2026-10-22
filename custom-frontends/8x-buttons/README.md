@@ -31,11 +31,15 @@ Article de reference : [4x2-BPL-v0.2](https://ksir-diy.blogspot.com/) sur le blo
 | LED | Vert 5 mm | 8 |
 
 ## Brochage / Mapping MIDIbox NG
+
+### Bus DIN — via module DIN (74HC165) sur J8/J9 du Core32
 | Broche | Signal |
 |--------|--------|
-| DIN-1 a DIN-8 | Boutons B1..B8 |
-| GND | Masse |
-| +5V (pull-up) | Active |
+| DIN-1 → DIN-8 | Boutons B1..B8 (8 entrées du 74HC165) |
+| GND | Masse commune |
+| +5V | Alimentation (pull-up 10 kΩ) |
+
+> Les 8 boutons se connectent sur 8 entrées d'un registre 74HC165. Résistances de pull-up 10 kΩ requises pour définir un niveau logique quand le bouton n'est pas pressé.
 
 ## Notes de montage et astuces DIY
 - Verifier la configuration des entres (active haut / active bas) avant cableage

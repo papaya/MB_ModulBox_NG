@@ -17,6 +17,8 @@ Cœur de contrôle du contrôleur MIDIbox NG. Basé sur STM32F4, il gère le mul
 - Gestion des bus AIN, DIN, DOUT
 - Communication USB/MIDI
 - Connecteurs pour modules d'extension
+- **Port WS2812 (LED strip adressable) :** J4B.SC = PB6 / TIM4 (GPIO_Pin_6) — 1 fil de données, pilote PWM + DMA via driver MIOS32
+- **Port AIN (SPI) :** J19 — interface SPI vers modules AINSER64/AINSER8 (MCP3208 + CD4051), 2 chip selects (RC1, RC2)
 
 ## Composants principaux
 | Type | Dénomination | Qté |
@@ -31,13 +33,16 @@ Cœur de contrôle du contrôleur MIDIbox NG. Basé sur STM32F4, il gère le mul
 | Empreinte ksir | varie | 1 |
 
 ## Brochage / Mapping MIDIbox NG
-| Broche | Signal |
-|--------|--------|
-| Bus AIN | Entrées analogiques multiplexées |
-| Bus DIN | Entrées digitales |
-| Bus DOUT | Sorties digitales |
-| USB | Communication MIDI vers hôte |
-| GND / +5V | Alimentation |
+
+### Connecteurs du Core STM32F4
+| Connecteur | Signal | Destination |
+|------------|--------|-------------|
+| **J8 / J9** | Bus DIN (74HC165) + Bus DOUT (74HC595) | Modules DIN/DOUT en cascade |
+| **J19** | Bus AIN (SPI) | Modules AINSER64 / AINSER8 (pots, faders) |
+| **J4B.SC** | WS2812 data (PB6 / TIM4) | LEDs RGB adressables (1 fil de données) |
+| **USB** | Communication MIDI vers hôte | Port USB Micro-B du Core |
+
+> Alimentation WS2812 : le +5V des LEDs doit être fourni séparément (pas via J4B). Chaque RGB LED peut consommer jusqu'à 20 mA.
 
 ## Documentation de fabrication
 - `hardware/` : sources KiCad (`Core32F4.*`)

@@ -3,20 +3,13 @@
 ## Description
 Carte de surface de contrôle combinant plusieurs interfaces (boutons, encodeurs, afficheur) sur une seule PCB. Version V0.1 du prototype global de contrôleur MIDIbox NG.
 
-📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
-
-## Assets de visualisation
-| Type | Fichier | Description |
-|------|---------|-------------|
-| Top view | `3d-top.png` | Vue de dessus du PCB |
-| Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
-
-![3D top](assets/Surface Control V0.1.png)
+> ⚠️ **Carte prototype V0.1 non validée** — les connexions exactes dépendent de la configuration finale. À valider avant toute fabrication.
 
 ## Spécifications techniques
-- Interface DIN (lecture boutons et encodeurs)
-- Interface DOUT (pilotage LEDs et afficheur)
-- Interface AIN (potentiomètres et faders)
+- Lecture boutons et encodeurs via bus DIN (module 74HC165 sur J8/J9 du Core32)
+- Pilotage LEDs et afficheur via bus DOUT (module 74HC595 sur J8/J9 du Core32)
+- Lecture potentiomètres et faders via bus AIN (module AINSER64 sur J19 SPI du Core32)
+- LEDs RGB adressables (WS2812B) sur J4B.SC (PB6 / TIM4) du Core32 — **PAS sur DOUT**
 - GND et +5V communs
 - Carte prototype V0.1 — à valider avant fabrication
 
@@ -24,18 +17,18 @@ Carte de surface de contrôle combinant plusieurs interfaces (boutons, encodeurs
 | Type | Dénomination | Qté |
 |------|-------------|-----|
 | Boutons / encodeurs | Selon configuration DIN | plusieurs |
-| LEDs | Selon configuration DOUT | plusieurs |
+| LEDs | Selon configuration DOUT ou WS2812B | plusieurs |
 | Potentiomètres / faders | Selon configuration AIN | plusieurs |
 | Connecteurs | Headers vers bus DIN, DOUT, AIN | plusieurs |
 
 ## Brochage / Mapping MIDIbox NG
-| Broche | Signal |
-|--------|--------|
-| Entrées DIN | Boutons et encodeurs |
-| Sorties DOUT | LEDs et afficheur |
-| Voies AIN | Potentiomètres et faders |
-| GND | Masse commune |
-| +5V | Alimentation commune |
+| Élément | Bus | Connecteur Core |
+|---------|-----|-----------------|
+| Entrées DIN (boutons, encodeurs) | DIN | J8/J9 (74HC165) |
+| Sorties DOUT (LEDs standards) | DOUT | J8/J9 (74HC595) |
+| Voies AIN (pots, faders) | AIN | J19 (SPI, AINSER64) |
+| Donnée WS2812B (LEDs RGB) | — | J4B.SC (PB6/TIM4) |
+| GND / +5V | Commun | — |
 
 ## Documentation de fabrication
 - `hardware/` : sources KiCad (`Surface Control V0.1.*`)

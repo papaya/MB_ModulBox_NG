@@ -15,7 +15,7 @@ Carte de front-end intégrant un clavier matricé 4x2 (8 touches) pour l'envoi d
 
 ## Spécifications techniques
 - Clavier matricé 4x2 (8 touches)
-- Interface DIN (Digital Input) — matricage 4x2
+- Interface DIN (Digital Input) — 8 touches sur 8 entrées d'un registre 74HC165 (pas de matrice colonnes/lignes séparées)
 - Diodes de protection anti-ghosting sur chaque touche
 - Alimentation : +5V (pull-up)
 
@@ -24,17 +24,20 @@ Carte de front-end intégrant un clavier matricé 4x2 (8 touches) pour l'envoi d
 |------|-------------|-----|
 | Switch mécanique | Cherry MX Low Profile / Kailh | 8 |
 | Touches (keycaps) | `beschr. Kappe.wrl` | 8 |
-| LED SK6812MINI-E | Rétroéclairage optionnel | 8 |
+| LED SK6812MINI-E | Rétroéclairage optionnel (sur J4B.SC si WS2812-compatible) | 8 |
 | Diode anti-ghosting | 1N4148 | 8 |
 | Connecteur | Header mâle 2x5 vers DIN | 1 |
 
 ## Brochage / Mapping MIDIbox NG
+
+### Bus DIN — via module DIN (74HC165) sur J8/J9 du Core32
 | Broche | Signal |
 |--------|--------|
-| DIN-1 → DIN-4 | Lignes de scan (colonnes) |
-| DIN-5 → DIN-6 | Lignes de retour (lignes) |
+| DIN-1 → DIN-8 | 8 touches du clavier matricé 4x2 (1 touche = 1 entrée 74HC165) |
 | GND | Masse commune |
 | +5V | Pull-up |
+
+> Chaque touche est connectée sur une entrée distincte du registre 74HC165. Diodes anti-ghosting (1N4148) sur chaque touche pour éviter les "ghost triggers".
 
 ## Documentation de fabrication
 - `hardware/` : sources KiCad (`MB-KeySW_4x2_V0.3.*`)

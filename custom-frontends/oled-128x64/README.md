@@ -1,7 +1,9 @@
-# oled-128x64 — Carte afficheur OLED 128x64 (DIN / I2C)
+# oled-128x64 — Carte afficheur OLED 128x64 (I2C)
 
 ## Description
-Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d'informations MIDI (nom de piste, valeur de paramètre, menu, etc.). L'afficheur est piloté via un bus série (I2C ou SPI) connecté au module de base MIDIbox.
+Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d'informations MIDI (nom de piste, valeur de paramètre, menu, etc.). L'afficheur est piloté en **I2C** (contrôleur SSD1306 ou SH1106 intégré).
+
+> ⚠️ **Note :** Cet afficheur se connecte en I2C directement, il n'utilise **pas** le bus DIN/DOUT du MIDIbox NG. Vérifier la compatibilité avec le Core STM32F4 (ports I2C disponibles).
 
 📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
 
@@ -15,8 +17,8 @@ Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d
 
 ## Spécifications techniques
 - Afficheur OLED 128x64 pixels
-- Contrôleur I2C ou SPI intégré (type SSD1306 ou SH1106)
-- Interface I2C/SPI vers module de base MIDIbox
+- Contrôleur I2C intégré (type SSD1306 ou SH1106)
+- Interface I2C (SDA, SCL)
 - Adresse I2C : 0x3C ou 0x3D (selon modèle)
 - Alimentation : 3.3V ou 5V selon l'afficheur choisi
 
@@ -24,7 +26,7 @@ Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d
 | Type | Dénomination | Qté |
 |------|-------------|-----|
 | Afficheur OLED | SSD1306 ou SH1106 | 1 |
-| Contrôleur I2C/SPI | Intégré | 1 |
+| Contrôleur I2C | Intégré | 1 |
 | Connecteur | Header mâle 4 broches | 1 |
 
 ## Brochage / Mapping MIDIbox NG

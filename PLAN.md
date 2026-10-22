@@ -519,7 +519,7 @@ Date : 18/10/2026. Méthode : `kicad-cli sch erc` / `pcb drc`, API `pcbnew` (ref
 
 ---
 
-## 11. MISE EN VALEUR COMMUNAUTÉ — Custom Front-ends au cœur du dépôt (TERMINÉ ✅)
+## 11. MISE EN VALURE COMMUNAUTÉ — Custom Front-ends au cœur du dépôt (TERMINÉ ✅)
 
 Date : 21/10/2026. Objectif : élever le dépôt au niveau des meilleurs projets hardware open-source (Adafruit, SparkFun, Mutable Instruments) — attractif, clair, robuste, simple à prendre en main.
 
@@ -537,7 +537,7 @@ Date : 21/10/2026. Objectif : élever le dépôt au niveau des meilleurs projets
 - [x] Avertissement « non professionnel » conservé en tête
 - [x] Licences, crédits, contribuer, ressources
 
-### 11.3 État des images par front-end (pour le tableau README)
+### 11.3 État des images par front-end
 | Front-end | Image |
 |-----------|-------|
 | 4x-faders | assets/Fad_1.png, Fad_2.png |
@@ -551,3 +551,57 @@ Date : 21/10/2026. Objectif : élever le dépôt au niveau des meilleurs projets
 | surface-control | assets/Surface Control V0.1.png |
 
 ---
+
+## 12. AUDIT TECHNIQUE COMPLET ET CORRECTIONS (2026-10-21) — TERMINE ✅
+
+### 12.1 Méthodologie
+- Source de vérité : fichiers `.kicad_sch` versionnés (`custom-frontends/*/hardware/` + `standard-modules/*/hardware/`)
+- Spécifications officielles : ucapps.de (MIDIbox NG Hardware), midibox.org (MIOS32 WS2812 driver)
+- Résultat : **9 fichiers README corrigés** — 5 erreurs critiques retracables
+
+### 12.2 Liste des erreurs découvertes et corrigées
+
+#### 🔴 Critique (WS2812B)
+
+| # | Fichier | Erreur détectée | Correction appliquée |
+|---|---------|----------------|----------------------|
+| 1 | `custom-frontends/encoders-led-rgb/README.md` | LED WS2812 annoncée sur DOUT (3 fils RGB séparés) | Remplacé par : **1 fil de données sur J4B.SC (PB6/TIM4)** du Core32F4, alimentation 5V séparée |
+| 2 | `custom-frontends/pad-rgb/README.md` | DOUT-1 annoncé pour Data WS2812 | Remplacé par : **DATA → J4B.SC / PB6**, pas sur DOUT |
+| 3 | `common-docs/bus-midibox-ng.md` | DOUT affiché pour « anneaux LED RGB » | Correction : DOUT gère LEDs standards (74HC595), WS2812B sur J4B.SC |
+
+#### 🟠 Erreurs de câblage / mapping
+
+| # | Fichier | Erreur détectée | Correction appliquée |
+|---|---------|----------------|----------------------|
+| 4 | `custom-frontends/8x-pots/README.md` | "D-Sub 24 broches" (schéma : IDC 2x05 10 broches) ; "pull-up 4.7k sur pots" ; mapping "AIN-1 a DIN-8" faux | Connector IDC 2x05 précisé ; pots : 2 pattes ext. → +5V/GND, curseur → AIN ; AIN via AINSER64 J19 SPI |
+| 5 | `custom-frontends/4x-faders/README.md` | Même erreur connecteur 24 broches | Connector IDC 2x05 précisé ; câblage pots/faders correct (Vd/Vs/curseur) |
+| 6 | `custom-frontends/keysw-4x2/README.md` | Matrice 4x2 décrite comme "DIN-1→DIN-4 colonnes, DIN-5→DIN-6 lignes" (6 broches = 32 entrées non adaptées à 8 touches) | Précisé : 8 touches = 8 entrées d'un 74HC165 (1 touche = 1 entrée) |
+| 7 | `custom-frontends/keysw-4x2/README.md` | LED SK6812 "rétroéclairage optionnel" sans précision de port | Précisé : LED optionnelle, si WS2812-compatible → J4B.SC (PB6) |
+
+#### 🟡 Manquements documentaires
+
+| # | Fichier | Manque | Ajout |
+|---|---------|--------|-------|
+| 8 | `standard-modules/Core/README.md` | Pas de pinout J4B.SC (WS2812) ni J19 (AINSER64) | Brochage complet J8/J9 (DIN/DOUT), J19 (AINSER64 SPI), J4B.SC (WS2812) |
+| 9 | `standard-modules/AIN/README.md` | Imprecision : AIN "Header mâle" | AINSER64 (MCP3208+CD4051) sur J19, 64/128 voies, câblage pots |
+| 10 | `custom-frontends/oled-128x64/README.md` | I2C/SPI ambigu sur "module de base MIDIbox" | Précisé I2C SSD1306/SH1106 → pas sur DIN/DOUT |
+| 11 | `custom-frontends/surface-control/README.md` | Prototype V0.1 trop vague | Mapping bus + concerné par WS2812 (J4B.SC), validation requise |
+
+### 12.3 Spécifications référencées
+- **WS2812B MIOS32** : https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html → J4B.SC (PB6/TIM4), alimentation 5V séparée
+- **MBHP_AINSER64** : https://www.ucapps.de/mbhp_ainser64.html → MCP3208 + CD4051, J19 Core, 64 voies, pots Vd/Vs/curseur
+- **MBHP_DIN** : https://www.ucapps.de/mbhp_din.html → 74HC165 en cascade, J8/J9, pull-up 10k
+- **MBHP_CORE_STM32F4** : https://www.ucapps.de/mbhp_core_stm32f4.html → J8/J9 (DIN/DOUT), J19 (AIN SPI), J15 LCD, J16 SD Card
+
+---
+
+## 13. PROJET SUR LE LONG — SUIVI
+
+- [ ] Corriger les 294 `lib_symbol_mismatch` (PEC_16_V0.2 DRC)
+- [ ] Terminer routage des cartes 🟠 (Midi V0.1, core32V7, V4)
+- [ ] Valider surface-control V0.1 en fabricant une épreuve
+- [ ] Mettre à jour les docs de kit de fabrication pour chaque carte
+- [ ] Réfléchir à la dualité I2C/SPI pour le OLED (SSD1306 vs SH1106)
+- [ ] Ajouter un bon de commande / BOM par carte
+- [ ] Implémenter un script de test DRC/ERC automatique pour CI
+- [ ] Vérifier l'alignement des symboles KiCad avec les bibliothèques officielles MIDIBOX

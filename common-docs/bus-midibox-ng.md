@@ -8,7 +8,7 @@ L'écosystème MIDIbox NG repose sur trois bus principaux qui interconnectent le
 |-----|------|-----------|-------------------|
 | **AIN** | Analog Input — lecture de potentiels (potentiomètres, faders, capteurs) | Core → Front-end | Header mâle 24 broches |
 | **DIN** | Digital Input — lecture d'états logiques (boutons, switchs, encodeurs) | Front-end → Core | Header mâle 2x05 (10 broches) |
-| **DOUT** | Digital Output — pilotage d'actionneurs (LEDs, afficheurs, relais) | Core → Front-end | Header mâle 2x05 (10 broches) |
+| **DOUT** | Digital Output — pilotage d'actionneurs (LEDs standards non adressables, afficheurs, relais) | Core → Front-end | Header mâle 2x05 (10 broches) |
 
 ---
 
@@ -71,9 +71,10 @@ L'écosystème MIDIbox NG repose sur trois bus principaux qui interconnectent le
 ## Règles de câblage
 
 1. **Masse commune :** Tous les GND des front-ends doivent être reliés à la masse du Core.
-2. **Alimentation :** +5V distribué sur tous les bus ; les front-ends à forte consommation (LEDs RGB) prévoient une alimentation dédiée.
-3. **Longueur des câbles :** Maintenir les câbles de bus courts (< 50 cm) pour éviter les parasitage sur l'AIN.
-4. **Déclenchement :** Les entrées DIN utilisent des pull-up internes ou externes (10 kΩ typique).
+2. **Alimentation :** +5V distribué sur tous les bus ; les front-ends à forte consommation (LEDs RGB WS2812B) prévoient une **alimentation 5V dédiée séparée** (pas via le connecteur J4B du Core).
+3. **LEDs WS2812B :** Se connectent en **1 fil de données sur J4B.SC (PB6 / TIM4)** du Core32F4 — **PAS** sur le bus DOUT (74HC595). Voir [spécifications WS2812 MIOS32](https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html).
+4. **Longueur des câbles :** Maintenir les câbles de bus courts (< 50 cm) pour éviter les parasitage sur l'AIN.
+5. **Déclenchement :** Les entrées DIN utilisent des pull-up internes ou externes (10 kΩ typique).
 
 ---
 

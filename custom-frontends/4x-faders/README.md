@@ -16,26 +16,30 @@ Article de reference : [4X1-FAD-1-v0.2 / 4X1-FAD-2-v0.2](https://ksir-diy.blogsp
 ![3D iso](assets/Fad_2.png)
 
 
-## Specifications techniques
-- Faders (glissieres) pour controle continu MIDI
-- Interface AIN (Analog Input) - voies analogiques
+## Spécifications techniques
+- Faders (glissières) pour contrôle continu MIDI
+- Interface AIN (Analog Input) — voies analogiques via AINSER64 sur J19 (SPI) du Core32F4
 - Une voie AIN par fader (curseur vers broche AINx)
-- Alimentation : +5V ou +3V3 selon les faders
+- Alimentation : +5V (fournie par le Core via J19)
 
 ## Composants principaux
-| Type | Denomination | Qte |
+| Type | Dénomination | Qté |
 |------|-------------|-----|
-| Fader / glissiere | ALPS RA6020F ou equivalent | 1 ou 2 |
+| Fader / glissière | ALPS RA6020F ou équivalent | 1 ou 2 |
 | Bouton/pommeau de fader | `ALPS Fader Knob.wrl` | 1 ou 2 |
 | Connecteur IDC 2x05 vertical | `IDC-Header_2x05_P2.54mm_Vertical.wrl` | 1 |
-| Connecteur | Header male vers bus AIN | 1 |
+| Connecteur | Header mâle IDC 2x05 vers bus AIN | 1 |
 
 ## Brochage / Mapping MIDIbox NG
-| Broche | Signal |
-|--------|--------|
-| AIN-x | Curseur du fader x |
-| GND | Masse commune |
-| +5V / +3V3 | Alimentation des faders |
+
+### Bus AIN — via module AINSER64 sur J19 (SPI) du Core32F4
+| Broche | Signal | Description |
+|--------|--------|-------------|
+| AIN-x | Curseur du fader x | Lecture curseur (MCP3208 via CD4051) |
+| GND | Masse commune | Référence 0V |
+| +5V | Alimentation des faders | Alimentation (Vd) |
+
+> Câblage des faders : les deux pattes externes se connectent à +5V (Vd) et GND (Vs). Le curseur (patte centrale) se connecte sur l'entrée AIN correspondante. Toutes les entrées AIN non utilisées doivent être reliées à la masse (GND).
 
 ## Documentation de fabrication
 - hardware/ : sources KiCad (Fad_1.*, Fad_2.*)

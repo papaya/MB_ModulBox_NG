@@ -18,26 +18,31 @@ Article de reference : [4X2-POTS-v0.2](https://ksir-diy.blogspot.com/) sur le bl
 ![Pot 4x2](assets/pot4x2.png)
 ![Screenshot](assets/Screenshot%202023-05-19%20153745.png)
 
-## Specifications techniques
-- 8 potentiometres rotatifs (10 kOhm)
-- Interface AIN (Analog Input) - 8 canaux
-- Connecteur : header 24 broches D-Sub
-- Alimentation : +5V ou +3V3 selon alimentation des pots
+## Spécifications techniques
+- 8 potentiomètres rotatifs (10 kOhm)
+- Interface AIN (Analog Input) — 8 canaux via AINSER64 sur J19 (SPI) du Core32F4
+- Connecteur : header IDC 2x05 P2.54mm (10 broches)
+- Alimentation : +5V (fournie par le Core via J19)
 
 ## Composants principaux
-| Type | Denomination | Qte |
+| Type | Dénomination | Qté |
 |------|-------------|-----|
-| Potentiometre | RK09D1130C1B ou RK09L1140A5L (10 kOhm) | 8 |
-| Connecteur | D-Sub 24 broches | 1 |
-| Resistance pull-up | 4.7 kOhm | 8 |
+| Potentiomètre | RK09D1130C1B ou RK09L1140A5L (10 kOhm) | 8 |
+| Connecteur | IDC Header 2x05 P2.54mm Vertical | 1 |
 | LED | Vert 5 mm | 8 |
 
 ## Brochage / Mapping MIDIbox NG
-| Broche | Signal |
-|--------|--------|
-| AIN-1 a DIN-8 | Potentiometres P1..P8 |
-| GND | Masse commune |
-| +5V | Alimentation |
+
+### Bus AIN — via module AINSER64 sur J19 (SPI) du Core32F4
+| Broche | Signal | Description |
+|--------|--------|-------------|
+| AIN-1 → AIN-8 | Potentiomètres P1..P8 | Lecture curseur (MCP3208 via CD4051) |
+| GND | Masse commune | Référence 0V |
+| +5V | Alimentation | Alimentation des pots (Vd) |
+
+> Câblage des pots : les deux pattes externes du potentiomètre se connectent à +5V (Vd) et GND (Vs). Le curseur (patte centrale) se connecte sur l'entrée AIN correspondante (A0..A7). Tous les entrées AIN non utilisées doivent être reliées à la masse (GND) pour éviter des valeurs aléatoires.
+
+> Configuration : jusqu'à 64 voies analogiques par module AINSER64, jusqu'à 2 modules (128 pots) supportés par MIDIbox NG.
 
 ## Notes de montage et astuces DIY
 - Verifier le cableage du curseur vers la broche AIN avant mise sous tension

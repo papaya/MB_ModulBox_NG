@@ -7,8 +7,11 @@ Module de base AIN (Analog Input) de l'écosystème MIDIbox NG. Fournit la lectu
 
 ## Interfaçage MIDIbox
 - **Type de bus :** AIN (Analog Input)
-- **Connecteur :** Header mâle vers bus AIN
-- **Voies :** Jusqu'à 64 entrées analogiques multiplexées
+- **Connecteur :** J19 (SPI) du Core STM32F4 → module AINSER64 (MCP3208 + CD4051)
+- **Voies :** Jusqu'à 64 entrées analogiques multiplexées par module AINSER64 (jusqu'à 2 modules = 128 voies)
+- **Composants :** MCP3208 (ADC 12-bit) + 8× CD4051 (multiplexeurs 8:1)
+
+> Câblage des pots/faders : les deux pattes externes se connectent à +5V (Vd) et GND (Vs). Le curseur (patte centrale) se connecte sur l'entrée AIN correspondante (A0..A7). Tous les entrées AIN non utilisées doivent être reliées à la masse (GND).
 
 ## Fichiers inclus
 | Emplacement | Contenu |
