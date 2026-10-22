@@ -516,3 +516,38 @@ Date : 18/10/2026. Méthode : `kicad-cli sch erc` / `pcb drc`, API `pcbnew` (ref
 
 
 **Prochaine étape (mode ACT) :** corriger le reste en GUI KiCad (routage, placement, sérigraphie — voir §9.4), appliquer la même recette (tables + extraction + refill) aux cartes 🟠 (DIN, keysw-4x2, pad-rgb, Pot-X2), puis passer aux cartes 🟡. Mettre à jour ce PLAN.md après chaque carte validée.
+
+---
+
+## 11. MISE EN VALEUR COMMUNAUTÉ — Custom Front-ends au cœur du dépôt (TERMINÉ ✅)
+
+Date : 21/10/2026. Objectif : élever le dépôt au niveau des meilleurs projets hardware open-source (Adafruit, SparkFun, Mutable Instruments) — attractif, clair, robuste, simple à prendre en main.
+
+### 11.1 Positionnement
+- **`custom-frontends/` = l'essence du dépôt** : cartes d'interface physiques originales (faders, pots, boutons, pads, encodeurs, OLED, clavier, alimentation, surface de contrôle).
+- **`standard-modules/` = bonus de référence** : modules MIDIbox standards (AIN, DIN, DOUT, Core, IO) pour alimenter les front-ends, pas la raison d'être du dépôt.
+
+### 11.2 Refonte du README principal
+- [x] Titre + banner + pitch d'accroche mettant en avant les front-ends
+- [x] Badges (licence, KiCad, statut)
+- [x] Section `🧩 Custom Front-ends — le cœur du dépôt` en premier, avec tableau enrichi (image, bus, rôle, état, lien doc)
+- [x] Section `🚀 Démarrage rapide` (cloner, ouvrir KiCad, fabriquer)
+- [x] Section `⚡ Modules standards MIDIbox (bonus)` reléguée en second plan
+- [x] Section `📦 Contenu du dépôt` (inclus / exclu)
+- [x] Avertissement « non professionnel » conservé en tête
+- [x] Licences, crédits, contribuer, ressources
+
+### 11.3 État des images par front-end (pour le tableau README)
+| Front-end | Image |
+|-----------|-------|
+| 4x-faders | assets/Fad_1.png, Fad_2.png |
+| 8x-pots | assets/Pot.png, Pot-X2.png |
+| 8x-buttons | assets/BP.png |
+| encoders-led-rgb | assets/PEC_16_V0.2.png |
+| pad-rgb | assets/Pad.png |
+| oled-128x64 | assets/Oled_1309_x1_V0.0.png |
+| keysw-4x2 | assets/MB-KeySW_4x2_V0.3.png |
+| carte-puissance | assets/Carte_puissance.png |
+| surface-control | assets/Surface Control V0.1.png |
+
+---

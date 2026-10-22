@@ -1,35 +1,57 @@
 # MB_ModulBox_NG — Contrôleur MIDI Modulaire (Écosystème MIDIbox NG)
 
-![3D quart](docs/assets/system/bandeau.jpg)
+![Bandeau](docs/assets/system/bandeau.jpg)
 
-Projet open-source hardware de contrôleur MIDI modulaire basé sur l'écosystème **MIDIbox NG**.  
+> **Construisez votre propre contrôleur MIDI modulaire.**  
+> MB_ModulBox_NG est une collection de **cartes d'interface physiques (front-ends)** custom — faders, potentiomètres, boutons, pads RGB, encodeurs, afficheur OLED, clavier, alimentation — conçues pour se brancher sur l'écosystème **MIDIbox NG**.
 
----
-
-## LISTE DES MODULES DISPONIBLES
-
-| Front-end | Bus | Rôle | Détail |
-|-----------|-----|------|--------|
-| encoders-led-rgb | DIN + DOUT | Encodeurs avec anneau LED RGB | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
-| keysw-4x2 | DIN | Clavier matricé 4x2 touches | [📄 README](custom-frontends/keysw-4x2/README.md) |
-| 4x-faders | AIN | Glissières / faders | [📄 README](custom-frontends/4x-faders/README.md) |
-| 8x-pots | AIN | 8 potentiomètres rotatifs | [📄 README](custom-frontends/8x-pots/README.md) |
-| 8x-buttons | DIN | 8 boutons poussoirs | [📄 README](custom-frontends/8x-buttons/README.md) |
-| pad-rgb | DIN + DOUT | Pads rétroéclairés RGB WS2812 | [📄 README](custom-frontends/pad-rgb/README.md) |
-| oled-128x64 | I2C / SPI | Afficheur OLED 128x64 | [📄 README](custom-frontends/oled-128x64/README.md) |
-| carte-puissance | — | Alimentation / distribution | [📄 README](custom-frontends/carte-puissance/README.md) |
-| surface-control | DIN + DOUT + AIN | Surface de contrôle globale (V0.1) | [📄 README](custom-frontends/surface-control/README.md) |
+[![Licence: GPL-3.0](https://img.shields.io/badge/Licence-GPL--3.0-blue.svg)](LICENSE)
+[![KiCad](https://img.shields.io/badge/KiCad-9-blueviolet)](https://kicad.org/)
+[![Statut: Actif](https://img.shields.io/badge/Statut-En%20développement-green)](PLAN.md)  
 
 ---
 
+## 🎯 Le projet en bref
 
-Le projet est séparé en deux grands ensembles :
-Le dossier essentiel est:
-1. **Cartes additionnelles / front-ends spécifiques** — plaques de contrôle physiques dans `custom-frontends/`
-2. **Modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) — référence centrale dans `standard-modules/`
+MB_ModulBox_NG, c'est avant tout une **bibliothèque de cartes de contrôle physiques** pour le système MIDIbox NG. Chaque carte est un PCB KiCad complet (schéma, routage, gerbers) prêt à être fabriqué, avec sa documentation d'assemblage.
+
+Les **modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) sont fournis en **bonus de référence** pour alimenter ces front-ends — ils ne sont pas le cœur du projet. L'essence de ce dépôt, ce sont les **`custom-frontends/`**.
+
+## 🧩 Custom Front-ends — le cœur du dépôt
+
+| Carte | Aperçu | Bus | Rôle | État | Doc |
+|-------|--------|-----|------|------|-----|
+| 4x-faders | ![Faders](custom-frontends/4x-faders/assets/Fad_1.png) | AIN | Glissières / faders | ✅ Terminé | [📄 README](custom-frontends/4x-faders/README.md) |
+| 8x-pots | ![Pots](custom-frontends/8x-pots/assets/Pot.png) | AIN | 8 potentiomètres rotatifs | ✅ Terminé | [📄 README](custom-frontends/8x-pots/README.md) |
+| 8x-buttons | ![Boutons](custom-frontends/8x-buttons/assets/BP.png) | DIN | 8 boutons poussoirs | ✅ Terminé | [📄 README](custom-frontends/8x-buttons/README.md) |
+| encoders-led-rgb | ![Encodeurs](custom-frontends/encoders-led-rgb/assets/PEC_16_V0.2.png) | DIN + DOUT | Encodeurs avec anneau LED RGB | 🟠 En cours | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
+| pad-rgb | ![Pads](custom-frontends/pad-rgb/assets/Pad.png) | DIN + DOUT | Pads rétroéclairés RGB WS2812 | ✅ Terminé | [📄 README](custom-frontends/pad-rgb/README.md) |
+| oled-128x64 | ![OLED](custom-frontends/oled-128x64/assets/Oled_1309_x1_V0.0.png) | I2C / SPI | Afficheur OLED 128x64 | ✅ Terminé | [📄 README](custom-frontends/oled-128x64/README.md) |
+| keysw-4x2 | ![Clavier](custom-frontends/keysw-4x2/assets/MB-KeySW_4x2_V0.3.png) | DIN | Clavier matricé 4x2 touches | ✅ Terminé | [📄 README](custom-frontends/keysw-4x2/README.md) |
+| carte-puissance | ![Alim](custom-frontends/carte-puissance/assets/Carte_puissance.png) | — | Alimentation / distribution | ✅ Terminé | [📄 README](custom-frontends/carte-puissance/README.md) |
+| surface-control | ![Surface](custom-frontends/surface-control/assets/Surface%20Control%20V0.1.png) | DIN + DOUT + AIN | Surface de contrôle globale | 🟡 Prototype V0.1 | [📄 README](custom-frontends/surface-control/README.md) |
 
 ---
-![3D quart](docs/assets/system/vue%20ensemble.jpg)
+## 🚀 Démarrage rapide
+
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/papaya/MB_ModulBox_NG.git
+   cd MB_ModulBox_NG
+   ```
+
+2. **Ouvrir un front-end dans KiCad**
+   - Choisissez une carte dans `custom-frontends/` (ex: `4x-faders/`)
+   - Ouvrez le fichier `.kicad_pro` avec KiCad (v9 recommandé)
+
+3. **Lier les bibliothèques partagées**
+   - `sym-lib-table` → `Mes_Librairies_KiCad/symbols/`
+   - `fp-lib-table` → `Mes_Librairies_KiCad/footprints/`
+   (chemins relatifs via `${KIPRJMOD}`)
+
+4. **Fabriquer**
+   - Les fichiers de production (gerbers, perçages) se trouvent dans `custom-frontends/<carte>/production/`
+   - Les modèles 3D et sources brutes sont sur l'[archive Google Drive](https://drive.google.com/drive/folders/1vpTdcTHLqAW1HyvYF8Y5nkU0c3LeNErb?usp=sharing) (non versionnés sur GitHub pour poids)
 
 
 ## 📦 Contenu de ce dépôt Git (et ce qui n'y est pas)
@@ -79,53 +101,9 @@ Ce dépôt est **allégé** pour rester léger et rapide à cloner. Sont version
 
 ---
 
-## Arborescence du projet
+## ⚡ Modules standards MIDIbox (bonus de référence)
 
-```
-MB_ModulBox_NG/
-├── README.md                 # Ce document
-├── PLAN.md                   # Feuille de route d'organisation (phases 0-9)
-├── .gitignore                # Exclusion des polluants KiCad et macOS
-├── common-docs/              # Documentation générale et bus MIDIbox NG
-│   ├── README.md
-│   ├── bus-midibox-ng.md     # Schéma de principe des bus AIN / DIN / DOUT
-│   ├── connecteurs/          # Brochage des connecteurs de bus communs
-│   └── schémas-principe/     # Blocs logiques partagés
-├── global-libs/              # Bibliothèques partagées (symboles + empreintes)
-│   ├── symbols/              # *.kicad_sym partagés
-│   └── footprints/           # *.pretty partagés
-├── standard-modules/         # Modules de base MIDIbox (copie de référence)
-│   ├── AIN/                  # Entrées analogiques
-│   ├── DIN/                  # Entrées digitales
-│   ├── DOUT/                 # Sorties digitales
-│   ├── Core/                 # Cœur STM32F4 (Core32f4)
-│   └── IO/                   # Interface MIDI / IO
-├── custom-frontends/         # Cartes additionnelles de contrôle
-│   ├── 4x-faders/            # Glissières / faders (AIN)
-│   ├── 8x-pots/              # Potentiomètres rotatifs (AIN)
-│   ├── 8x-buttons/           # Boutons poussoirs (DIN)
-│   ├── encoders-led-rgb/     # Encodeurs avec anneau LED RGB (DIN+DOUT)
-│   ├── pad-rgb/              # Pads rétroéclairés RGB WS2812 (DIN+DOUT)
-│   ├── oled-128x64/          # Afficheur OLED 128x64 (I2C/SPI)
-│   ├── keysw-4x2/            # Clavier matricé 4x2 touches (DIN)
-│   ├── carte-puissance/      # Alimentation / distribution
-│   └── surface-control/      # Surface de contrôle globale (prototype V0.1)
-├── archive/                  # Versions figées (KICAD_6, doublons, tests)
-    │   └── …                  # ⚠️ `archive/sources/` (2,9 Go) n'est PAS versionné (voir § Contenu du dépôt)
-│   ├── 2023-KICAD-6/
-│   ├── 2023-KICAD-7-doublons/
-│   └── experimental/
-├── docs/                     # Documentation et assets visuels
-│   ├── assets/system/        # Vues d'ensemble, schémas d'architecture
-│   ├── assets/standard-modules/  # Rendus 3D des modules standards
-│   ├── assets/frontends/     # Rendus 3D par front-end
-│   └── guides/               # Guides de câblage et d'assemblage
-└── tools/                    # Scripts de nettoyage / validation
-```
-
-
-
-## Modules standards MIDIbox
+Ces modules standards alimentent les front-ends en bus AIN / DIN / DOUT. Ils sont fournis à titre de référence — ce ne sont pas la raison d’être de ce dépôt.
 
 | Module | Bus | Rôle | Détail |
 |--------|-----|------|--------|
