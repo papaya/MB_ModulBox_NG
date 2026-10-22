@@ -557,7 +557,8 @@ Date : 21/10/2026. Objectif : élever le dépôt au niveau des meilleurs projets
 ### 12.1 Méthodologie
 - Source de vérité : fichiers `.kicad_sch` versionnés (`custom-frontends/*/hardware/` + `standard-modules/*/hardware/`)
 - Spécifications officielles : ucapps.de (MIDIbox NG Hardware), midibox.org (MIOS32 WS2812 driver)
-- Résultat : **9 fichiers README corrigés** — 5 erreurs critiques retracables
+- Résultat : **11 fichiers README corrigés** (le tableau §12.2 en detaille 11) — 5 erreurs critiques retracables
+- ⚠️ **Cette premiere passe (2026-10-21) reposait sur une lecture « a l'oeil » des schemas et comportait des erreurs. Elle est reprise et corrigee integralement en §14 (2026-10-22), sur la base d'une extraction de netlist par `kicad-cli` et d'une comparaison bit-a-bit avec les archives.**
 
 ### 12.2 Liste des erreurs découvertes et corrigées
 
@@ -601,7 +602,94 @@ Date : 21/10/2026. Objectif : élever le dépôt au niveau des meilleurs projets
 - [ ] Terminer routage des cartes 🟠 (Midi V0.1, core32V7, V4)
 - [ ] Valider surface-control V0.1 en fabricant une épreuve
 - [ ] Mettre à jour les docs de kit de fabrication pour chaque carte
-- [ ] Réfléchir à la dualité I2C/SPI pour le OLED (SSD1306 vs SH1106)
+- [x] ~~Réfléchir à la dualité I2C/SPI pour le OLED (SSD1306 vs SH1106)~~ → **résolu en §14 : le schéma est un SPI SSD1309, pas un I2C**
 - [ ] Ajouter un bon de commande / BOM par carte
 - [ ] Implémenter un script de test DRC/ERC automatique pour CI
 - [ ] Vérifier l'alignement des symboles KiCad avec les bibliothèques officielles MIDIBOX
+
+---
+
+## 14. RÉVISION CIBLÉE DES SOURCES — Grille de vérification KiCad ↔ README ↔ ucapps.de (2026-10-22)
+
+**Méthode :** export netlist de chaque `.kicad_sch` via `kicad-cli 9.0.2` (`sch export netlist`),
+analyse des broches par connecteur, comparaison bit-à-bit avec les archives (`diff`),
+DRC headless (`kicad-cli pcb drc`), confrontation avec ucapps.de / midibox.org.
+
+### 14.1 Grille de suivi par module — `custom-frontends/`
+
+- [x] **8x-pots**
+  - **Statut Cohérence :** ⚠️ **INCOHÉRENT (README)** — le schéma est correct et cohérent
+  - **Action Source :** Conservée (`Pot.kicad_sch` = `archive/sources/MB MODULBOX NG/2023/KICAD 7/POTS/Vertical/Pot.kicad_sch`, diff = 0)
+  - **README :** Corrigé — tension **+3V0** (et non +5V), curseur → `J1` broches 3-10, GND pin 1, `+3V0` pin 2 ; suppression de la mention « LED verte ×8 » (absente du schéma) ; Pot-X2 = variante 4×2 sans schéma ni annotation
+- [x] **4x-faders**
+  - **Statut Cohérence :** ⚠️ **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (Fad_1 / Fad_2 — identiques aux archives KICAD 7)
+  - **README :** Corrigé — **+3V0** (et non +5V) ; `Fad_1` = 4 faders (J3/J4), `Fad_2` = 4 faders (J5) ; pas de AIN sur la carte elle-même, curseur → connecteur → AINSER64
+- [x] **8x-buttons**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (`BP.kicad_sch` identique à l'archive KICAD 7)
+  - **README :** Corrigé — **pas de D-Sub** : 2 × IDC 2x05 (J1 = 8 entrées DIN, J2 = 8 LEDs) ; **aucune résistance de pull-up sur la carte** (pull-up 10 kΩ porté par le module DIN 74HC165) ; 8 LED + 8 switch à led
+- [x] **keysw-4x2**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (`MB-KeySW_4x2_V0.3.kicad_sch`)
+  - **README :** Corrigé — **8 touches = 8 entrées 1:1 d'un 74HC165** (pas de matrice) ; **aucune diode anti-ghosting** dans le schéma (contrairement au README) ; SK6812MINI-E **en cascade série** (J2 pin 6 = DI, J3 pin 6 = DO) et non adressables individuellement ; J4 = 1×2 GND
+- [x] **pad-rgb**
+  - **Statut Cohérence :** ⚠️ **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (`Pad.kicad_sch` identique à l'archive KICAD 7)
+  - **README :** Corrigé — 8 pads = 8 entrées DIN (J1) ; 8 × **WS2812-2020** (PLCC4) **en cascade** J2 → J3 (et non pilotés individuellement) ; 8 × C 100 nF ; 2 pads × 4 contacts
+- [x] **encoders-led-rgb**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (`PEC_16_V0.2.kicad_sch`, PCB identique à l'archive KICAD 7)
+  - **README :** Corrigé — 8 × encodeur **PEC16** (A/B + poussoir) = **24 entrées DIN** (J11/J12/J13) ; **128 × WS2812-2020** en cascade (J4 → D1…D128 → J5), pas « 1 anneau » ; 2 lignes WS2812 disponibles
+- [x] **oled-128x64**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (README) — erreur de protocole**
+  - **Action Source :** Conservée (`Oled_1309_x1_V0.0.kicad_sch`)
+  - **README :** Corrigé — **SSD1309 en SPI** (broches `D0`=SCLK, `D1`=SDATA, `DC`, `CS`, `RES`), **pas de I2C** ; 8 cavaliers `JP1..JP8` de sélection CS ; R1 = 1 kΩ + C1 = 10 µF sur `RES` ; J1 = IDC 2x08
+- [x] **surface-control**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (`Surface Control V0.1.kicad_sch`)
+  - **README :** Corrigé — ce n'est **pas** une carte multi-bus : 1 encodeur + 6 boutons → **J10A/J10B du Core** (SCS officiel, GPIO PE8-PE15 / PC13-PC15), **sans** 74HC165, **sans** DOUT, **sans** AIN ; PCB **non routé** (0 segment, 21 non connectés) → prototype
+- [x] **carte-puissance**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (README)**
+  - **Action Source :** Conservée (`Carte_puissance.kicad_sch` identique à l'archive KICAD 7)
+  - **README :** Corrigé — **distributeur de bus passif**, **aucun régulateur / aucune protection** ; 24 × IDC 2x05 (J2…J25) + 4 borniers ALTECH AK300-2 (J1 entrée, J27 sortie, J28/J29 entrée) + J26/J30/J31 (1×2) + J32 « Disconect » ; 2 nets : `+5VD` (digital) et `+5VA` (analogique, J2 + J32)
+
+### 14.2 Grille de suivi par module — `standard-modules/`
+
+- [x] **Core**
+  - **Statut Cohérence :** ⚠️ **INCOHÉRENT (README)**
+  - **Action Source :** Conservée — `Core32F4.kicad_sch`/`.kicad_pcb` identiques à `archive/sources/MB Hardware/Core32f4/Core32f4_V0.1/` (diff = 0) ; `core32V7` / `V4` écartés (pas de schéma associé)
+  - **README :** Corrigé — **4 lignes WS2812** et non 1 : `J4A` pin 6 = PB10, `J4A` pin 8 = PB11, `J4B` pin 6 = **PB6 (TIM4 — référence MIOS32)**, `J4B` pin 8 = PB9 ; pull-up 2,2 kΩ vers +5V (R7a/R7b/R8a/R8b, sortie open-drain) ; `J19` = SPI AIN (PB4 + 2 chip-selects) ; `J8J9` = DIN+DOUT ; `J10A/J10B` = SCS ; `J16` = SPI SD/ETH 3V3 ; `J15A/J15B` = LCD
+- [x] **DIN**
+  - **Statut Cohérence :** ✅ **COHÉRENT** (README à compléter)
+  - **Action Source :** Conservée (`DIN4_R5_KS.kicad_sch` + PCB 2023 identique aux archives ; `DIN4_R5_KS_2024` = PCB sans schéma, écarté)
+  - **README :** Corrigé — 4 × 74HC165 (32 entrées), 36 × pull-up **10 kΩ** + 8 réseaux RN1..RN8, 4 × C 100 nF, J1/J2 = chaînage (J8/J9), J3..J6 = 8 entrées + GND
+- [x] **DOUT**
+  - **Statut Cohérence :** 🟡 **COHÉRENT (version maintenue = DOUT2024, référence officielle MB Hardware 2024)**
+  - **Action Source :** Conservée — `hardware/DOUT.kicad_pro`/`.kicad_sch`/`.kicad_pcb` sont **identiques** à `archive/sources/MB Hardware/DOUT/DOUT2024/Dout2024/Dout2024.kicad_{pro,sch,pcb}` (diff = 0)
+  - **README :** Corrigé — 4 × SN74HC595N, R1 réseau 8×220 + R2/R3/R4 individuels, J1..J6, 6 connecteurs ; **21 pads non connectés** au +5V et **74 violations DRC** → version signalée comme non-fabrique en l'état (routage partiel +5V)
+- [x] **IO**
+  - **Statut Cohérence :** ⚠️ **INCOHÉRENT (README + PCB non routé)**
+  - **Action Source :** Conservée (`Midi_V0.1.kicad_sch` + PCB — seul exemplaire existant ; archive `pre-refill` = même PCB)
+  - **README :** Corrigé — **2 × 6N138** (2 MIDI IN), 2 × MIDI OUT, 2 × SN74HC00N, 4 LED, 4 × LEMO5/DIN-5 (2 IN + 2 OUT) ; **PCB non routé** (0 segment, 81 pads non connectés) → non fabricable en l'état
+- [x] **AIN**
+  - **Statut Cohérence :** 🔴 **INCOHÉRENT (source absente)**
+  - **Action Source :** ⚠️ **Aucune source KiCad disponible** — `archive/sources/MB Hardware/AINSER64/` est vide ; seul `mbhp_ainser64_v1_2023-06-02.zip` (Gerbers Eagle uniquement, 11 fichiers, pas de `.kicad_sch`) existe
+  - **README :** Corrigé — refait sur la base de la fiche **ucapps.de/mbhp_ainser64** (MCP3208 + 8 × CD4051 + 74HC595, SPI sur J19, 2 chip-selects, 64 voies) ; suppression de la fausse impression d'un dépôt de sources KiCad local
+
+### 14.3 Actions correctives globales
+
+- [x] `PLAN.md` : décompte « 9 fichiers README corrigés » → **11 fichiers** (§12) — corrigé
+- [x] Avertissement « hobbyist / non professionnel / sans garantie ni engagement / erreurs possibles » **uniformisé sur les 16 documents** (README racine, 9 front-ends, 5 modules standards, `common-docs/bus-midibox-ng.md`)
+- [x] `common-docs/bus-midibox-ng.md` : connecteur AIN « Header mâle 24 broches » → IDC 2x05 ; DOUT réservé aux LEDs standards ; WS2812 hors DOUT
+- [x] README racine : tableau mis à jour (états réels, `+3V0`, SPI OLED, SCS, carte-puissance passive)
+
+### 14.4 Points ouverts (non corrigibles sans action hardware)
+
+- [ ] `standard-modules/IO` : PCB non routé → à router avant toute fabrication
+- [ ] `custom-frontends/surface-control` : PCB non routé (prototype V0.1)
+- [ ] `custom-frontends/8x-pots/hardware/Pot-X2.kicad_pcb` : 41 empreintes dont 5 `REF**` non annotées, aucun schéma associé, 10 pads non connectés
+- [ ] `standard-modules/AIN` : reconstruire la carte (schéma KiCad) à partir des Gerbers Eagle ou repartir du PDF xcircuit
+- [ ] DRC : `encoders-led-rgb` (315), `DIN` (255), `keysw-4x2` (177), `pad-rgb` (121) restent à corriger
+
+

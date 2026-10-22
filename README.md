@@ -1,5 +1,7 @@
 # MB_ModulBox_NG — Contrôleur MIDI Modulaire (Écosystème MIDIbox NG)
 
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
+
 ![Bandeau](docs/assets/system/bandeau.jpg)
 
 > **Construisez votre propre contrôleur MIDI modulaire.**  
@@ -21,17 +23,19 @@ Les **modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) sont fournis en **b
 
 | Carte | Aperçu | Bus | Rôle | État | Doc |
 |-------|--------|-----|------|------|-----|
-| 4x-faders | ![Faders](custom-frontends/4x-faders/assets/Fad_1.png) | AIN | Glissières / faders | ✅ Terminé | [📄 README](custom-frontends/4x-faders/README.md) |
-| 8x-pots | ![Pots](custom-frontends/8x-pots/assets/Pot.png) | AIN | 8 potentiomètres rotatifs | ✅ Terminé | [📄 README](custom-frontends/8x-pots/README.md) |
-| 8x-buttons | ![Boutons](custom-frontends/8x-buttons/assets/BP.png) | DIN | 8 boutons poussoirs | ✅ Terminé | [📄 README](custom-frontends/8x-buttons/README.md) |
-| encoders-led-rgb | ![Encodeurs](custom-frontends/encoders-led-rgb/assets/PEC_16_V0.2.png) | DIN + WS2812 (J4B.SC) | Encodeurs avec anneau LED RGB | 🟠 En cours | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
-| pad-rgb | ![Pads](custom-frontends/pad-rgb/assets/Pad.png) | DIN + WS2812 (J4B.SC) | Pads rétroéclairés RGB WS2812 | ✅ Terminé | [📄 README](custom-frontends/pad-rgb/README.md) |
-| oled-128x64 | ![OLED](custom-frontends/oled-128x64/assets/Oled_1309_x1_V0.0.png) | I2C / SPI | Afficheur OLED 128x64 | ✅ Terminé | [📄 README](custom-frontends/oled-128x64/README.md) |
-| keysw-4x2 | ![Clavier](custom-frontends/keysw-4x2/assets/MB-KeySW_4x2_V0.3.png) | DIN | Clavier matricé 4x2 touches | ✅ Terminé | [📄 README](custom-frontends/keysw-4x2/README.md) |
-| carte-puissance | ![Alim](custom-frontends/carte-puissance/assets/Carte_puissance.png) | — | Alimentation / distribution | ✅ Terminé | [📄 README](custom-frontends/carte-puissance/README.md) |
-| surface-control | ![Surface](custom-frontends/surface-control/assets/Surface%20Control%20V0.1.png) | DIN + DOUT + AIN | Surface de contrôle globale | 🟡 Prototype V0.1 | [📄 README](custom-frontends/surface-control/README.md) |
+| 4x-faders | ![Faders](custom-frontends/4x-faders/assets/3d%203quart.png) | AIN (curseur → +3V0) | Glissières / faders (RA6020F) | ✅ Schéma + routage | [📄 README](custom-frontends/4x-faders/README.md) |
+| 8x-pots | ![Pots](custom-frontends/8x-pots/assets/pot4x2.png) | AIN (curseur → +3V0) | 8 potentiomètres rotatifs | ✅ Schéma + routage | [📄 README](custom-frontends/8x-pots/README.md) |
+| 8x-buttons | ![Boutons](custom-frontends/8x-buttons/assets/Screenshot%202023-05-19%20163416.png) | DIN + DOUT | 8 boutons poussoirs + 8 LED | ✅ Schéma + routage | [📄 README](custom-frontends/8x-buttons/README.md) |
+| encoders-led-rgb | ![Encodeurs](custom-frontends/encoders-led-rgb/assets/IMG_20230708_111915.jpg) | DIN + WS2812 (J4A/J4B) | 8 encodeurs PEC16 + 128 LED WS2812 | 🟠 Prototype (315 violations DRC) | [📄 README](custom-frontends/encoders-led-rgb/README.md) |
+| pad-rgb | ![Pads](custom-frontends/pad-rgb/assets/Pad.png) | DIN + WS2812 (J4A/J4B) | 2 pads 8 contacts + 8 LED WS2812 en cascade | 🟠 LED en cascade (non adressables) | [📄 README](custom-frontends/pad-rgb/README.md) |
+| oled-128x64 | ![OLED](custom-frontends/oled-128x64/assets/screen.png) | **SPI** (SSD1309) | Afficheur OLED 128x64, 8 CS | ✅ Schéma + routage | [📄 README](custom-frontends/oled-128x64/README.md) |
+| keysw-4x2 | ![Clavier](custom-frontends/keysw-4x2/assets/keySwitch.png) | DIN + WS2812 (J4A/J4B) | 8 touches Cherry MX + 8 SK6812 en cascade | 🟠 LED en cascade | [📄 README](custom-frontends/keysw-4x2/README.md) |
+| carte-puissance | ![Alim](custom-frontends/carte-puissance/assets/Carte_puissance.png) | — | Distributeur passif 5 V / GND, 24 IDC | ⚠️ Passif (sans régulateur) | [📄 README](custom-frontends/carte-puissance/README.md) |
+| surface-control | ![Surface](custom-frontends/surface-control/assets/Surface%20Control%20V0.1.png) | GPIO `J10A`/`J10B` | SCS : 1 encodeur + 6 boutons | 🔴 Prototype **non routé** | [📄 README](custom-frontends/surface-control/README.md) |
 
-> ⚠️ **Note importante sur les LEDs RGB WS2812/WS2812B :** Les cartes `encoders-led-rgb` et `pad-rgb` utilisent des LEDs adressables qui se connectent en **1 fil de données sur J4B.SC (PB6 / TIM4)** du Core STM32F4 — **PAS** sur le bus DOUT (74HC595). Voir les README respectifs et [spécifications WS2812 MIOS32](https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html).
+> ⚠️ **Note importante sur les LEDs RGB WS2812/WS2812B :** Les cartes `encoders-led-rgb`, `pad-rgb` et `keysw-4x2` utilisent des LEDs adressables qui se connectent en **1 fil de données sur une sortie WS2812 du Core STM32F4** (`J4A` broches 6/8 = PB10/PB11, `J4B` broches 6/8 = **PB6 (TIM4)**/PB9) — **PAS** sur le bus DOUT (74HC595). Voir les README respectifs et [spécifications WS2812 MIOS32](https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html).
+>
+> ℹ️ Sur ces trois cartes, les WS2812 sont montés **en cascade série** : ils ne sont pas adressables individuellement depuis une seule ligne.
 
 ---
 ## 🚀 Démarrage rapide
@@ -109,11 +113,11 @@ Ces modules standards alimentent les front-ends en bus AIN / DIN / DOUT. Ils son
 
 | Module | Bus | Rôle | Détail |
 |--------|-----|------|--------|
-| AIN | AIN | Entrées analogiques (64 voies) | [📄 README](standard-modules/AIN/README.md) |
-| DIN | DIN | Entrées digitales (DIN4_R5_KS) | [📄 README](standard-modules/DIN/README.md) |
-| DOUT | DOUT | Sorties digitales | [📄 README](standard-modules/DOUT/README.md) |
-| Core | — | Cœur STM32F4 (Core32F4) | [📄 README](standard-modules/Core/README.md) |
-| IO | MIDI | Interface MIDI IN/OUT | [📄 README](standard-modules/IO/README.md) |
+| AIN | AIN (SPI `J19`) | Entrées analogiques (64 voies, AINSER64) | [📄 README](standard-modules/AIN/README.md) — ⚠️ **sources KiCad absentes** |
+| DIN | DIN (`J8J9`) | 32 entrées digitales (4 × 74HC165) | [📄 README](standard-modules/DIN/README.md) |
+| DOUT | DOUT (`J8J9`) | 32 sorties digitales (4 × 74HC595) | [📄 README](standard-modules/DOUT/README.md) |
+| Core | — | Cœur STM32F4 (Core32F4), 4 lignes WS2812 | [📄 README](standard-modules/Core/README.md) |
+| IO | MIDI | Interface MIDI 2 IN / 2 OUT (6N138) | [📄 README](standard-modules/IO/README.md) — ⚠️ **PCB non routé** |
 
 ---
 
