@@ -1,6 +1,5 @@
 # 4x-faders — Carte faders / glissieres (AIN)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ![3D quart](assets/3d%203quart.png)
 
@@ -92,5 +91,4 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible ave
 
 > **Licence & Usage :** Ces fichiers hardware sont partages sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du cablage ou du routage.
 
-Retro-ingenierie par l'equipe — GPL-3.0
-
+Retro-ingenierie par l'equipe — GPL-3.0> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

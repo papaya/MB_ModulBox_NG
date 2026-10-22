@@ -1,9 +1,8 @@
 # keysw-4x2 — Clavier 8 touches (DIN) + retroeclairage SK6812 en cascade
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
-Carte de front-end integrant un clavier de **8 touches mecaniques** (Cherry MX) pour l'envoi d'evenements MIDI (notes, CC, etc.). Chaque touche est lue sur une entree digitale distincte du bus DIN. La carte embarque en outre **8 LED RGB adressables SK6812MINI-E** montees **en cascade serie** (et non adressees individuellement).
+Carte de front-end integrant un clavier de **8 touches mecaniques** (Cherry MX) pour l'envoi d'evenements MIDI (notes, CC, etc.). Chaque touche est lue sur une entree digitale distincte du bus DIN. La carte embarque en outre **8 LED RGB SK6812MINI-E adressables** montees **en cascade serie** (chaque LED est adressable individuellement).
 
 📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
 
@@ -35,7 +34,7 @@ Carte de front-end integrant un clavier de **8 touches mecaniques** (Cherry MX) 
 > ⚠️ **Corrections par rapport aux versions anterieures de cette page** :
 > - Le clavier **n'est pas matriciel** : 8 touches = 8 entrees distinctes.
 > - **Aucune diode anti-ghosting (1N4148) n'est presente dans le schema** : il n'y en a pas dans le composant. Le câblage 1:1 ne le requiert pas.
-> - Les LED SK6812 **ne sont pas adressees individuellement** : elles sont **cascadees**, donc tous les pixels affiche le meme couleur (elles ne recoivent pas de commande d'adresse).
+> - Les LED SK6812 sont **adressees individuellement** : chaque pixel peut afficher sa propre couleur. Elles sont câblees en serie (chaine) pour le câblage physique, chacune decodifie sa propre couleur (R,G,B).
 
 ## Brochage / Mapping MIDIbox NG
 
@@ -86,7 +85,7 @@ Core (J4A/J4B, WS2812)  ->  J2 (broche 6)  ->  D0 -> D1 -> ... -> D7  ->  J3 (br
 
 - Le Core STM32F4 dispose de **4 lignes WS2812** (`J4A` PB10 / PB11, `J4B` **PB6** = TIM4, reference MIOS32 / `J4B` PB9), chacune avec un pull-up 2,2 kΩ et une sortie en open-drain.
 - **L'alimentation +5V des LED doit etre fournie separement** (les LED ne doivent pas etre alimentees via `J4A`/`J4B` du Core : jusqu'a 20 mA par LED RGB). Voir [specifications WS2812 MIOS32](https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html).
-- Comme les LED sont **cascadees**, une seule ligne de commande pilote les 8 LED a l'identique.
+- Comme les LED sont **cascadees**, chaque LED decode et affiche sa propre couleur (une seule ligne de donnees suffit).identique.
 
 ## Documentation de fabrication
 - `hardware/` : sources KiCad (`MB-KeySW_4x2_V0.3.*`)
@@ -101,5 +100,5 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible ave
 
 > **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**
-
+🔋 **Gestion de la puissance** : La gestion de la puissance des LED est indispensable, j'ai paramétré les LED à 10% de puissance.
+**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

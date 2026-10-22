@@ -1,15 +1,14 @@
 # pad-rgb — Carte pads retroeclaires RGB (DIN + WS2812 en cascade)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
-Carte de front-end integrant des pads (boutons sensibles) retroeclaires RGB (WS2812B) pour le declenchement d'evenements MIDI avec retour visuel couleur. Chaque pad genere un evenement MIDI sur le **bus DIN**, et l'eclairage RGB est commande par **une seule ligne de donnees WS2812**, les 8 LED etant **cascadees en serie**.
+Carte de front-end integrant des pads (boutons sensibles) retroeclaires RGB (WS2812B) pour le declenchement d'evenements MIDI avec retour visuel couleur. Chaque pad genere un evenement MIDI sur le **bus DIN**, et l'eclairage RGB est commande par **une seule ligne de donnees WS2812** qui traverse la carte. Les **LED WS2812B sont adressables individuellement** : chaque pixel peut afficher sa propre couleur. La ligne de donnees traverse la chaine (câblage en serie) mais aucune limitation d'adressage.
 
 📖 **Article de référence :** [4X2-PADS-RGB](https://ksir-diy.blogspot.com/) sur le blog Ksir DIY'S — modèle PAD4X2.
 
 > ⚠️ **Les LED WS2812B ne se connectent PAS sur le bus DOUT (74HC595).** Elles recoivent une ligne de donnees specifique d'une sortie WS2812 du **Core32F4** (`J4A` / `J4B`). Le bus DOUT (74HC595) est reserve aux LEDs standards non adressables.
 >
-> ⚠️ **Les 8 LED sont en cascade** : elles ne sont **pas** adressees individuellement. Une seule ligne commande la couleur de toutes les LED a l'identique.
+> ⚠️ **Les 8 LED WS2812B sont en cascade** au niveau du cablage physique (chaine de donnees), mais **elles sont adressables individuellement**. Il est possible de commander chaque LED a une couleur differente.
 
 ## Assets de visualisation
 | Type | Fichier | Description |
@@ -103,5 +102,5 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible ave
 
 > **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**
-
+🔋 **Gestion de la puissance** : La gestion de la puissance des LED est indispensable, j'ai paramétré les LED à 10% de puissance.
+**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

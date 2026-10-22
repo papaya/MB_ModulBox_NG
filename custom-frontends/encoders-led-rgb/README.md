@@ -1,6 +1,5 @@
 # encoders-led-rgb — Carte 8 encodeurs PEC16 + 128 LED WS2812 (DIN + WS2812)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Carte de front-end integrant **8 encodeurs rotatifs avec poussoir** (PEC16) et **128 LED RGB adressables WS2812** (anneaux lumineux). Chaque encodeur genere des evenements MIDI via le **bus DIN**, et l'eclairage est commande par **une ligne de donnees WS2812**, les 128 LED etant **cascadees en serie**.
@@ -9,7 +8,7 @@ Carte de front-end integrant **8 encodeurs rotatifs avec poussoir** (PEC16) et *
 
 > ⚠️ **Les LED WS2812 ne se connectent PAS sur le bus DOUT (74HC595).** Elles recoivent une ligne de donnees specifique d'une sortie WS2812 du **Core32F4** (`J4A` / `J4B`). L'alimentation 5V des LED doit etre fournie **separement** (pas via `J4A`/`J4B`).
 >
-> ⚠️ **Les 128 LED sont en cascade** : elles ne sont **pas** adressees individuellement sur cette carte (une seule commande de couleur pour toute la chaine).
+> **Les 128 LED WS2812 sont en cascade** au niveau du cablage physique (chaine de donnees),  **elles sont adressables individuellement**. Il est possible de commander chaque LED a une couleur differente.
 
 ## Assets de visualisation
 | Type | Fichier | Description |
@@ -133,5 +132,5 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible ave
 
 > **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**
-
+🔋 **Gestion de la puissance** : La gestion de la puissance des LED est indispensable, j'ai paramétré les LED à 10% de puissance.
+**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

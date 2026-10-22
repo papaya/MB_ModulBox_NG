@@ -1,6 +1,5 @@
 # 8x-pots — Carte 8 potentiomètres rotatifs (AIN)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Module potentiometres rotatifs (8 canaux) pour le controle de parametres continus MIDI (volume, filtre, effets, etc.). Chaque potentiometre est lu sur une voie analogique independante. La carte ne contient **aucun convertisseur analogique-numerique** : elle expose 8 curseurs sur un connecteur IDC, relies au module **AINSER64** (MCP3208 + CD4051) du bus AIN.
@@ -88,5 +87,4 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible ave
 
 > **Licence & Usage :** Ces fichiers hardware sont partages sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du cablage ou du routage.
 
-Retro-ingenierie par l'equipe — GPL-3.0
-
+Retro-ingenierie par l'equipe — GPL-3.0> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

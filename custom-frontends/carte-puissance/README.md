@@ -1,6 +1,5 @@
 # carte-puissance — Carte de distribution des bus (passive)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Carte de **distribution des bus** pour l'ecosysteme MIDIbox NG : elle repartit l'alimentation 5 V et la masse vers de nombreux connecteurs IDC afin d'alimenter et de relier les modules DIN, DOUT, AIN et les front-ends.
@@ -109,5 +108,4 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible ave
 
 > **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**
-
+**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

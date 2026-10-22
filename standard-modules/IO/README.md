@@ -1,6 +1,5 @@
 # IO — Module Interface MIDI Midi_V0.1 (MIDIbox NG)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Module de base **IO** (Interface MIDI) de l'ecosysteme MIDIbox NG, equivalent du **MBHP_MIDI_IO**. Il fournit **2 entrees MIDI IN** et **2 sorties MIDI OUT** avec **isolation galvanique par opto-coupleurs**, pour relier le controleur a d'autres equipements MIDI.
@@ -63,4 +62,4 @@ Ce module est une ré-implémentation sous KiCad basée sur les schémas origina
 
 > **Licence & Usage :** Ce matériel est fourni sous licence Open Hardware à but strictement personnel, éducatif et DIY (**Non-Commercial**). Toute utilisation commerciale est exclue. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Référence MIDIbox NG — GPL-3.0**
+**Référence MIDIbox NG — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

@@ -1,6 +1,5 @@
 # MB_ModulBox_NG — Contrôleur MIDI Modulaire (Écosystème MIDIbox NG)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
 
 ![Bandeau](docs/assets/system/bandeau.jpg)
 
@@ -35,7 +34,7 @@ Les **modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) sont fournis en **b
 
 > ⚠️ **Note importante sur les LEDs RGB WS2812/WS2812B :** Les cartes `encoders-led-rgb`, `pad-rgb` et `keysw-4x2` utilisent des LEDs adressables qui se connectent en **1 fil de données sur une sortie WS2812 du Core STM32F4** (`J4A` broches 6/8 = PB10/PB11, `J4B` broches 6/8 = **PB6 (TIM4)**/PB9) — **PAS** sur le bus DOUT (74HC595). Voir les README respectifs et [spécifications WS2812 MIOS32](https://www.midibox.org/mios32/midibox_ng/group___w_s2812.html).
 >
-> ℹ️ Sur ces trois cartes, les WS2812 sont montés **en cascade série** : ils ne sont pas adressables individuellement depuis une seule ligne.
+> ℹ️ Sur ces trois cartes, les WS2812 sont montés **en cascade série** : elles sont adressables individuellement depuis une seule ligne. 
 
 ---
 ## 🚀 Démarrage rapide
@@ -178,4 +177,4 @@ Retrouvez plus de photos sur **[Ksir DIY'S](https://ksir-diy.blogspot.com/)** �
 ---
 
 **Licence :** GPL-3.0 — Open Source Hardware  
-**Rétro-ingénierie et structuration :** Équipe MB_ModulBox_NG
+**Rétro-ingénierie et structuration :** Équipe MB_ModulBox_NG> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.

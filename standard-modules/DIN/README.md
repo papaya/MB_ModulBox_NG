@@ -1,6 +1,5 @@
 # DIN — Module Entrées Digitales DIN4_R5_KS (MIDIbox NG)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Module de base **DIN** (Digital Input) de l'ecosysteme MIDIbox NG, equivalent du **MBHP_DINX4_R5**. Il fournit **32 entrees digitales** (4 registres a decalage **74HC165** en cascade) pour boutons, switchs et encodeurs. Se connecte aux front-ends DIN (`8x-buttons`, `keysw-4x2`, `encoders-led-rgb`, `pad-rgb`).
@@ -90,4 +89,4 @@ Ce module est une ré-implémentation sous KiCad basée sur les schémas origina
 
 > **Licence & Usage :** Ce matériel est fourni sous licence Open Hardware à but strictement personnel, éducatif et DIY (**Non-Commercial**). Toute utilisation commerciale est exclue. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Référence MIDIbox NG — GPL-3.0**
+**Référence MIDIbox NG — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

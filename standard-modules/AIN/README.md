@@ -1,6 +1,5 @@
 # AIN — Module Entrées Analogiques AINSER64 (MIDIbox NG)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Module d'**entrees analogiques** de l'ecosysteme MIDIbox NG, equivalent du **MBHP_AINSER64**. Il scanne **64 pots / faders** avec une resolution de 12 bits entre 0 et 5 V. C'est le module qui **remplace** l'ancien MBHP_AIN (non supporte par MIOS32).
@@ -60,4 +59,4 @@ Ce module est une ré-implémentation sous KiCad basée sur les schémas origina
 
 > **Licence & Usage :** Ce matériel est fourni sous licence Open Hardware à but strictement personnel, éducatif et DIY (**Non-Commercial**). Toute utilisation commerciale est exclue. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Référence MIDIbox NG — GPL-3.0**
+**Référence MIDIbox NG — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

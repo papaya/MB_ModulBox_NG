@@ -1,6 +1,5 @@
 # surface-control — Surface de controle (SCS du Core32F4)
 
-> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
 
 ## Description
 Carte de surface de controle pour le **Core32F4**, qui reproduit la **Standard Control Surface (SCS)** officielle de MIDIbox NG : **1 encodeur rotatif** + **6 boutons poussoirs**. Elle se branche directement sur les **GPIO du Core**, sans passer par les registres 74HC165 / 74HC595.
@@ -77,5 +76,4 @@ Carte d'interface **originale MB MODULBOX NG** (conception Ksir), **inspiree** d
 
 > **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**
-
+**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
