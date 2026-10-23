@@ -1806,7 +1806,7 @@
       (net 1 "GNDA") (pinfunction "Pin_1") (pintype "passive") (tstamp bfc290e1-e160-40a8-ac0f-8690e9b2a0eb))
     (pad "2" thru_hole oval (at 5 0) (size 1.98 3.96) (drill 1.32) (layers "*.Cu" "*.Mask")
       (net 17 "+5VD") (pinfunction "Pin_2") (pintype "passive") (tstamp 72f5f74e-f76d-419d-98bb-aea4931da554))
-    (model "C:/Users/papaya/Downloads/ENG_CVM_CVM_796681-2_C1.3d_stp/c-796681-2-c1-3d.stp"
+    (model ""
       (offset (xyz 2.5 -4.5 15.5))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "ksir 2022")(type "KiCad")(uri "${KIPRJMOD}/../../fp-libs/ksir/pretty")(options "")(descr "Empreintes ksir MIDIbox"))
+  (lib (name "teensy")(type "KiCad")(uri "${KIPRJMOD}/../../fp-libs/teensy.pretty")(options "")(descr "Empreintes Teensy"))
+  (lib (name "Pad_x_4")(type "KiCad")(uri "${KIPRJMOD}/../../fp-libs/Pad_x_4.kicad_mod")(options "")(descr "Empreinte pad 4x"))
+)

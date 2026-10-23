@@ -1,0 +1,17 @@
+{
+	"mcpServers": {
+		"kicad": {
+			"command": "/Users/fil/.nvm/versions/node/v24.14.1/bin/node",
+			"args": [
+				"/Users/fil/.local/share/kicad-mcp-server/dist/index.js"
+			],
+			"env": {
+				"KICAD_PYTHON": "/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3",
+				"PYTHONPATH": "/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages",
+				"LOG_LEVEL": "info",
+				"KICAD_AUTO_LAUNCH": "false",
+				"KICAD_MCP_DEV": "0"
+			}
+		}
+	}
+}

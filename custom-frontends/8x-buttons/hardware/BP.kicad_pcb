@@ -133,12 +133,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 56ea7a48-67fb-4df5-9da1-bd78a11a60a3))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 17 "Net-(J1-D2)") (pinfunction "2") (pintype "passive") (tstamp c53626f3-e1d4-4c77-b2cd-98a28b8a4ab4))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -180,12 +180,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp b4b0ea09-1ac5-45f8-8d52-7affc54be19f))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 15 "Net-(J1-D4)") (pinfunction "2") (pintype "passive") (tstamp 42907706-ac5a-4349-a6b7-115a1a7d03e4))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -227,12 +227,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp da027b66-cc27-4a1a-bf22-959f8f74cb0b))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 13 "Net-(J1-D6)") (pinfunction "2") (pintype "passive") (tstamp 0680d3c2-a63f-4ca8-9159-7f55c5a1590f))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -274,12 +274,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 6bce519d-7379-431d-b998-f90863092b20))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 18 "Net-(J1-D1)") (pinfunction "2") (pintype "passive") (tstamp e9bd84db-413d-49f5-ba71-c40f9f831fb2))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -321,12 +321,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp e503a5f8-c0a9-4889-856c-467af8bca8a3))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 14 "Net-(J1-D5)") (pinfunction "2") (pintype "passive") (tstamp 9d9816e6-ca9e-40c5-8b6e-b560258d8adf))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -368,12 +368,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 4b426871-043e-4934-bac8-bd6d229b3eac))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 12 "Net-(J1-D7)") (pinfunction "2") (pintype "passive") (tstamp 421fb690-3749-4e1e-8e62-d2b3e2213732))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -415,12 +415,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 657f0bd0-cd99-4413-a1a9-1d785d965690))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 19 "Net-(J1-D0)") (pinfunction "2") (pintype "passive") (tstamp d1dfd479-07e0-4cee-8467-82cb24e0a2ef))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -966,12 +966,12 @@
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 750a18a4-ba7a-4a1f-95ab-74142f84dc47))
     (pad "2" thru_hole circle (at -5 3.7) (size 2 2) (drill 1) (layers "*.Cu" "*.Mask")
       (net 16 "Net-(J1-D3)") (pinfunction "2") (pintype "passive") (tstamp 26c29616-68ff-44aa-8713-eb8885a0295b))
-    (model "C:/Users/papaya/Downloads/133417274-659-3fth9xx/3fth9xx.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/133417243-659-1e_91/1e_91.stp"
+    (model ""
       (offset (xyz 0 0 9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))

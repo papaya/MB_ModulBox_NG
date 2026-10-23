@@ -516,7 +516,7 @@
 			(uuid "4dfce689-77ae-40dd-b8c0-e77537e0ac31")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -811,7 +811,7 @@
 			(uuid "d9de4ce4-cfba-4f92-8738-71036d7de0c3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -1106,7 +1106,7 @@
 			(uuid "b5142ca6-2de0-4dc0-b068-aaeaf719cec3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -1306,7 +1306,7 @@
 			(uuid "7e96ede7-2baf-4e3e-af14-678c4f5648f1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1506,7 +1506,7 @@
 			(uuid "c61b57e6-98e5-4352-b557-d5b3dc58412d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1801,7 +1801,7 @@
 			(uuid "c12bae39-14e2-452b-a37a-b8df491984f9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -2134,7 +2134,7 @@
 			(uuid "119271d0-7677-4e13-bc10-d20f7f46e678")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -2429,7 +2429,7 @@
 			(uuid "ab896c8f-4890-47e8-9901-c2d12fcaba65")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -2629,7 +2629,7 @@
 			(uuid "3f2b1e67-5d9b-4aa6-84ef-53ea0087c9e5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2924,7 +2924,7 @@
 			(uuid "19c641cc-b9b3-4bd6-ae0a-6b3f290864bf")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -3124,7 +3124,7 @@
 			(uuid "a0a9aeb5-b5d9-4cb7-8b35-487a1d75fee8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3324,7 +3324,7 @@
 			(uuid "d8e9cfe2-df3e-4a4a-a297-ae9779d7209f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3524,7 +3524,7 @@
 			(uuid "1da1201e-9025-41d4-b41b-79eff502af59")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3819,7 +3819,7 @@
 			(uuid "6cf69d16-f363-49f1-82a9-379d2c432e6d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -4114,7 +4114,7 @@
 			(uuid "54fea5a4-3f85-42de-a0ca-b7bfc9085d6d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -4495,7 +4495,7 @@
 			(uuid "96abc20d-b648-4956-9537-011d27f2246e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -4695,7 +4695,7 @@
 			(uuid "727d2633-b72f-4e90-8e8b-df2f7fc82ce9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4990,7 +4990,7 @@
 			(uuid "c07985f6-d685-4bd9-b82f-548442a188cc")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -5190,7 +5190,7 @@
 			(uuid "88a749d0-7cd3-4c5f-ae6e-0cb7ecb87a11")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5485,7 +5485,7 @@
 			(uuid "94e9b82d-b4fd-440b-bcab-eb0c14dc0f89")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -6040,7 +6040,7 @@
 			(uuid "1c29ad03-f095-4aed-8042-3c26c3a418b7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -6333,7 +6333,7 @@
 			(uuid "b6e2de7d-d099-4051-8fad-e9708b8eb334")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -6533,7 +6533,7 @@
 			(uuid "ada623f2-e720-4961-a7d0-3b4a31bfe50f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6826,7 +6826,8 @@
 			(uuid "9a681108-f056-4797-a938-937ef3e7782f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -6835,6 +6836,17 @@
 			)
 			(rotate
 				(xyz -90 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 -180 -0)
 			)
 		)
 	)
@@ -7121,7 +7133,7 @@
 			(uuid "2777c002-9b6f-4027-95f3-8a611484a752")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -7416,7 +7428,7 @@
 			(uuid "7ab140ba-107d-4e8a-a2ce-29628576129d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -7704,7 +7716,7 @@
 			(uuid "47418de3-4f54-485e-a713-3cb6671798ec")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7904,7 +7916,7 @@
 			(uuid "ff4c4ff4-8a37-4993-9a04-8c8aafd2c31b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8484,7 +8496,7 @@
 			(uuid "4153f842-bc8e-4fde-ac16-d415d83d7ca2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -8684,7 +8696,7 @@
 			(uuid "e73f486d-67cf-4695-941a-b725384a4909")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8979,7 +8991,7 @@
 			(uuid "de92f034-3642-4e64-aaf3-67931eca1a8c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -9272,7 +9284,7 @@
 			(uuid "e2769cb4-5f1b-4ba7-9d60-947b594f5519")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -9560,7 +9572,7 @@
 			(uuid "e944b52a-d24f-44b2-934d-1439fe95bae3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9855,7 +9867,7 @@
 			(uuid "68c76698-88f6-4c83-b7c7-be27c6687a9b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -10055,7 +10067,7 @@
 			(uuid "d5b7db57-8340-4011-80d7-4b143714046f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10255,7 +10267,7 @@
 			(uuid "aa8f63ef-f83f-4617-894e-d9df0f723dca")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10707,7 +10719,7 @@
 			(uuid "e26fa351-f347-41bd-9645-90fdecec27bd")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10907,7 +10919,7 @@
 			(uuid "bb4db76c-9bdb-4fc1-804d-29dff856a0e2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11290,7 +11302,7 @@
 			(uuid "07ef148b-16e3-4be9-8c80-3a7a30f000d1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -11583,7 +11595,7 @@
 			(uuid "f6a31419-15fe-4561-840b-2810171174e1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -11783,7 +11795,7 @@
 			(uuid "ebc5b903-7783-45af-b6ae-818caa4551d8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12078,7 +12090,7 @@
 			(uuid "2c10462c-ab8c-4728-af5f-f9289d2b427d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -12373,7 +12385,7 @@
 			(uuid "5113e403-8b1e-4924-a327-fd00af6d03c5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -12573,7 +12585,7 @@
 			(uuid "9e068659-e5ab-41e3-b5d4-606f7a9849c3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12773,7 +12785,7 @@
 			(uuid "787a8d8c-5ab0-429c-8e4b-1d1bbe832b35")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12973,7 +12985,7 @@
 			(uuid "99531694-0b1d-4a79-a4fb-ed77967dc7f1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13173,7 +13185,7 @@
 			(uuid "c4664191-dd54-486b-8230-a71efe7014d4")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13468,7 +13480,7 @@
 			(uuid "47678377-7498-4e2d-9403-64573fcc9a26")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -13801,7 +13813,7 @@
 			(uuid "0aeb8463-ff61-41aa-a656-fd36847957da")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -14184,7 +14196,7 @@
 			(uuid "0361158b-a18e-4ee7-8472-d5ce9550049d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -14477,7 +14489,7 @@
 			(uuid "2ad0dda6-3877-49d5-9301-af195b383c10")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -14677,7 +14689,7 @@
 			(uuid "f4ea91ee-3db0-4c09-b644-f3396e3516d9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14877,7 +14889,7 @@
 			(uuid "9d3c54cd-b76c-4d2b-b779-5a2ee61692c2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15077,7 +15089,7 @@
 			(uuid "fb8be3a9-c4b6-4c33-bd83-5bff7857687b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15372,7 +15384,7 @@
 			(uuid "2a4d9a2f-dcae-49ae-ae9d-3f562e6c00e8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -15572,7 +15584,7 @@
 			(uuid "1daf264e-9be8-4104-b9a7-4ce9d043fbd1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15772,7 +15784,7 @@
 			(uuid "692ea972-041a-452e-82f5-f23043a1d08d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16065,7 +16077,7 @@
 			(uuid "ff4e56c5-333d-4fd5-9bff-1e908c56e4b3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -16360,7 +16372,7 @@
 			(uuid "24eaed1c-46ee-4d3b-9abf-8a2eb31cedea")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -16655,7 +16667,7 @@
 			(uuid "f30b8de4-7470-408f-811d-8f554f0ca57d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -16855,7 +16867,7 @@
 			(uuid "85a4cacc-f5f4-432f-9925-6fb987546875")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17412,7 +17424,7 @@
 			(uuid "16be0693-2864-407e-ad26-0f4606366aca")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -17612,7 +17624,7 @@
 			(uuid "da75f73f-9206-428e-afd8-6cd537056ab8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17812,7 +17824,7 @@
 			(uuid "5837071c-ae1f-4211-b5d0-cd81a14b4339")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18107,7 +18119,7 @@
 			(uuid "80efb3e1-4fd6-4cb2-8c41-c4bad86fc8d2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -18307,7 +18319,7 @@
 			(uuid "124106af-60ee-46eb-a87a-a17a33b0f17b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18602,7 +18614,7 @@
 			(uuid "840c6bd8-1946-4757-a554-0acb127d5511")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -18895,7 +18907,7 @@
 			(uuid "31fabd93-2782-46dd-ab9f-204da8d998a7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -19188,7 +19200,7 @@
 			(uuid "5a0869e2-cee8-4b60-b433-d07800c4e682")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -19388,7 +19400,7 @@
 			(uuid "676cde32-2d3f-490e-863f-f934249246e8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19588,7 +19600,7 @@
 			(uuid "3201e700-8a0f-474d-83af-b4fbbfe9bfc0")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19788,7 +19800,7 @@
 			(uuid "54c032ae-a6a6-4a26-a050-af8b0d564915")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19988,7 +20000,7 @@
 			(uuid "1bc1c08f-8f39-495d-b03a-31309f9458b3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20283,7 +20295,7 @@
 			(uuid "65e78ef4-a8ba-4942-9de9-7ac06169c0e5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -20483,7 +20495,7 @@
 			(uuid "7812c7ac-f440-44d6-9a65-e67aa02d6127")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20683,7 +20695,7 @@
 			(uuid "b9400725-7c23-4de9-b9a9-c338040d9a49")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20883,7 +20895,7 @@
 			(uuid "0621e441-1156-4ec6-ac3a-f2142b99d48f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21083,7 +21095,7 @@
 			(uuid "9c2d32cf-3f64-4eae-ba34-34eade015607")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21283,7 +21295,7 @@
 			(uuid "4a4bcbbc-2598-4327-a9d6-8197cdde1cb1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21578,7 +21590,7 @@
 			(uuid "b2bd5eb1-60c0-4b6a-a1b4-7980c2192b0b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -21873,7 +21885,7 @@
 			(uuid "eadb791e-16dc-49c6-8320-c602667358fe")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -22168,7 +22180,7 @@
 			(uuid "6fb1d833-2945-457a-af63-f5c72f642a74")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -22368,7 +22380,7 @@
 			(uuid "a4c26205-2f94-44ef-a4f0-89852ad43418")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22568,7 +22580,7 @@
 			(uuid "20adbf29-7257-4ca3-bbdd-d946bcb2e619")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22768,7 +22780,7 @@
 			(uuid "737b5778-7be7-4028-abec-5710c270ea56")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23061,7 +23073,7 @@
 			(uuid "1bd2e2f2-432b-4648-bd5f-d25e40a116ae")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -23261,7 +23273,7 @@
 			(uuid "9a8f8f03-2df8-4fc0-8a40-d37ea43d38be")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23461,7 +23473,7 @@
 			(uuid "ef4df200-3766-4920-8913-0d643c4fa8ce")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23661,7 +23673,7 @@
 			(uuid "c06dada2-fe97-4279-be49-38167a9596b5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23861,7 +23873,7 @@
 			(uuid "67e6816c-ca55-437a-a5c8-7733e11570c3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24154,7 +24166,7 @@
 			(uuid "8a8a4ec8-5bf1-4f40-8ad0-29273724255b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -24449,7 +24461,7 @@
 			(uuid "18d91f09-86f1-460a-9d99-e17254332550")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -24744,7 +24756,7 @@
 			(uuid "6541582a-1f43-4dde-b175-c78519361b86")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -25039,7 +25051,7 @@
 			(uuid "5cfe87fc-dfef-463f-a2bd-b37265db03b0")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -25334,7 +25346,7 @@
 			(uuid "726bdcc0-458e-433e-ab7a-a5562e274402")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -25710,7 +25722,7 @@
 			(uuid "f833f936-8bbf-4dc3-a27c-74ef450645d6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25910,7 +25922,7 @@
 			(uuid "7ece3275-ef20-491a-ade5-d3b800f884f1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26110,7 +26122,7 @@
 			(uuid "a890050e-d0a7-4605-9e1c-003637f39509")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26310,7 +26322,7 @@
 			(uuid "31b42c22-bc56-4db0-8b67-ff34cdec9534")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26510,7 +26522,7 @@
 			(uuid "90bee218-8e1a-4e12-b309-8fcbb4e17ced")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26805,7 +26817,7 @@
 			(uuid "6b50d84f-099a-431a-9200-1909cffb4144")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -27100,7 +27112,7 @@
 			(uuid "c94ada10-88ec-4208-bd8e-7a6b6f3fd041")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -27300,7 +27312,7 @@
 			(uuid "3dc6ebab-b740-4e17-93a9-1391ab3da249")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -27847,7 +27859,7 @@
 			(uuid "ed5a9e15-0441-46cf-88b4-215ba274598d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -28047,7 +28059,7 @@
 			(uuid "7e23ab7c-2d27-4c92-9c24-8427e5ac2148")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28247,7 +28259,7 @@
 			(uuid "a5056f90-f267-42c6-b551-9c70df693c19")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28447,7 +28459,7 @@
 			(uuid "5aa1a460-ad2e-4f05-af41-b283ebadad0a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28647,7 +28659,7 @@
 			(uuid "38f0c1cc-62a9-4084-b0fb-f6ef14bf8df4")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28847,7 +28859,7 @@
 			(uuid "5a5c3144-952c-4050-bd12-af1b6f03bed7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29047,7 +29059,7 @@
 			(uuid "fd698e0d-1fe6-43b2-a45d-3e8f6a368aa9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29342,7 +29354,7 @@
 			(uuid "3516b2d7-2a5f-4bd3-9800-f32d36c9ea94")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -29542,7 +29554,7 @@
 			(uuid "e1315641-7bc1-4c39-9389-bc563ba53dd6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29742,7 +29754,7 @@
 			(uuid "cb29cb48-5228-4674-8f63-a6a406198759")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29942,7 +29954,7 @@
 			(uuid "fd5c2d57-ab50-4b55-8ac8-cc695e4d28eb")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30235,7 +30247,7 @@
 			(uuid "e02fdb10-3dc6-47a3-8b23-4cd474406dad")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -30528,7 +30540,7 @@
 			(uuid "b98b7a28-8005-4819-b1fd-aee2c79c3998")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -30823,7 +30835,7 @@
 			(uuid "22760019-d74f-47b2-94d7-da837480d601")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -31116,7 +31128,7 @@
 			(uuid "f3e5593c-8a65-42e4-8750-f8e3328649f1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -31316,7 +31328,7 @@
 			(uuid "eda71696-0e31-4e26-9e29-91acb62cdedf")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31611,7 +31623,7 @@
 			(uuid "3d5d0af9-3f21-4582-aacb-b5d9fc1518bc")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -31811,7 +31823,7 @@
 			(uuid "a2b2c842-bc09-4f58-a958-44c44bc791bf")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32194,7 +32206,7 @@
 			(uuid "e67138a8-aa02-444b-8980-806e53649991")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -32394,7 +32406,7 @@
 			(uuid "11f42506-0e70-49d6-9e29-707eac06519d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -32689,7 +32701,7 @@
 			(uuid "4f36377e-035d-4248-952d-f35e25d4771c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -33022,7 +33034,7 @@
 			(uuid "0cc22340-6dda-477c-974a-6834f42cb423")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -33222,7 +33234,7 @@
 			(uuid "9af6c8bc-29d2-4e46-9fae-a97203059d55")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33422,7 +33434,7 @@
 			(uuid "b49e779e-a924-4204-a2a6-a790ffe32081")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33622,7 +33634,7 @@
 			(uuid "43943fdc-f95f-429d-9793-b75def2b23b8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -33822,7 +33834,7 @@
 			(uuid "aa6c724a-de1b-4dd9-b63c-cc7b628e0d60")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34022,7 +34034,7 @@
 			(uuid "0b4c2ddd-e42c-4454-9c6f-4eb4a3a3b53a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34317,7 +34329,7 @@
 			(uuid "09afd205-9a64-4e5f-aebd-b3ac9aaa24ed")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -34517,7 +34529,7 @@
 			(uuid "021895fc-8af8-454c-8f0c-6b08342c0824")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34812,7 +34824,7 @@
 			(uuid "13999482-c85c-4d0c-b78d-d1a93f0fa447")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -35012,7 +35024,7 @@
 			(uuid "8a5e491e-7b8e-43b0-b896-14e3c9265c92")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35307,7 +35319,7 @@
 			(uuid "a03e938d-c2fe-4308-a671-0488928b421c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -35600,7 +35612,7 @@
 			(uuid "eb84fcd6-4439-430c-a9e6-0a8926012157")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -35800,7 +35812,7 @@
 			(uuid "e293d1c9-8388-4a64-b4d7-5b19a2dbc013")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36000,7 +36012,7 @@
 			(uuid "86974069-3d32-4f01-a5e0-773ca67a5e38")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36200,7 +36212,7 @@
 			(uuid "6ae3da6b-ee64-4590-9f61-b1873d3a019c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36400,7 +36412,7 @@
 			(uuid "c38c66d6-1cbd-414f-96f6-73714f31fbfd")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36695,7 +36707,7 @@
 			(uuid "50f549b9-2bb1-4612-a210-f1be3d712629")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -36990,7 +37002,7 @@
 			(uuid "f91d1f83-091f-4e2f-856f-2811247d7822")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -37285,7 +37297,7 @@
 			(uuid "07e4c83c-8a69-4afa-8fbb-9b184b30ca4b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -37485,7 +37497,7 @@
 			(uuid "44276125-6c58-4ee1-b715-35f94d64d508")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37685,7 +37697,7 @@
 			(uuid "1613725e-c166-48ac-bf00-c6d7833b3e54")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37885,7 +37897,7 @@
 			(uuid "d4c7ab20-98a6-425d-bff9-bd6bc9aa442b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38085,7 +38097,7 @@
 			(uuid "340f44c9-ce17-4398-bd1a-b9096fabdcd7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38380,7 +38392,7 @@
 			(uuid "4cd7e2b7-ace0-469a-b850-ff2cf01930eb")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -38763,7 +38775,7 @@
 			(uuid "73d79a9f-fb5d-421b-9b1d-294feeca2813")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -39051,7 +39063,7 @@
 			(uuid "faa58c76-36f0-4ff6-9dfb-3666389b5b0c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39346,7 +39358,7 @@
 			(uuid "cf1aaade-6b83-48aa-96e4-242fa0f78802")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -39641,7 +39653,7 @@
 			(uuid "71d7dfa1-d886-4400-95e3-32cebe55fc8d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -39841,7 +39853,7 @@
 			(uuid "a03f79c1-0591-46f4-a5de-2f3777f27eae")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40136,7 +40148,7 @@
 			(uuid "1e26e5fd-36d6-4726-b192-3e79c0690f02")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -40431,7 +40443,7 @@
 			(uuid "e8a4ec29-5dde-4901-a535-064ce22b37d6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -40724,7 +40736,7 @@
 			(uuid "ca44f7ca-3c3f-46fc-9881-a6c80a37ccc3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -41019,7 +41031,7 @@
 			(uuid "990d5923-732c-4f9a-aac0-b22ec224af20")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -41312,7 +41324,7 @@
 			(uuid "f17cff9f-3d44-448b-9113-bc66786b8c8a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -41605,7 +41617,7 @@
 			(uuid "da7e32f6-ff81-4ef3-b439-285cbdba763e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -41805,7 +41817,7 @@
 			(uuid "d2c0935c-8d7e-4058-b117-76d4e7e97226")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42100,7 +42112,7 @@
 			(uuid "71748ea2-c74e-4822-8ec6-e2619446b978")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -42300,7 +42312,7 @@
 			(uuid "b75bdbe2-ff92-4c00-a0c5-c7bdccf9f979")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42633,7 +42645,7 @@
 			(uuid "46b59025-37df-478e-a97e-81c886999ebe")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -42928,7 +42940,7 @@
 			(uuid "be5effdb-4e1d-4952-9107-c671c9ab363a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -43216,7 +43228,7 @@
 			(uuid "7a9d09e9-c602-467d-9c4e-871d9649a471")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43416,7 +43428,7 @@
 			(uuid "9e4dd233-a8b8-4384-a686-5125071d281e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43711,7 +43723,7 @@
 			(uuid "d91b573c-95af-44b2-b352-ec336967818a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -43911,7 +43923,7 @@
 			(uuid "653da16c-7384-4e05-98f5-007fe9c2c2d9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44292,7 +44304,7 @@
 			(uuid "a270a851-aed8-4cd0-af82-7cd4b0ff7020")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -44492,7 +44504,7 @@
 			(uuid "3c6edd6a-aaa5-4c76-bc26-f27e93a406bc")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44787,7 +44799,7 @@
 			(uuid "38104e5b-01f8-409e-b09b-1a13c252a408")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -45082,7 +45094,7 @@
 			(uuid "ad1b4b6a-3f4a-45a4-b19b-9d2e41cb8b95")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -45282,7 +45294,7 @@
 			(uuid "d4d461ec-680b-4f81-a2db-e3c56b0f0959")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -45577,7 +45589,7 @@
 			(uuid "b58668ca-2211-4504-866c-dffa073bf7a8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -45872,7 +45884,7 @@
 			(uuid "6af6a28f-14f2-421b-a060-d45fb27eb299")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -46167,7 +46179,7 @@
 			(uuid "8cd02439-85f9-45de-aa0e-e23743a11951")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -46550,7 +46562,7 @@
 			(uuid "a569fd15-f942-429c-bb2a-affe7611b6f3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -46845,7 +46857,7 @@
 			(uuid "af1200ab-1440-4f07-b327-ad130118f615")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -47140,7 +47152,7 @@
 			(uuid "a1b731fe-dae2-4e61-b66f-2d5b6ff947c2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -47340,7 +47352,7 @@
 			(uuid "b5803f32-7fbf-4f25-82bb-e0be90229c3e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47540,7 +47552,7 @@
 			(uuid "d1c7ca26-eada-4eb6-8dd2-74097794d5d7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47923,7 +47935,7 @@
 			(uuid "48e8f97a-0b92-4e78-adce-6e3c5316ea9f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -48123,7 +48135,7 @@
 			(uuid "252ad0f9-3b13-4ef2-aadd-0bb8497a6256")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -48456,7 +48468,7 @@
 			(uuid "8706f73d-159c-4390-8c7b-717a11367d16")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -48751,7 +48763,7 @@
 			(uuid "f83271de-f7bc-43fc-b4df-5a7abad36b5f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -48951,7 +48963,7 @@
 			(uuid "bf20483e-3c5a-4dc7-8895-e55ae75418e0")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -49617,7 +49629,7 @@
 			(uuid "bdb1feaa-aa30-4fa4-a823-ded3882db0b7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -49910,7 +49922,7 @@
 			(uuid "2e42cb3d-db55-423d-ba32-06bfa163673d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -50293,7 +50305,7 @@
 			(uuid "cd2750d3-1d1a-485f-9372-a3f0a80ecbd8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -50588,7 +50600,7 @@
 			(uuid "c14a923c-9aef-4986-8d3f-d5fa3eca5488")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -50788,7 +50800,7 @@
 			(uuid "fc032516-c2c0-43d8-840d-714e65d48575")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50988,7 +51000,7 @@
 			(uuid "7adbb73c-65ac-4f40-a99d-70adb2de741c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51188,7 +51200,7 @@
 			(uuid "78856e0b-4ebb-494a-bf19-ac0e5725a6b6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51483,7 +51495,7 @@
 			(uuid "0919dfd6-a0c7-406e-ad18-7a84082ffb3d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -51683,7 +51695,7 @@
 			(uuid "0fa7f6e7-5c3c-4bf9-beaf-0e080c404659")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51883,7 +51895,7 @@
 			(uuid "82aedfb8-a711-45aa-93e3-80c98f4810c5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -52083,7 +52095,7 @@
 			(uuid "c6c89f1a-dc51-4863-9ce0-c689594a7564")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -52378,7 +52390,7 @@
 			(uuid "029c03e4-4420-4cd6-84bf-dccf452bc0d2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -52578,7 +52590,7 @@
 			(uuid "6e6eb159-93b0-493a-8ef8-732834a4e2a5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -52866,7 +52878,7 @@
 			(uuid "f35ed244-b002-49f3-9c77-786213acd0ae")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -53161,7 +53173,7 @@
 			(uuid "7281d288-13e8-4855-8483-100c36a93690")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -53361,7 +53373,7 @@
 			(uuid "cc7403a6-dc94-42cd-a205-7c00c07215c4")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -53654,7 +53666,7 @@
 			(uuid "d434b95c-281d-4c91-a9d5-90b1a20750e0")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -53949,7 +53961,7 @@
 			(uuid "4bb7ea14-c97d-4db0-a798-686611da3f33")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -54149,7 +54161,7 @@
 			(uuid "f3bb7710-2026-4aa1-ba96-29a0982f14e3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -54349,7 +54361,7 @@
 			(uuid "df4eb170-0844-4df0-98a2-5893831e8c07")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -54644,7 +54656,7 @@
 			(uuid "f2dc8d16-9c95-404d-b1c3-2f7dccfd5414")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -54939,7 +54951,7 @@
 			(uuid "faacd25a-d06e-486c-9588-4ed3a9057d5f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -55519,7 +55531,7 @@
 			(uuid "6273366d-9ada-4587-8648-ba5eb3862277")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -55719,7 +55731,7 @@
 			(uuid "f60fe4ca-6383-4e05-992a-1564a109dcf6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -56014,7 +56026,7 @@
 			(uuid "c6528ab7-55fd-4d88-9bf6-43ccd1080e10")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -56214,7 +56226,7 @@
 			(uuid "b18962bc-4d14-4bb2-8451-964d194d1b9f")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -56414,7 +56426,7 @@
 			(uuid "586d347f-24a3-466e-a5d4-73376c619767")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -56795,7 +56807,7 @@
 			(uuid "758e203f-161d-4eea-8cd2-d2a3ceed8d6a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -57090,7 +57102,7 @@
 			(uuid "9e0d6a85-8c2d-4b82-98aa-92df2abd861e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -57423,7 +57435,7 @@
 			(uuid "d211168a-59a9-4992-97ee-bb7061115977")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -57623,7 +57635,7 @@
 			(uuid "7db29a31-a0a0-4f6a-86b3-dc09e1e1abd9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -57823,7 +57835,7 @@
 			(uuid "f9d4b90a-5f63-48a9-a9cd-e817bcc1b8cb")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58118,7 +58130,7 @@
 			(uuid "0442f365-1b54-4ed9-9faa-41f46a84dd80")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -58451,7 +58463,7 @@
 			(uuid "8d228996-3368-478f-bda3-c1103dbd749c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -58651,7 +58663,7 @@
 			(uuid "8da34cbc-4ee8-4d0f-9ac7-f925d668d267")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58851,7 +58863,7 @@
 			(uuid "6067745f-39f4-4d3f-a78d-4579db16ba3c")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -59146,7 +59158,7 @@
 			(uuid "7aca492d-ab8e-4862-9996-00f2c395b435")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -59441,7 +59453,7 @@
 			(uuid "c0e8c09a-eb98-4b91-9a15-3720e177ae78")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -59734,7 +59746,7 @@
 			(uuid "90dffb3c-bb83-4fdc-a786-0c8b11126541")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -60029,7 +60041,7 @@
 			(uuid "a21e1e56-25bc-45f5-9859-f1e227748b0d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -60324,7 +60336,7 @@
 			(uuid "7ea51969-8a1d-463c-91d4-12f453362e2a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -60524,7 +60536,7 @@
 			(uuid "394d2a4f-b728-4416-b6e6-1cf2889f1c9e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -60724,7 +60736,7 @@
 			(uuid "c809b98e-06ea-4b6c-b2de-c6a98263b6bc")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -60924,7 +60936,7 @@
 			(uuid "1f21f88d-dfb9-4d46-b549-0827bd48f9b3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -61219,7 +61231,7 @@
 			(uuid "ffb64170-bedf-4c28-9935-025f3f8a6cb0")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -61512,7 +61524,7 @@
 			(uuid "2fc7519e-07d6-4970-b3d8-1dd023aecbe2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -61800,7 +61812,7 @@
 			(uuid "42e1811d-0264-439f-8247-990c2b45cb5e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -62133,7 +62145,7 @@
 			(uuid "1f0dbba2-e699-48ab-8f37-82e659b53fd9")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+		(model "${KICAD_USER_3DMOD}/PEC16-4X20F-SXXXX.wrl" (rotate (xyz 0 0 0) (scale 1 1 1) (offset (xyz 0 0 0))))
 			(offset
 				(xyz 5 10.5 5.5)
 			)
@@ -62514,7 +62526,7 @@
 			(uuid "6bbae383-965d-4893-a9f4-73494f670d4e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -62809,7 +62821,7 @@
 			(uuid "f9eff937-6e94-4779-9116-cee228efe54a")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -63102,7 +63114,7 @@
 			(uuid "9eac23c4-f998-4808-ba35-302b164ae5a3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -63395,7 +63407,7 @@
 			(uuid "5b09e0e6-671f-4e26-999d-c9e1aa128ee2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -63688,7 +63700,7 @@
 			(uuid "810dc518-3469-419b-9898-191993e22335")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -63888,7 +63900,7 @@
 			(uuid "56680704-ad97-46d8-bad6-cce51c085206")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -64183,7 +64195,7 @@
 			(uuid "520b3372-f559-4784-8776-856e4a057d7e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -64478,7 +64490,7 @@
 			(uuid "015845f4-f578-4463-84b6-147aef03dbd0")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -65058,7 +65070,7 @@
 			(uuid "100cffa3-b42a-4bbd-a451-3c4f40651a77")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -65353,7 +65365,7 @@
 			(uuid "99dbff0a-155f-4771-878b-f63dd5743ce3")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -65648,7 +65660,7 @@
 			(uuid "7cf72d01-e691-475f-9ded-f88212240a65")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -65848,7 +65860,7 @@
 			(uuid "5a919eb7-6a97-469a-816f-b6307bf74cdb")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -66143,7 +66155,7 @@
 			(uuid "fbc93e0a-84bb-4211-b08b-bc70a8ad00ce")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -66343,7 +66355,7 @@
 			(uuid "d2c43c55-3439-41d4-a0df-544d2bb730d8")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -66636,7 +66648,7 @@
 			(uuid "f73dc60d-f1e5-4c34-9db2-12759cd87686")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -66836,7 +66848,7 @@
 			(uuid "ca856221-46d0-4d64-b91e-badc558f4370")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -67131,7 +67143,7 @@
 			(uuid "6868e304-be8e-40b6-a482-b277aadfdfc6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -67426,7 +67438,7 @@
 			(uuid "e2154026-cfde-4ffe-b7a4-639e43cba1e2")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -67626,7 +67638,7 @@
 			(uuid "f9a3eb3e-fcfc-4c2c-bd4b-311741d0d6b1")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -67826,7 +67838,7 @@
 			(uuid "32f8f86f-cc3c-4ae1-b637-f29b1977383d")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68121,7 +68133,7 @@
 			(uuid "14d10d82-f220-4417-ab60-1a474d68549b")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -68414,7 +68426,7 @@
 			(uuid "c7e3e2e4-924c-4499-baa2-fcc6acb94c32")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -68614,7 +68626,7 @@
 			(uuid "e0c881da-377c-4cdd-bba2-4ba7b6f931f7")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68909,7 +68921,7 @@
 			(uuid "45010852-25a6-4474-a70a-8d9efc4d4bf5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -69109,7 +69121,7 @@
 			(uuid "854b62aa-af94-4851-9729-d5b08f917255")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -69309,7 +69321,7 @@
 			(uuid "b26d249b-634c-4a22-bba7-a8e99f21425e")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -69509,7 +69521,7 @@
 			(uuid "4c5ba95b-842e-4d59-acff-4496e7cc5cf6")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -69804,7 +69816,7 @@
 			(uuid "3710c699-e3fa-4160-b6ea-6e421eebf5cc")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+		(model "${KIPRJMOD}/3D/WS2812-2020.step"
 			(offset
 				(xyz 0 0 0.28)
 			)
@@ -70004,7 +70016,7 @@
 			(uuid "5ecadd3f-bb41-46a0-97d1-b65a83903f83")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)
@@ -70204,7 +70216,7 @@
 			(uuid "236f49e6-f6ac-4c72-b399-de789f419fd5")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+		(model "" 
 			(offset
 				(xyz 0 0 0)
 			)

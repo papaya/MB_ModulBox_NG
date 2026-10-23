@@ -693,3 +693,176 @@ DRC headless (`kicad-cli pcb drc`), confrontation avec ucapps.de / midibox.org.
 - [ ] DRC : `encoders-led-rgb` (315), `DIN` (255), `keysw-4x2` (177), `pad-rgb` (121) restent à corriger
 
 
+
+
+
+---
+
+## 15. PROBLÈMES TECHNIQUES CRITIQUES — 3 INTERVENTIONS IMMÉDIATES
+
+Date : 23/10/2026. Orchestreur : ingénieur CAO (KiCad MCP). Priorité : 🔴 BLOCANT.
+
+Ces 3 tâches ont été identifiées comme les problèmes structurels et techniques les plus critiques de l'ensemble du dépôt :
+1. **Liens 3D cassés** (protractions visuelles, rendu 3D en présentation, et possible plantage KiCad)
+2. **Facades aluminium absentes** (manque de traceabilité fabrication et de fichiers mécaniques)
+3. **Séparation module encodeurs** (1 projet -> 3 sous-projets, pas de modularité OSHW)
+
+---
+
+### Task 1 — Correction des liens 3D cassés (.kicad_pcb)
+
+#### 15.1 Diagnostic
+| Type de problème | Présence | Nombre récapitulatif | Impact |
+|-----------------|----------|---------------------|--------|
+| Chemins absolus Windows (C:/Users/...) | 7 projets | ~90+ occurrences | 🔴 Basculé si KiCad non installé sur Windows |
+| Modèles téléchargés non versionnés | 6 projets | ~40 occurrences | 🔴 Fichiers introuvables en local |
+| Variables KiCad (${KICAD6_3DMODEL_DIR}, ${KIPRJMOD}) | 12 projets | ~85 occurrences | 🟡 Valides si variables d'environnement corrects |
+| Référence à fichier absent | 3 projets | ~35 occurrences | 🔴 CL05B104KO5NNNC.stp dans PEC_16 |
+
+#### 15.2 Actions
+- [ ] **1A** : Localiser l'emplacement réel de chaque modèle 3D dans Mes_Librairies_KiCad/3d/ et les dossiers hardware/3D/
+- [ ] **1B** : Supprimer les références absolues Windows cassées (aucune correspondance sur disk) : C:/Users/papaya/Downloads/...
+- [ ] **1C** : Pour les modèles qui existent localement :
+  - PEC_16_V0.2.wrl / .step -> referencer ${KIPRJMOD}/3D/PEC_16_V0.2.wrl (relatif au projet)
+  - WS2812-2020.step -> referencer ${KIPRJMOD}/3D/WS2812-2020.step
+  - encoders.step / SN74AHCT125N.stp / PEC16-4X20F-SXXXX.wrl -> referencer ${KICAD_USER_3DMOD}/... ou ../../Mes_Librairies_KiCad/3d/...
+- [ ] **1D** : Pour les composants sans modèle 3D defini (ex: CL05B104KO5NNNC, capacitor 0603) -> supprimer le model embedding du PCB (conserver le symbole sans 3D, ce n'est pas critique)
+- [ ] **1E** : Valider chaque projet corrige avec kicad-cli pcb pcbnew --export-3d ou pcb_get_board_summary (KiCad MCP)
+- [ ] **1F** : Documenter la convention de nommage des chemins 3D dans le README.md racine
+
+#### 15.3 Livrables
+- PEC_16_V0.2.kicad_pcb : liens 3D corriges
+- Tous les autres .kicad_pcb : liens 3D corriges ou supprimes
+- Documentation des conventions de chemins 3D
+
+
+
+
+
+
+---
+
+### Task 2 — Rapatriement des fichiers de Face Avant Aluminum (Front Panels)
+
+#### 15.1 Diagnostic
+| Front panel | Module | Fichier(s) | Statut |
+|------------|--------|-----------|--------|
+| Facade LCD 20X2 | (archive) | Facade LCD 20X2/ | Archive |
+| Facade controle | surface-control | archive/... | Archive |
+| Facade enc rgb | encoders-led-rgb | archive/... | Archive |
+| Produton facade | keysw-4x2 | archive/... + production/facade_jlcpcb*.zip | Archive + ZIP |
+| facade oled 128x64 | oled-128x64 | archive/... | Archive |
+| 3D aluminium | 4x-faders | hardware/3D/ existant | WARNINGS 3D seulement |
+| 3D aluminium | 8x-pots | hardware/3D/ existant | WARNINGS 3D seulement |
+
+#### 15.2 Actions
+- [ ] **2A** : Rechercher dans archive/ et common-docs/ tous les fichiers KiCad lies aux facades : .kicad_pcb, .dxf, .step, .wtf, .igs
+- [ ] **2B** : Creer custom-frontends/*/mechanical/ pour chaque module possedant une facade
+- [ ] **2C** : Dans mechanical/ :
+  - Fichiers .kicad_pcb de la facade (contour mechanique, holes, nichees)
+  - .dxf ou .step pour l usinage (deux-tours, laser, clochetage)
+  - .zip d export destine au fabricant (ex: facade_jlcpcb.zip)
+- [ ] **2D** : Mettre a jour le README.md de chaque module pour reference mechanical/
+- [ ] **2E** : Verifier que les files de fabrication de la carte production/ et de la facade mechanical/ sont coherentes (memes trous, memes tolerences)
+
+#### 15.3 Livrables
+- Dossier mechanical/ avec fichiers de fabrication pour chaque module ayant une facade
+- README.md mis a jour pour chaque module
+- Table des correspondances (broches carte -> trous facade)
+
+---
+
+### Task 3 — Modularisation et separation du projet Encodeurs (1 -> 3 PCBs)
+
+#### 15.1 Diagnostic
+Le projet PEC_16_V0.2.kicad_pro groupe actuellement 3 PCBs distincts au sein d un seul fichier :
+| Carte | Role | Composants cles |
+|-------|------|------------------|
+| Control Board (Carte Shift Registers / Interfaçage) | Interface avec MIOS32 du Core, shift registers, gestion 74HC165 | STM32F4 (via report), 74HC165x3, 74HC595x2 |
+| Encoders / Switches (Carte Encodeurs) | 8 x PEC16 avec poussoir, 24 entrees DIN | PEC164120FS0012x8, 74HC165x3 |
+| Ring LEDs RGB (Carte WS2812B) | 128 x WS2812-2020 en cascade | WS2812-2020x128, AOA, 74HC165x1 |
+
+#### 15.2 Actions
+- [ ] **3A** : Analyser le .kicad_sch actuel (PEC_16_V0.2.kicad_sch) pour identifier :
+  - Les sections separees (schemas logiques)
+  - Les connecteurs de liaison entre sous-cartes (J14, J15, J20-J35, J30-J35)
+  - Les feuilles d annotations distinctes (EC5, EC6, etc.)
+- [ ] **3B** : Creer l arborescence :
+  custom-frontends/encoders-led-rgb/
+  ├── control-board/          -> Carte Shift Registers / Interfaçage
+  │   ├── hardware/
+  │   │   ├── Control_Board.kicad_pro
+  │   │   ├── Control_Board.kicad_sch
+  │   │   ├── Control_Board.kicad_pcb
+  │   │   ├── 3D/             -> modeles 3D de la control board
+  │   │   └── fp-lib-table
+  │   ├── production/
+  │   └── README.md
+  ├── encoders-board/         -> Carte Encodeurs / Switches
+  │   ├── hardware/
+  │   │   ├── Encoders.kicad_pro
+  │   │   ├── Encoders.kicad_sch
+  │   │   ├── Encoders.kicad_pcb
+  │   │   ├── 3D/
+  │   │   └── fp-lib-table
+  │   ├── production/
+  │   └── README.md
+  ├── led-ring/              -> Carte Ring LEDs RGB (WS2812B)
+  │   ├── hardware/
+  │   │   ├── Led_Ring.kicad_pro
+  │   │   ├── Led_Ring.kicad_sch
+  │   │   ├── Led_Ring.kicad_pcb
+  │   │   ├── 3D/
+  │   │   └── fp-lib-table
+  │   ├── production/
+  │   └── README.md
+  ├── hardware/              -> Raccordement commun (legacy)
+  │   ├── PEC_16_V0.2.kicad_pro (s liaison unique)
+  │   └── ...
+  ├── docs/
+  │   └── interconnect.md    -> Documentation des liens entre 3 cartes
+  └── README.md
+- [ ] **3C** : Separ dans les 3 schemas :
+  - Control_Board.kicad_sch (Schema A - Interface + Shift Registers)
+  - Encoders.kicad_sch (Schema B - 8 x Encodeurs PEC16)
+  - Led_Ring.kicad_sch (Schema C - 128 x WS2812)
+- [ ] **3D** : Separ le .kicad_pcb en 3 PCBs :
+  - Control_Board.kicad_pcb
+  - Encoders.kicad_pcb
+  - Led_Ring.kicad_pcb
+- [ ] **3E** : Mettre a jour les fp-lib-table et sym-lib-table pour chaque sous-projet
+- [ ] **3F** : Generer les connexions IEEE pour les pins de liaison :
+  - Control Board -> Encoders Board : DIN signals (J14/J15)
+  - Control Board -> Led Ring : DATA WS2812 (J20/J21)
+- [ ] **3G** : Documenter l interconnect dans docs/interconnect.md
+
+#### 15.3 Livrables
+- 3 sous-projets autonomes sous custom-frontends/encoders-led-rgb/
+- docs/interconnect.md avec pinout complet des liaisons
+- README.md mis a jour pour chaque sous-projet
+- Production (Gerbers, BOM, netlist) generee pour chaque carte
+
+---
+
+### Suivi
+
+| Tache | Sous-tache | Statut |
+|-------|-----------|--------|
+| **1** Correction liens 3D | 1A Localisation | BLANK |
+| | 1B Suppression chemins absolus | BLANK |
+| | 1C Repointage vers fichiers existants | BLANK |
+| | 1D Suppression model non essentiels | BLANK |
+| | 1E Validation | BLANK |
+| **2** Face Avant aluminium | 2A Recherche archives | BLANK |
+| | 2B Creation mechanical/ | BLANK |
+| | 2C Fichiers de fabrication | BLANK |
+| | 2D Mise a jour README | BLANK |
+| | 2E Coherent production/facade | BLANK |
+| **3** Separation encodeurs | 3A Analyse schema | BLANK |
+| | 3B Creation arborescence | BLANK |
+| | 3C Separation schemas | BLANK |
+| | 3D Separation PCB | BLANK |
+| | 3E Mise a jour bibliotheques | BLANK |
+| | 3F Generation connexions | BLANK |
+| | 3G Documentation interconnect | BLANK |
+

@@ -231,7 +231,7 @@
       (net 3 "Net-(D501-DO)") (pinfunction "DI") (pintype "input") (tstamp 8e3d10be-edd1-4532-8a26-ef87732a9ad8))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp 43b079dc-3ac8-48fa-92a0-a54ce453251f))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -283,7 +283,7 @@
       (net 1 "GND") (pintype "passive") (tstamp f981f4cc-efae-496f-aaaf-2b61e18b9be9))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp 1acb2d04-179b-4e20-89b4-a94e847bcf5a))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -380,7 +380,7 @@
       (net 8 "Net-(D505-DO)") (pinfunction "DI") (pintype "input") (tstamp af1b3451-6af3-4824-b642-b1ca8a00a4f2))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp dc91f595-1394-4a4a-99a4-90af9692662c))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -432,7 +432,7 @@
       (net 1 "GND") (pintype "passive") (tstamp 99f736e2-ff9e-4736-aec5-6597af9a0d62))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp ac97c8d4-ceb9-415f-80e7-5a8d3923858d))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -484,7 +484,7 @@
       (net 1 "GND") (pintype "passive") (tstamp 0ed72b02-c266-4686-9a11-35526b680ad8))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp 74d047de-9395-4c40-9f6e-b325519f7945))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -671,7 +671,7 @@
       (net 5 "Net-(D502-DO)") (pinfunction "DI") (pintype "input") (tstamp d777adbe-4a65-4a7e-ab4d-019db1283c51))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp dff8b335-e6f2-46b9-acfd-45c100d1368b))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1013,7 +1013,7 @@
       (net 1 "GND") (pintype "passive") (tstamp b0fbf42e-d007-42a7-bea5-2744efab3417))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp 846a0452-1827-4851-a46b-2cf639537073))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1095,7 +1095,7 @@
       (net 1 "GND") (pintype "passive") (tstamp 7a0d2789-d449-48e0-8dcf-4590281da922))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp f44f2a3c-1682-4f99-b97f-4ea31f18d744))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1542,7 +1542,7 @@
       (net 4 "Net-(D501-DI)") (pinfunction "DI") (pintype "input") (tstamp bf2b7047-6367-4386-8496-1b4fd4a38d7e))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp e10fc824-1452-479f-8af4-08dc0d8ae4fc))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1609,7 +1609,7 @@
       (net 10 "Net-(D507-DO)") (pinfunction "DI") (pintype "input") (tstamp e7d1dfdb-0003-401d-a40d-b2949fbdac71))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp 8126277f-df18-4730-a713-f09560d2acb0))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1706,7 +1706,7 @@
       (net 9 "Net-(D506-DO)") (pinfunction "DI") (pintype "input") (tstamp ddf90d44-bdb0-4dbb-a8b4-bdb9f9ca0f99))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp 813c247a-788d-459c-a6b6-5f49d93421da))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1923,7 +1923,7 @@
       (net 6 "Net-(D503-DO)") (pinfunction "DI") (pintype "input") (tstamp a6d4bb2e-9b44-4d70-98c7-870ebfd50dc5))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp 3c151d0e-98b8-4fc1-b0e2-0ba706bfa27b))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -1975,7 +1975,7 @@
       (net 1 "GND") (pintype "passive") (tstamp 49448e69-1761-42af-a1ba-f4bd8f054fbb))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp 8869d711-a07b-47f2-94d5-5dd72eca44bd))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2027,7 +2027,7 @@
       (net 1 "GND") (pintype "passive") (tstamp a8a7fccb-6ce8-4109-a9f2-bad4e5aa6898))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pintype "passive") (tstamp 5c8fdbbe-20a2-4d13-9cec-6c5aab2d242a))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model ""
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2124,7 +2124,7 @@
       (net 7 "Net-(D504-DO)") (pinfunction "DI") (pintype "input") (tstamp e07dd15f-0cff-4066-8e92-4d5da0e826eb))
     (pad "4" smd rect (at 0.915 -0.55) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp bbab3b48-00f6-4e9c-93c8-205f9993439d))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model ""
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
