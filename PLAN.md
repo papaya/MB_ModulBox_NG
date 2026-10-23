@@ -866,3 +866,158 @@ Le projet PEC_16_V0.2.kicad_pro groupe actuellement 3 PCBs distincts au sein d u
 | | 3F Generation connexions | BLANK |
 | | 3G Documentation interconnect | BLANK |
 
+## 16. MATRICE D'AUDIT & SÉCURITÉ (v1.0) — 2026-10-24
+
+### 16.1 État Git et périmètre
+
+- Branche d'audit : `feature/kicad-audit-and-fix`.
+- Commit de sauvegarde de l'état local avant audit : `eed4fd2` (`wip: save pre-audit local changes and PCB updates`). Les fichiers présents avant l'audit, y compris les fichiers non suivis, y sont sauvegardés.
+- Inventaire : 113 fichiers projet `.kicad_pro` réels ; 10 sidecars macOS `._*.kicad_pro` exclus du décompte.
+- Projets actifs : 21, répartis entre 9 projets stables et 12 projets à risque (fichiers modifiés avant l'audit). Les autres 92 projets sont des archives/historiques hors périmètre de normalisation.
+- Parmi les 9 projets stables, 6 ont un PCB homonyme et ont reçu des règles de projet ; 3 sont des configurations orphelines sans PCB ni schéma homonyme, donc sans conception à modifier.
+- PCB auparavant illisible : `custom-frontends/encoders-led-rgb/hardware/PEC_16_V0.2.kicad_pcb`, restauré depuis `PEC_16_V0.2.kicad_pcb.backup_3d_fix`. KiCad CLI 9.0.2 le charge maintenant et produit un rapport DRC (315 violations préexistantes, 0 élément non connecté).
+- La normalisation de cette phase porte sur les 6 PCB stables présents. Aucun composant n'a été déplacé. Les classes et les presets définissent les largeurs cibles ; une géométrie de cuivre existante n'est élargie que si le DRC reste valide.
+
+### 16.2 Normalisation appliquée et limites électriques
+
+- Six fichiers `.kicad_pro` stables avec PCB associé ont des classes `Default`/signal (0,25 mm, clearance 0,20 mm) et `Power` (0,50 mm, clearance 0,20 mm), avec motifs de nets correspondant à chaque carte. La carte LED possède en plus `PowerStrong` (1,20 mm) pour `+5V` et `GND`.
+- Les règles globales de fabrication définissent une clearance minimale de 0,127 mm, une largeur minimale de piste de 0,127 mm, un perçage traversant minimal de 0,30 mm et un diamètre de via minimal de 0,50 mm ; toute règle existante plus stricte est conservée. Les presets disponibles incluent 0,25 / 0,50 / 0,80 / 1,00 / 1,20 mm.
+- Les segments de signal routés ont été ramenés à 0,25 mm sur Control Board (109 segments), Encoder Board (136) et Led Ring (300) ; leurs DRC restent au même niveau qu'avant cette normalisation. Les segments d'alimentation des cartes Control/Encoder étaient déjà au moins à 0,50 mm.
+- Des essais d'élargissement des routes d'alimentation DIN (0,40 → 0,50 mm) et OLED (0,20 → 0,50 mm) ont créé des violations de clearance. Ces largeurs de cuivre ont été restaurées ; les classes restent configurées pour les futurs routages, mais ces routes ne sont pas déclarées conformes à la cible tant qu'une revue/révision de routage n'a pas résolu les conflits.
+- Le ring héberge 128 WS2812. Son DRC confirme une zone GND, mais aucune zone +5V ; les pistes +5V existantes restent à 0,50 mm. La classe 1,20 mm n'est qu'une cible de routage et ne certifie pas une alimentation à pleine charge. Le courant de dimensionnement, la distribution d'alimentation et les plans cuivre doivent être revus avant fabrication (les valeurs de courant indiquées dans la documentation sont à réconcilier).
+- ERC/DCR n'a pas été « nettoyé » en masquant des défauts électriques : OLED conserve 2 erreurs `power_pin_not_driven` sur des symboles d'alimentation sans réseau de puissance connecté, et IO conserve 4 erreurs de pins dupliquées dans le symbole `LEMO5`. Aucun `PWR_FLAG` ou `No-Connect` n'a été ajouté sans confirmation de la connectivité/sémantique voulue. Les champs secondaires visibles sont déjà masqués dans les instances des trois schémas actifs stables ; aucune modification visuelle risquée n'était justifiée.
+
+### 16.3 Résultats de vérification KiCad CLI
+
+Contrôles exécutés avec KiCad 9.0.2 après normalisation. Les résultats DRC ci-dessous n'ont pas augmenté par rapport à l'état de référence ; les violations restantes sont consignées pour traitement dédié.
+
+| Projet | DRC (erreurs / avertissements ; non-connectés) | ERC (erreurs / avertissements) |
+|---|---:|---:|
+| `custom-frontends/encoders-led-rgb/control-board/hardware/connect board` | 1 / 20 ; 0 | — (schéma homonyme absent) |
+| `custom-frontends/encoders-led-rgb/encoders-board/hardware/En` | 17 / 38 ; 0 | — (schéma homonyme absent) |
+| `custom-frontends/encoders-led-rgb/led-ring/leds` | 30 / 403 ; 0 | — (schéma homonyme absent) |
+| `custom-frontends/oled-128x64/hardware/Oled_1309_x1_V0.0` | 0 / 38 ; 0 | 2 / 8 |
+| `standard-modules/DIN/hardware/DIN4_R5_KS` | 18 / 237 ; 0 | 0 / 48 |
+| `standard-modules/IO/hardware/Midi_V0.1` | 0 / 121 ; 81 | 4 / 4 |
+
+Les 81 éléments non connectés du PCB IO correspondent au routage incomplet/non réalisé de cette carte, pas à des changements induits ici. La liste ERC IO attribue les 4 erreurs à des numéros de pins dupliqués du symbole `LEMO5`. La vérification des schémas n'a pas autorisé à conclure que ces erreurs sont cosmétiques.
+
+### 16.4 Matrice exhaustive des fichiers projet
+
+`Stable — normalisé` signifie qu'un PCB homonyme existe et que ses règles de projet ont été normalisées. Les entrées sans fichiers PCB/schéma homonymes sont signalées séparément. `Réparé depuis backup` reste dans le groupe des projets à risque pour la revue électrique.
+
+| # | Projet KiCad (`.kicad_pro`) | PCB homonyme | Schéma homonyme | Statut |
+|---:|---|---|---|---|
+| 1 | `archive/sources/MB Hardware/Core32f4/Core32f4_V0.0/Core32f4_V0.0.kicad_pro` | `Core32f4_V0.0.kicad_pcb` | — | Archive / hors périmètre |
+| 2 | `archive/sources/MB Hardware/Core32f4/Core32f4_V0.1/Core32f4_V0.1/Core32f4_V0.1.kicad_pro` | `Core32f4_V0.1.kicad_pcb` | `Core32f4_V0.1.kicad_sch` | Archive / hors périmètre |
+| 3 | ``archive/sources/MB Hardware/DOUT/DOUT/DOUT`_2024.kicad_pro`` | ``DOUT`_2024.kicad_pcb`` | — | Archive / hors périmètre |
+| 4 | `archive/sources/MB Hardware/DOUT/DOUT2024/Dout2024/Dout2024.kicad_pro` | `Dout2024.kicad_pcb` | `Dout2024.kicad_sch` | Archive / hors périmètre |
+| 5 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/AINSER64_DIN_DOUT/DIN_DOUT/DIN_DOUT/DIN_DOUT.kicad_pro` | `DIN_DOUT.kicad_pcb` | `DIN_DOUT.kicad_sch` | Archive / hors périmètre |
+| 6 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/AINSER64_DIN_DOUT/DOUT/DOUT/DOUT.kicad_pro` | `DOUT.kicad_pcb` | `DOUT.kicad_sch` | Archive / hors périmètre |
+| 7 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/BP/BP.kicad_pro` | `BP.kicad_pcb` | `BP.kicad_sch` | Archive / hors périmètre |
+| 8 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/carte puissance/Carte_puissance/Carte_puissance.kicad_pro` | `Carte_puissance.kicad_pcb` | `Carte_puissance.kicad_sch` | Archive / hors périmètre |
+| 9 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/CONTROL/Control.kicad_pro` | `Control.kicad_pcb` | `Control.kicad_sch` | Archive / hors périmètre |
+| 10 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/encoder led ring NO rgb/encoders/encoders/encoders.kicad_pro` | — | — | Archive / hors périmètre |
+| 11 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/encoder led ring NO rgb/Led ring NO rgb/Led ring NO rgb/Led ring NO rgb.kicad_pro` | `Led ring NO rgb.kicad_pcb` | `Led ring NO rgb.kicad_sch` | Archive / hors périmètre |
+| 12 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/PEC_16_V0.2/PEC_16_V0.2/oonnect board Temp/Conect board/Conect board.kicad_pro` | `Conect board.kicad_pcb` | `Conect board.kicad_sch` | Archive / hors périmètre |
+| 13 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/PEC_16_V0.2/PEC_16_V0.2/PEC_16_V0.2.kicad_pro` | `PEC_16_V0.2.kicad_pcb` | `PEC_16_V0.2.kicad_sch` | Archive / hors périmètre |
+| 14 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders rgb/encoder rgb/au as ou/encoder rgb memokicad_sch.kicad_pro` | — | `encoder rgb memokicad_sch.kicad_sch` | Archive / hors périmètre |
+| 15 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders rgb/encoder rgb/encoder rgb.kicad_pro` | `encoder rgb.kicad_pcb` | `encoder rgb.kicad_sch` | Archive / hors périmètre |
+| 16 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders rgb/encoder rgb/Encoders/encoder rgb.kicad_pro` | `encoder rgb.kicad_pcb` | `encoder rgb.kicad_sch` | Archive / hors périmètre |
+| 17 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders swith/Encoder switch/Encoder switch.kicad_pro` | `Encoder switch.kicad_pcb` | `Encoder switch.kicad_sch` | Archive / hors périmètre |
+| 18 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders swith/Encoder switch/oonnect board Temp/Conect board/Conect board.kicad_pro` | `Conect board.kicad_pcb` | `Conect board.kicad_sch` | Archive / hors périmètre |
+| 19 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders swith/TEMP/TEMP/TEMP.kicad_pro` | `TEMP.kicad_pcb` | `TEMP.kicad_sch` | Archive / hors périmètre |
+| 20 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders/Encoders/Encoders.kicad_pro` | `Encoders.kicad_pcb` | `Encoders.kicad_sch` | Archive / hors périmètre |
+| 21 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/pec 16/Encoder switch/Encoder switch.kicad_pro` | `Encoder switch.kicad_pcb` | `Encoder switch.kicad_sch` | Archive / hors périmètre |
+| 22 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/pec 16/Encoder switch/oonnect board Temp/Conect board/Conect board.kicad_pro` | `Conect board.kicad_pcb` | `Conect board.kicad_sch` | Archive / hors périmètre |
+| 23 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Encoder with led ring RGB/TEST_NOT_WORKING/pec 16/TEMP/TEMP/TEMP.kicad_pro` | `TEMP.kicad_pcb` | `TEMP.kicad_sch` | Archive / hors périmètre |
+| 24 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/FADER/1/Fad_1.kicad_pro` | `Fad_1.kicad_pcb` | — | Archive / hors périmètre |
+| 25 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/FADER/2/Fad_2.kicad_pro` | `Fad_2.kicad_pcb` | `Fad_2.kicad_sch` | Archive / hors périmètre |
+| 26 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/Pad RGB/Kicad/Pad/Pad.kicad_pro` | `Pad.kicad_pcb` | `Pad.kicad_sch` | Archive / hors périmètre |
+| 27 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/POTS/Horizontal/Pot-X2.kicad_pro` | `Pot-X2.kicad_pcb` | — | Archive / hors périmètre |
+| 28 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/POTS/Horizontal/Pot.kicad_pro` | `Pot.kicad_pcb` | `Pot.kicad_sch` | Archive / hors périmètre |
+| 29 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/POTS/Vertical/Pot.kicad_pro` | `Pot.kicad_pcb` | `Pot.kicad_sch` | Archive / hors périmètre |
+| 30 | `archive/sources/MB MODULBOX NG/2023/KICAD 7/TEMP/EXPORT/EXPORT.kicad_pro` | `EXPORT.kicad_pcb` | `EXPORT.kicad_sch` | Archive / hors périmètre |
+| 31 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/BP/Kicad/BP.kicad_pro` | `BP.kicad_pcb` | `BP.kicad_sch` | Archive / hors périmètre |
+| 32 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/Control/Control/Control.kicad_pro` | `Control.kicad_pcb` | `Control.kicad_sch` | Archive / hors périmètre |
+| 33 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/encoder led ring NO rgb/encoder led ring NO rgb/encoder led ring NO rgb.kicad_pro` | `encoder led ring NO rgb.kicad_pcb` | `encoder led ring NO rgb.kicad_sch` | Archive / hors périmètre |
+| 34 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/Encoder with led ring RGB/Led Ring RGB/Led_Ring_RGB/Led_Ring_RGB.kicad_pro` | `Led_Ring_RGB.kicad_pcb` | `Led_Ring_RGB.kicad_sch` | Archive / hors périmètre |
+| 35 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/Fader/Kicad/1/Fad_1/Fad_1.kicad_pro` | `Fad_1.kicad_pcb` | `Fad_1.kicad_sch` | Archive / hors périmètre |
+| 36 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/Fader/Kicad/2/Fad_2/Fad_2.kicad_pro` | `Fad_2.kicad_pcb` | `Fad_2.kicad_sch` | Archive / hors périmètre |
+| 37 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/Pad RGB/Kicad/Pad/Pad.kicad_pro` | `Pad.kicad_pcb` | `Pad.kicad_sch` | Archive / hors périmètre |
+| 38 | `archive/sources/MB MODULBOX NG/2023/KICAD_6/Pot/vertical/Kicad/Pot.kicad_pro` | — | — | Archive / hors périmètre |
+| 39 | `archive/sources/MB MODULBOX NG/Kicad/CONTROL/Surface Control V0.0/Control.kicad_pro` | `Control.kicad_pcb` | `Control.kicad_sch` | Archive / hors périmètre |
+| 40 | `archive/sources/MB MODULBOX NG/Kicad/CONTROL/Surface Control V0.1/Facade controle/Facade controle/Facade controle.kicad_pro` | `Facade controle.kicad_pcb` | — | Archive / hors périmètre |
+| 41 | `archive/sources/MB MODULBOX NG/Kicad/CONTROL/Surface Control V0.1/facade surface_control_v0.1.kicad_pro` | `facade surface_control_v0.1.kicad_pcb` | — | Archive / hors périmètre |
+| 42 | `archive/sources/MB MODULBOX NG/Kicad/encoder led ring NO rgb/encoder plus led no rgb/encoder led ring NO rgb.kicad_pro` | `encoder led ring NO rgb.kicad_pcb` | `encoder led ring NO rgb.kicad_sch` | Archive / hors périmètre |
+| 43 | `archive/sources/MB MODULBOX NG/Kicad/encoder led ring NO rgb/encoders/encoders/encoders.kicad_pro` | `encoders.kicad_pcb` | `encoders.kicad_sch` | Archive / hors périmètre |
+| 44 | `archive/sources/MB MODULBOX NG/Kicad/encoder led ring NO rgb/Led ring NO rgb/Led ring NO rgb/Led ring NO rgb.kicad_pro` | `Led ring NO rgb.kicad_pcb` | — | Archive / hors périmètre |
+| 45 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/Kicad 8/PCB/connect board.kicad_pro` | `connect board.kicad_pcb` | — | Archive / hors périmètre |
+| 46 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/Kicad 8/PCB/En.kicad_pro` | `En.kicad_pcb` | — | Archive / hors périmètre |
+| 47 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/Kicad 8/PCB/leds.kicad_pro` | `leds.kicad_pcb` | — | Archive / hors périmètre |
+| 48 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/Kicad 8/PEC_16_V0.2.kicad_pro` | `PEC_16_V0.2.kicad_pcb` | `PEC_16_V0.2.kicad_sch` | Archive / hors périmètre |
+| 49 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/PEC_16_V0.2/PEC_16_V0.2/oonnect board Temp/Conect board/Conect board.kicad_pro` | `Conect board.kicad_pcb` | `Conect board.kicad_sch` | Archive / hors périmètre |
+| 50 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/PEC_16_V0.2/PEC_16_V0.2/PCB/connect board.kicad_pro` | `connect board.kicad_pcb` | — | Archive / hors périmètre |
+| 51 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/PEC_16_V0.2/PEC_16_V0.2/PCB/En.kicad_pro` | `En.kicad_pcb` | — | Archive / hors périmètre |
+| 52 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/PEC_16_V0.2/PEC_16_V0.2/PCB/leds.kicad_pro` | `leds.kicad_pcb` | — | Archive / hors périmètre |
+| 53 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders rgb/encoder rgb/au as ou/encoder rgb memokicad_sch.kicad_pro` | — | `encoder rgb memokicad_sch.kicad_sch` | Archive / hors périmètre |
+| 54 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders rgb/encoder rgb/encoder rgb.kicad_pro` | `encoder rgb.kicad_pcb` | `encoder rgb.kicad_sch` | Archive / hors périmètre |
+| 55 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders rgb/encoder rgb/Encoders/encoder rgb.kicad_pro` | `encoder rgb.kicad_pcb` | `encoder rgb.kicad_sch` | Archive / hors périmètre |
+| 56 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders swith/Encoder switch/Encoder switch.kicad_pro` | `Encoder switch.kicad_pcb` | `Encoder switch.kicad_sch` | Archive / hors périmètre |
+| 57 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders swith/Encoder switch/oonnect board Temp/Conect board/Conect board.kicad_pro` | `Conect board.kicad_pcb` | `Conect board.kicad_sch` | Archive / hors périmètre |
+| 58 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders swith/TEMP/TEMP/TEMP.kicad_pro` | `TEMP.kicad_pcb` | `TEMP.kicad_sch` | Archive / hors périmètre |
+| 59 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Encoders/Encoders/Encoders.kicad_pro` | `Encoders.kicad_pcb` | `Encoders.kicad_sch` | Archive / hors périmètre |
+| 60 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/Led Ring RGB/Led_Ring_RGB/Led_Ring_RGB.kicad_pro` | `Led_Ring_RGB.kicad_pcb` | `Led_Ring_RGB.kicad_sch` | Archive / hors périmètre |
+| 61 | `archive/sources/MB MODULBOX NG/Kicad/Encoder with led ring RGB/TEST_NOT_WORKING/pec 16/Encoder switch/oonnect board Temp/Conect board/Conect board.kicad_pro` | `Conect board.kicad_pcb` | `Conect board.kicad_sch` | Archive / hors périmètre |
+| 62 | `archive/sources/MB MODULBOX NG/Kicad/Facade LCD 20X2/Facade LCD 20X2/Facade LCD 20X2.kicad_pro` | `Facade LCD 20X2.kicad_pcb` | `Facade LCD 20X2.kicad_sch` | Archive / hors périmètre |
+| 63 | `archive/sources/MB MODULBOX NG/Kicad/FADER/Adaptateur/Adaptateur V0.0/Adaptateur V0.0.kicad_pro` | `Adaptateur V0.0.kicad_pcb` | `Adaptateur V0.0.kicad_sch` | Archive / hors périmètre |
+| 64 | `archive/sources/MB MODULBOX NG/Kicad/FADER/Fader Facade/Fader Facade_V0.1.kicad_pro` | `Fader Facade_V0.1.kicad_pcb` | — | Archive / hors périmètre |
+| 65 | `archive/sources/MB MODULBOX NG/Kicad/FADER/Fader Facade/Fader Facade_V0.2.kicad_pro` | `Fader Facade_V0.2.kicad_pcb` | — | Archive / hors périmètre |
+| 66 | `archive/sources/MB MODULBOX NG/Kicad/FADER/Fader Facade/Fader Facade_V0.3.kicad_pro` | `Fader Facade_V0.3.kicad_pcb` | — | Archive / hors périmètre |
+| 67 | `archive/sources/MB MODULBOX NG/Kicad/FADER/Fader_Rgb/Fader_Rgb 1/Fader_Rgb 1.kicad_pro` | `Fader_Rgb 1.kicad_pcb` | `Fader_Rgb 1.kicad_sch` | Archive / hors périmètre |
+| 68 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 7/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.1.kicad_pro` | `MB-KeySW_4x2_V0.1.kicad_pcb` | `MB-KeySW_4x2_V0.1.kicad_sch` | Archive / hors périmètre |
+| 69 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.1/facade jlcpcb.kicad_pro` | `facade jlcpcb.kicad_pcb` | — | Archive / hors périmètre |
+| 70 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.1.kicad_pro` | `MB-KeySW_4x2_V0.1.kicad_pcb` | `MB-KeySW_4x2_V0.1.kicad_sch` | Archive / hors périmètre |
+| 71 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.2/facade jlcpcb.kicad_pro` | `facade jlcpcb.kicad_pcb` | — | Archive / hors périmètre |
+| 72 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.2/MB-KeySW_4x2_V0.2.kicad_pro` | `MB-KeySW_4x2_V0.2.kicad_pcb` | `MB-KeySW_4x2_V0.2.kicad_sch` | Archive / hors périmètre |
+| 73 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/facade jlcpcb.kicad_pro` | — | — | Archive / hors périmètre |
+| 74 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/facade jlcpcb_v0.3.kicad_pro` | `facade jlcpcb_v0.3.kicad_pcb` | — | Archive / hors périmètre |
+| 75 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/facade jlcpcb_v0.3b.kicad_pro` | `facade jlcpcb_v0.3b.kicad_pcb` | — | Archive / hors périmètre |
+| 76 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 8/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/MB-KeySW_4x2_V0.3.kicad_pro` | `MB-KeySW_4x2_V0.3.kicad_pcb` | `MB-KeySW_4x2_V0.3.kicad_sch` | Archive / hors périmètre |
+| 77 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 9/MB-KeySW_4x2_V0.3/facade jlcpcb.kicad_pro` | — | — | Archive / hors périmètre |
+| 78 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 9/MB-KeySW_4x2_V0.3/facade jlcpcb_v0.3.kicad_pro` | `facade jlcpcb_v0.3.kicad_pcb` | — | Archive / hors périmètre |
+| 79 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 9/MB-KeySW_4x2_V0.3/facade jlcpcb_v0.3b.kicad_pro` | `facade jlcpcb_v0.3b.kicad_pcb` | — | Archive / hors périmètre |
+| 80 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/Kicad 9/MB-KeySW_4x2_V0.3/MB-KeySW_4x2_V0.3.kicad_pro` | `MB-KeySW_4x2_V0.3.kicad_pcb` | `MB-KeySW_4x2_V0.3.kicad_sch` | Archive / hors périmètre |
+| 81 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/facade jlcpcb.kicad_pro` | — | — | Archive / hors périmètre |
+| 82 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/facade jlcpcb_v0.3.kicad_pro` | `facade jlcpcb_v0.3.kicad_pcb` | — | Archive / hors périmètre |
+| 83 | `archive/sources/MB MODULBOX NG/Kicad/MB-KeySW_4x2_V0.1/MB-KeySW_4x2_V0.3/facade jlcpcb_v0.3b.kicad_pro` | `facade jlcpcb_v0.3b.kicad_pcb` | — | Archive / hors périmètre |
+| 84 | `archive/sources/MB MODULBOX NG/Kicad/Oled/128x64/facade oled 128x64/facade oled 128x64.kicad_pro` | `facade oled 128x64.kicad_pcb` | `facade oled 128x64.kicad_sch` | Archive / hors périmètre |
+| 85 | `archive/sources/MB MODULBOX NG/Kicad/Oled/Oled V2/Oed V2/Oed V2.kicad_pro` | `Oed V2.kicad_pcb` | `Oed V2.kicad_sch` | Archive / hors périmètre |
+| 86 | `archive/sources/MB MODULBOX NG/Kicad/Oled/Oled V2/Oed V2/Oed V2X4.kicad_pro` | `Oed V2X4.kicad_pcb` | — | Archive / hors périmètre |
+| 87 | `archive/sources/MB MODULBOX NG/Kicad/Oled/Oled/Oled.kicad_pro` | `Oled.kicad_pcb` | `Oled.kicad_sch` | Archive / hors périmètre |
+| 88 | `archive/sources/MB MODULBOX NG/Kicad/POTS/Horizontal/Pot.kicad_pro` | `Pot.kicad_pcb` | `Pot.kicad_sch` | Archive / hors périmètre |
+| 89 | `archive/superseded-core-v4-core32V7/core32V7.kicad_pro` | `core32V7.kicad_pcb` | — | Archive / hors périmètre |
+| 90 | `archive/superseded-core-v4-core32V7/V4.kicad_pro` | `V4.kicad_pcb` | — | Archive / hors périmètre |
+| 91 | `archive/superseded-din/DIN4_R5_KS_2024.kicad_pro` | `DIN4_R5_KS_2024.kicad_pcb` | — | Archive / hors périmètre |
+| 92 | `archive/superseded-dout/DOUT.kicad_pro` | `DOUT.kicad_pcb` | `DOUT.kicad_sch` | Archive / hors périmètre |
+| 93 | `custom-frontends/4x-faders/hardware/Fad_1.kicad_pro` | `Fad_1.kicad_pcb` | `Fad_1.kicad_sch` | À risque — modifié avant audit |
+| 94 | `custom-frontends/4x-faders/hardware/Fad_2.kicad_pro` | `Fad_2.kicad_pcb` | `Fad_2.kicad_sch` | À risque — modifié avant audit |
+| 95 | `custom-frontends/8x-buttons/hardware/BP.kicad_pro` | `BP.kicad_pcb` | `BP.kicad_sch` | À risque — modifié avant audit |
+| 96 | `custom-frontends/8x-pots/hardware/Pot-X2.kicad_pro` | `Pot-X2.kicad_pcb` | — | À risque — modifié avant audit |
+| 97 | `custom-frontends/8x-pots/hardware/Pot.kicad_pro` | `Pot.kicad_pcb` | `Pot.kicad_sch` | À risque — modifié avant audit |
+| 98 | `custom-frontends/carte-puissance/hardware/Carte_puissance.kicad_pro` | `Carte_puissance.kicad_pcb` | `Carte_puissance.kicad_sch` | À risque — modifié avant audit |
+| 99 | `custom-frontends/encoders-led-rgb/control-board/hardware/connect board.kicad_pro` | `connect board.kicad_pcb` | — | Stable — normalisé |
+| 100 | `custom-frontends/encoders-led-rgb/control-board/hardware/Control_Board.kicad_pro` | — | — | Stable — configuration orpheline, aucun fichier de conception homonyme |
+| 101 | `custom-frontends/encoders-led-rgb/encoders-board/hardware/En.kicad_pro` | `En.kicad_pcb` | — | Stable — normalisé |
+| 102 | `custom-frontends/encoders-led-rgb/encoders-board/hardware/Encoders.kicad_pro` | — | — | Stable — configuration orpheline, aucun fichier de conception homonyme |
+| 103 | `custom-frontends/encoders-led-rgb/hardware/PEC_16_V0.2.kicad_pro` | `PEC_16_V0.2.kicad_pcb` | `PEC_16_V0.2.kicad_sch` | Réparé depuis backup — reste à risque, revue dédiée |
+| 104 | `custom-frontends/encoders-led-rgb/led-ring/hardware/Led_Ring.kicad_pro` | — | — | Stable — configuration orpheline, aucun fichier de conception homonyme |
+| 105 | `custom-frontends/encoders-led-rgb/led-ring/leds.kicad_pro` | `leds.kicad_pcb` | — | Stable — normalisé |
+| 106 | `custom-frontends/keysw-4x2/hardware/MB-KeySW_4x2_V0.3.kicad_pro` | `MB-KeySW_4x2_V0.3.kicad_pcb` | `MB-KeySW_4x2_V0.3.kicad_sch` | À risque — modifié avant audit |
+| 107 | `custom-frontends/oled-128x64/hardware/Oled_1309_x1_V0.0.kicad_pro` | `Oled_1309_x1_V0.0.kicad_pcb` | `Oled_1309_x1_V0.0.kicad_sch` | Stable — normalisé |
+| 108 | `custom-frontends/pad-rgb/hardware/Pad.kicad_pro` | `Pad.kicad_pcb` | `Pad.kicad_sch` | À risque — modifié avant audit |
+| 109 | `custom-frontends/surface-control/hardware/Surface Control V0.1.kicad_pro` | `Surface Control V0.1.kicad_pcb` | `Surface Control V0.1.kicad_sch` | À risque — modifié avant audit |
+| 110 | `standard-modules/Core/hardware/Core32F4.kicad_pro` | `Core32F4.kicad_pcb` | `Core32F4.kicad_sch` | À risque — modifié avant audit |
+| 111 | `standard-modules/DIN/hardware/DIN4_R5_KS.kicad_pro` | `DIN4_R5_KS.kicad_pcb` | `DIN4_R5_KS.kicad_sch` | Stable — normalisé |
+| 112 | `standard-modules/DOUT/hardware/DOUT.kicad_pro` | `DOUT.kicad_pcb` | `DOUT.kicad_sch` | À risque — modifié avant audit |
+| 113 | `standard-modules/IO/hardware/Midi_V0.1.kicad_pro` | `Midi_V0.1.kicad_pcb` | `Midi_V0.1.kicad_sch` | Stable — normalisé |
