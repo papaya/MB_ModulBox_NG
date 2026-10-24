@@ -38,9 +38,9 @@ Les **modules standards MIDIbox** (AIN, DIN, DOUT, Core, IO) sont fournis en **b
 |---|---|---|---|---|
 | ![Core32](standard-modules/Core/assets/Core-Core32F4.png)  | Core32F4 | [`standard-modules/Core/`](standard-modules/Core/) | [CORE_STM32F4](https://www.ucapps.de/mbhp_core_stm32f4.html) | BOM/positions/netlist ; pas de Gerbers |
 | ![ain](standard-modules/AIN/assets/) | AIN / AINSER64 | [`standard-modules/AIN/`](standard-modules/AIN/) | [AINSER64](https://www.ucapps.de/mbhp_ainser64.html) | Sources KiCad et fichiers de production absents |
-| ![din](standard-modules/din/assets/DIN-DIN4_R5_KS.png) | DIN | [`standard-modules/DIN/`](standard-modules/DIN/) | [DIN](https://www.ucapps.de/mbhp_din.html) | Gerbers + perçages + BOM |
-| ![dout](standard-modules/dout/assets/DOUT-DOUT.png) | DOUT | [`standard-modules/DOUT/`](standard-modules/DOUT/) | [DOUT](https://www.ucapps.de/mbhp_dout.html) | BOM/positions/netlist ; pas de Gerbers |
-| ![Core32](standard-modules/io/assets/IO-Midi_V0.1.png) | MIDI IO | [`standard-modules/IO/`](standard-modules/IO/) | [MIDIbox NG Hardware](https://www.ucapps.de/midibox_ng_manual_hw.html) | Pas de fichiers de fabrication ; PCB non routé |
+| ![din](standard-modules/DIN/assets/DIN-DIN4_R5_KS.png) | DIN | [`standard-modules/DIN/`](standard-modules/DIN/) | [DIN](https://www.ucapps.de/mbhp_din.html) | Gerbers + perçages + BOM |
+| ![dout](standard-modules/DOUT/assets/DOUT-DOUT.png) | DOUT | [`standard-modules/DOUT/`](standard-modules/DOUT/) | [DOUT](https://www.ucapps.de/mbhp_dout.html) | BOM/positions/netlist ; pas de Gerbers |
+| ![io](standard-modules/IO/assets/IO-Midi_V0.1.png) | MIDI IO | [`standard-modules/IO/`](standard-modules/IO/) | [MIDIbox NG Hardware](https://www.ucapps.de/midibox_ng_manual_hw.html) | Pas de fichiers de fabrication ; PCB non routé |
 ---
 ![3D quart](docs/assets/system/vue%20ensemble.jpg)
 ---
