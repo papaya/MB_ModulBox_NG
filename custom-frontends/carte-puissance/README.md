@@ -1,8 +1,11 @@
-# carte-puissance — Carte de distribution des bus (passive)
+# carte-puissance — Module custom carte de distribution des bus (passive)
 
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
 
 ## Description
-Carte de **distribution des bus** pour l'ecosysteme MIDIbox NG : elle repartit l'alimentation 5 V et la masse vers de nombreux connecteurs IDC afin d'alimenter et de relier les modules DIN, DOUT, AIN et les front-ends.
+Carte de **distribution des bus** pour l'écosystème MIDIbox NG : elle répartit l'alimentation 5 V et la masse vers de nombreux connecteurs IDC afin d'alimenter et de relier les modules DIN, DOUT, AIN et les modules custom.
+
+Ce module est une **conception originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox. : elle repartit l'alimentation 5 V et la masse vers de nombreux connecteurs IDC afin d'alimenter et de relier les modules DIN, DOUT, AIN et les modules custom.
 
 > ⚠️ **Correction majeure : les versions anterieures de cette page decrivaient une carte d'alimentation a regulateur, avec protection contre l'inversion de polarite et des condensateurs de decouplage.** Le schema `Carte_puissance.kicad_sch` ne contient **que 32 connecteurs** et **aucun composant actif** : **pas de regulateur de tension, pas de diode de protection, pas de condensateur, pas de resistance**. C'est un simple **distributeur passif** de +5 V et GND.
 
@@ -106,6 +109,6 @@ Brochage type de chaque connecteur de bus :
 
 Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
-> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> **Origine et usage :** conception originale MB MODULBOX NG, prévue pour le DIY/personnel. Aucune licence formelle n'est publiée dans le dépôt ; voir le README racine. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
+Conception originale MB MODULBOX NG. > ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

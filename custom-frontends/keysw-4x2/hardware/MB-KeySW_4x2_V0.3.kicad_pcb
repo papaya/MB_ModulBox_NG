@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,25 +9,25 @@
 	(paper "A3" portrait)
 	(layers
 		(0 "F.Cu" signal "Dessus.Cu")
-		(31 "B.Cu" signal "Dessous.Cu")
-		(32 "B.Adhes" user "Dessous.Adhes")
-		(33 "F.Adhes" user "Dessus.Adhes")
-		(34 "B.Paste" user "Dessous.Pate")
-		(35 "F.Paste" user "Dessus.Pate")
-		(36 "B.SilkS" user "Dessous.SilkS")
-		(37 "F.SilkS" user "Dessus.SilkS")
-		(38 "B.Mask" user "Dessous.Masque")
-		(39 "F.Mask" user "Dessus.Masque")
-		(40 "Dwgs.User" user "Dessin.User")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user "Contours.Ci")
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(50 "User.1" user)
-		(51 "User.2" user)
+		(2 "B.Cu" signal "Dessous.Cu")
+		(9 "F.Adhes" user "Dessus.Adhes")
+		(11 "B.Adhes" user "Dessous.Adhes")
+		(13 "F.Paste" user "Dessus.Pate")
+		(15 "B.Paste" user "Dessous.Pate")
+		(5 "F.SilkS" user "Dessus.SilkS")
+		(7 "B.SilkS" user "Dessous.SilkS")
+		(1 "F.Mask" user "Dessus.Masque")
+		(3 "B.Mask" user "Dessous.Masque")
+		(17 "Dwgs.User" user "Dessin.User")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user "Contours.Ci")
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(39 "User.1" user)
+		(41 "User.2" user)
 	)
 	(setup
 		(stackup
@@ -71,11 +71,12 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(aux_axis_origin 61 187)
 		(grid_origin 61 187)
 		(pcbplotparams
-			(layerselection 0x0001030_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_575555f5)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes yes)
@@ -85,7 +86,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 6)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -93,16 +93,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -175,18 +178,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bfe74875-b14b-47fa-8faf-ad4d855c4a89")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -196,6 +187,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -208,6 +200,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -342,7 +335,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "060c5351-3bb1-4f83-b673-65a14684349a")
 		)
@@ -353,7 +346,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "b6461597-c73b-4fa2-92c7-3dc7643ec940")
 		)
@@ -681,17 +674,6 @@
 				(xy 98.5 199.5) (xy 89.5 199.5)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
-				(at 94 190.334391 0)
-				(layer "User.9")
-				(uuid "00d244ba-5c77-4fe6-97fc-3cfc82b3fc5f")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -703,8 +685,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
+				(at 94 190.334391 0)
+				(layer "User.9")
+				(uuid "00d244ba-5c77-4fe6-97fc-3cfc82b3fc5f")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -714,17 +710,6 @@
 				(xy 89 209) (xy 89 190)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 83.5 199.5 90)
-				(layer "User.9")
-				(uuid "2cd6fd8a-3cd0-43e2-aeda-f258ed577aac")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -736,8 +721,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 83.5 199.5 90)
+				(layer "User.9")
+				(uuid "2cd6fd8a-3cd0-43e2-aeda-f258ed577aac")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -747,7 +746,23 @@
 				(xy 98.5 199.5) (xy 107.5 199.5)
 			)
 			(height -8)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 103 190.35 0)
 				(layer "User.9")
 				(uuid "5d3d380b-a407-42dd-8edd-43ea79e3e76b")
@@ -758,6 +773,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "cd0023f1-3e7f-4a14-a5cf-2a36bc27f909")
+			(pts
+				(xy 89 209) (xy 89 199.5)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -769,18 +793,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "cd0023f1-3e7f-4a14-a5cf-2a36bc27f909")
-			(pts
-				(xy 89 209) (xy 89 199.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 85.85 204.25 90)
 				(layer "User.9")
 				(uuid "cd0023f1-3e7f-4a14-a5cf-2a36bc27f909")
@@ -791,19 +809,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -816,14 +821,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "56edde90-bb56-46ce-887e-3f54a6d3ecdc")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "806429cd-05ef-4753-8a8f-57f8e5cccb04")
 		)
 		(pad "" np_thru_hole circle
@@ -877,7 +882,9 @@
 			(pintype "passive")
 			(uuid "8b243c08-be19-436a-a261-9eda7ec74b0e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -888,50 +895,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -963,18 +935,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e944d8a9-1521-42a4-91a5-52f2c27dac10")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -984,6 +944,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -996,6 +957,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1130,7 +1092,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "63f73459-a343-4e7b-b648-fe062cf81ab8")
 		)
@@ -1141,7 +1103,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "d37bcfd3-d7fb-46d5-a104-815ee65a2260")
 		)
@@ -1469,17 +1431,6 @@
 				(xy 123.5 224.5) (xy 114.5 224.5)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
-				(at 119 215.334391 0)
-				(layer "User.9")
-				(uuid "244ee027-d85c-4c9d-9b0f-593e84d0f959")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -1491,8 +1442,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
+				(at 119 215.334391 0)
+				(layer "User.9")
+				(uuid "244ee027-d85c-4c9d-9b0f-593e84d0f959")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -1502,17 +1467,6 @@
 				(xy 114 234) (xy 114 215)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 108.5 224.5 90)
-				(layer "User.9")
-				(uuid "9287a6ad-23e9-4a7a-ad4f-7e3b801824cf")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -1524,8 +1478,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 108.5 224.5 90)
+				(layer "User.9")
+				(uuid "9287a6ad-23e9-4a7a-ad4f-7e3b801824cf")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -1535,7 +1503,23 @@
 				(xy 123.5 224.5) (xy 132.5 224.5)
 			)
 			(height -8)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 128 215.35 0)
 				(layer "User.9")
 				(uuid "db24b336-2714-47f4-8eda-9f0efdae43f6")
@@ -1546,6 +1530,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "f77837ee-637e-4779-9c59-2bd18b2dbeff")
+			(pts
+				(xy 114 234) (xy 114 224.5)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -1557,18 +1550,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "f77837ee-637e-4779-9c59-2bd18b2dbeff")
-			(pts
-				(xy 114 234) (xy 114 224.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 110.85 229.25 90)
 				(layer "User.9")
 				(uuid "f77837ee-637e-4779-9c59-2bd18b2dbeff")
@@ -1579,19 +1566,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -1604,14 +1578,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "cbfedbf9-7a0b-49b7-b0fa-360e6412a583")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "26b0628d-4195-4d38-919d-d344de0245eb")
 		)
 		(pad "" np_thru_hole circle
@@ -1665,6 +1639,7 @@
 			(pintype "passive")
 			(uuid "91d8d183-1894-4433-8eda-b688c3bfa559")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1676,50 +1651,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 180)
 			)
 		)
 	)
@@ -1752,18 +1692,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f8cb515b-561e-4f87-a37e-bbf9d75c4d2a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -1773,6 +1701,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1785,6 +1714,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1800,7 +1730,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "3f55c42b-597b-4c07-81fb-f5809989d073")
 		)
@@ -1811,7 +1741,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "38b71a9a-0159-4668-9a5e-d469e74e950c")
 		)
@@ -1833,6 +1763,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "2988dd16-5956-423e-97f6-e51e19b0860b")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
 		(layer "F.Cu")
@@ -1862,18 +1793,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4ea2b77f-9294-42ad-b431-9dd97ef4a777")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -1883,6 +1802,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1895,6 +1815,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2029,7 +1950,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "aeb5578b-f2b6-49fa-8832-d087ae1d6260")
 		)
@@ -2040,7 +1961,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "7b514c7d-3443-4603-98db-c0b334916054")
 		)
@@ -2368,17 +2289,6 @@
 				(xy 89 233.99) (xy 89 214.99)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 83.5 224.49 90)
-				(layer "User.9")
-				(uuid "4320a784-cf30-46ec-b36c-281238693d08")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -2390,8 +2300,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 83.5 224.49 90)
+				(layer "User.9")
+				(uuid "4320a784-cf30-46ec-b36c-281238693d08")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -2401,7 +2325,23 @@
 				(xy 98.5 224.49) (xy 89.5 224.49)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 94 215.324391 0)
 				(layer "User.9")
 				(uuid "4815016d-21c7-4492-90d1-5dd19d9639db")
@@ -2412,6 +2352,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "7b4d1157-4a41-42b1-99a1-f144cf6d8933")
+			(pts
+				(xy 89 233.99) (xy 89 224.49)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -2423,18 +2372,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "7b4d1157-4a41-42b1-99a1-f144cf6d8933")
-			(pts
-				(xy 89 233.99) (xy 89 224.49)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 85.85 229.24 90)
 				(layer "User.9")
 				(uuid "7b4d1157-4a41-42b1-99a1-f144cf6d8933")
@@ -2445,6 +2388,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "ee2a5019-94ab-4579-b39d-948e72391598")
+			(pts
+				(xy 98.5 224.49) (xy 107.5 224.49)
+			)
+			(height -8)
 			(format
 				(prefix "")
 				(suffix "")
@@ -2456,18 +2408,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "ee2a5019-94ab-4579-b39d-948e72391598")
-			(pts
-				(xy 98.5 224.49) (xy 107.5 224.49)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -8)
-			(gr_text "9,0000 mm"
+			(gr_text "9.0000 mm"
 				(at 103 215.34 0)
 				(layer "User.9")
 				(uuid "ee2a5019-94ab-4579-b39d-948e72391598")
@@ -2478,19 +2424,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -2503,14 +2436,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "9bfb0ad1-1872-42d8-ba8b-fdd26898aa8b")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "88bc2f21-3a15-4629-8938-8f9e0f2664b4")
 		)
 		(pad "" np_thru_hole circle
@@ -2564,7 +2497,9 @@
 			(pintype "passive")
 			(uuid "e06eba5d-e018-4c53-9294-a8ecc06d6b82")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2575,50 +2510,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "  /Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -2651,18 +2551,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9447ecf3-bab0-429a-8d99-6ccf3eb24725")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2672,6 +2560,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2684,6 +2573,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2699,7 +2589,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "2154de19-5317-4a28-91be-d2bab0644371")
 		)
@@ -2710,7 +2600,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "8e462170-b883-498d-87c9-9d8bdc58afbe")
 		)
@@ -2721,6 +2611,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "7280e41e-39e4-47c1-b3c0-e7b59f0fb7da")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3mm"
 		(layer "F.Cu")
@@ -2751,18 +2642,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "de98d8a1-5bc4-40a7-8324-14ba06af961a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2772,6 +2651,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2784,6 +2664,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2799,7 +2680,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "6fbf10fa-91c8-421a-b06e-978440415819")
 		)
@@ -2810,7 +2691,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "9c9dd8e7-fe8d-40ad-9b58-9897a0480993")
 		)
@@ -2821,6 +2702,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "2d3f50b1-5055-41fe-8129-8b91c8be9d58")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3mm"
 		(layer "F.Cu")
@@ -2851,18 +2733,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "85f32512-f669-4ef8-879a-01f59d73fec0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2872,6 +2742,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2884,6 +2755,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2899,7 +2771,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "6d26b2bd-0e23-4a24-92fb-58ab1a6cccc6")
 		)
@@ -2910,7 +2782,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "c2c44f9c-48ef-443e-b40c-f6061c9cf4ca")
 		)
@@ -2921,6 +2793,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "ee5a4f88-0e2e-4779-829e-94cc95cf5182")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3mm"
 		(layer "F.Cu")
@@ -2951,18 +2824,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0ec17ce5-2968-4514-9331-1a4839a26bca")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2972,6 +2833,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2984,6 +2846,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2999,7 +2862,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "eae6678c-1cdd-4f01-9e1e-f33cb17c6f91")
 		)
@@ -3010,7 +2873,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "a1554850-ef50-48eb-93ff-df226945a4df")
 		)
@@ -3032,6 +2895,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "ae872739-3cd4-43df-afd4-112a5628b1fc")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
 		(layer "F.Cu")
@@ -3061,18 +2925,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f89c31fd-0198-457d-975d-b4a11c988a58")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -3082,6 +2934,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3094,6 +2947,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3228,7 +3082,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "49261c01-629e-4ba9-adda-28ada4db542e")
 		)
@@ -3239,7 +3093,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "f2d71b17-da1f-440a-9c85-5765e48186e3")
 		)
@@ -3567,17 +3421,6 @@
 				(xy 73.5 199.5) (xy 64.5 199.5)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
-				(at 69 190.334391 0)
-				(layer "User.9")
-				(uuid "84215b6b-c207-476f-941b-ef1797b32956")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -3589,8 +3432,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
+				(at 69 190.334391 0)
+				(layer "User.9")
+				(uuid "84215b6b-c207-476f-941b-ef1797b32956")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -3600,17 +3457,6 @@
 				(xy 64 209) (xy 64 190)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 58.5 199.5 90)
-				(layer "User.9")
-				(uuid "90ec7d9b-0aa1-4d8d-a83b-294a117d869e")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -3622,8 +3468,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 58.5 199.5 90)
+				(layer "User.9")
+				(uuid "90ec7d9b-0aa1-4d8d-a83b-294a117d869e")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -3633,7 +3493,23 @@
 				(xy 73.5 199.5) (xy 82.5 199.5)
 			)
 			(height -8)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 78 190.35 0)
 				(layer "User.9")
 				(uuid "f0297070-e929-4e00-a05d-8ad441b9dd59")
@@ -3644,6 +3520,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "f76dce03-d799-4f68-a82c-759db1ba6cbd")
+			(pts
+				(xy 64 209) (xy 64 199.5)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -3655,18 +3540,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "f76dce03-d799-4f68-a82c-759db1ba6cbd")
-			(pts
-				(xy 64 209) (xy 64 199.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 60.85 204.25 90)
 				(layer "User.9")
 				(uuid "f76dce03-d799-4f68-a82c-759db1ba6cbd")
@@ -3677,19 +3556,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -3702,14 +3568,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "0b5df4b7-cca0-4d1d-b471-9e6c35409010")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "00a81a5e-07b7-4c3f-a0c2-2a17d47e5ccf")
 		)
 		(pad "" np_thru_hole circle
@@ -3763,6 +3629,7 @@
 			(pintype "passive")
 			(uuid "40397551-a0a8-4ff7-b57b-66bdc37583d0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3774,50 +3641,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -3849,18 +3681,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e1a155e0-af2f-4e97-a30a-5fbdacc15210")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -3870,6 +3690,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3882,6 +3703,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4016,7 +3838,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "0084a6d3-579b-41a5-b8ae-04487785507a")
 		)
@@ -4027,7 +3849,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "963122e2-d6d4-4099-9e00-9172f3790003")
 		)
@@ -4355,7 +4177,23 @@
 				(xy 148.5 224.5) (xy 157.5 224.5)
 			)
 			(height -8)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 153 215.35 0)
 				(layer "User.9")
 				(uuid "0a7be068-9f62-40b3-ae9d-03135a8d530b")
@@ -4366,6 +4204,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "77b95785-d766-4e66-87a1-7034dd73e4a9")
+			(pts
+				(xy 139 234) (xy 139 224.5)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -4377,18 +4224,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "77b95785-d766-4e66-87a1-7034dd73e4a9")
-			(pts
-				(xy 139 234) (xy 139 224.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 135.85 229.25 90)
 				(layer "User.9")
 				(uuid "77b95785-d766-4e66-87a1-7034dd73e4a9")
@@ -4399,6 +4240,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "aef116ae-6af5-40e5-b7bc-e20741f316c3")
+			(pts
+				(xy 148.5 224.5) (xy 139.5 224.5)
+			)
+			(height 8.015609)
 			(format
 				(prefix "")
 				(suffix "")
@@ -4410,18 +4260,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "aef116ae-6af5-40e5-b7bc-e20741f316c3")
-			(pts
-				(xy 148.5 224.5) (xy 139.5 224.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height 8.015609)
-			(gr_text "9,0000 mm"
+			(gr_text "9.0000 mm"
 				(at 144 215.334391 0)
 				(layer "User.9")
 				(uuid "aef116ae-6af5-40e5-b7bc-e20741f316c3")
@@ -4432,19 +4276,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(dimension
 			(type aligned)
@@ -4454,17 +4285,6 @@
 				(xy 139 234) (xy 139 215)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 133.5 224.5 90)
-				(layer "User.9")
-				(uuid "dd022037-61dc-4889-957e-450ae24d5b47")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -4476,8 +4296,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 133.5 224.5 90)
+				(layer "User.9")
+				(uuid "dd022037-61dc-4889-957e-450ae24d5b47")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -4490,14 +4324,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "dc4d667b-d77f-4069-93ac-1a899c24b540")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "572efbed-b5c3-4b86-9d37-22661a73cb0e")
 		)
 		(pad "" np_thru_hole circle
@@ -4551,6 +4385,7 @@
 			(pintype "passive")
 			(uuid "19403077-b73a-4932-a8c2-34812413e7d0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4559,53 +4394,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -4637,18 +4437,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b8013832-aaef-4400-93b9-1c3410924609")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -4658,6 +4446,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4670,6 +4459,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4804,7 +4594,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "45f0302b-3828-4efa-af1c-d37795afec73")
 		)
@@ -4815,7 +4605,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "c8afc470-3941-426c-9b76-836d5a627858")
 		)
@@ -5143,17 +4933,6 @@
 				(xy 114 209) (xy 114 190)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 108.5 199.5 90)
-				(layer "User.9")
-				(uuid "98d87814-d13b-49cc-a652-d0e67270717c")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -5165,8 +4944,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 108.5 199.5 90)
+				(layer "User.9")
+				(uuid "98d87814-d13b-49cc-a652-d0e67270717c")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -5176,7 +4969,23 @@
 				(xy 123.5 199.5) (xy 114.5 199.5)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 119 190.334391 0)
 				(layer "User.9")
 				(uuid "a5106d8e-9c01-46c7-8273-6bcd991b166d")
@@ -5187,6 +4996,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "c69f701c-b9e4-4b14-9d03-065f6c8cd857")
+			(pts
+				(xy 123.5 199.5) (xy 132.5 199.5)
+			)
+			(height -8)
 			(format
 				(prefix "")
 				(suffix "")
@@ -5198,18 +5016,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "c69f701c-b9e4-4b14-9d03-065f6c8cd857")
-			(pts
-				(xy 123.5 199.5) (xy 132.5 199.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -8)
-			(gr_text "9,0000 mm"
+			(gr_text "9.0000 mm"
 				(at 128 190.35 0)
 				(layer "User.9")
 				(uuid "c69f701c-b9e4-4b14-9d03-065f6c8cd857")
@@ -5220,6 +5032,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "ddaab6aa-a8a7-4ea8-8254-cc565ed2455e")
+			(pts
+				(xy 114 209) (xy 114 199.5)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -5231,18 +5052,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "ddaab6aa-a8a7-4ea8-8254-cc565ed2455e")
-			(pts
-				(xy 114 209) (xy 114 199.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 110.85 204.25 90)
 				(layer "User.9")
 				(uuid "ddaab6aa-a8a7-4ea8-8254-cc565ed2455e")
@@ -5253,19 +5068,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -5278,14 +5080,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "af50f4c5-62b1-4041-b7c1-e75ab27e59f4")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "22fdb1d8-14ab-4cb1-8a71-91c10b520b24")
 		)
 		(pad "" np_thru_hole circle
@@ -5339,7 +5141,9 @@
 			(pintype "passive")
 			(uuid "938f9118-0470-4df9-8af4-55e72cb4700c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5350,50 +5154,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -5426,18 +5195,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "70ce6719-5b02-40bc-99e1-7c3353c5bfcd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -5447,6 +5204,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5459,6 +5217,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5474,7 +5233,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "c399f603-ab2a-423c-b864-1fbf9d3c69df")
 		)
@@ -5485,7 +5244,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "40fbfe10-6b1d-4718-a9ae-7d2de4fe1de8")
 		)
@@ -5507,6 +5266,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "6967cd06-62e8-42ab-99e8-473669fa6b2a")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_3mm"
 		(layer "F.Cu")
@@ -5537,18 +5297,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a10a06b8-3280-4ed1-a5f6-64f161a59e54")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -5558,6 +5306,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5570,6 +5319,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5585,7 +5335,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "31b6e11b-8e5f-4135-9bf9-8a900f6a8070")
 		)
@@ -5596,7 +5346,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "4b61dfb6-ecc2-44f7-bda5-7389490d6dc0")
 		)
@@ -5618,6 +5368,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "c8898f47-cfe9-466c-ac7f-f82280d805ac")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
 		(layer "F.Cu")
@@ -5647,18 +5398,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "39c1c3f0-9250-4846-aaef-7118034f31f5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -5668,6 +5407,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5680,6 +5420,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5814,7 +5555,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "f484027d-6557-4c32-a612-78479061100d")
 		)
@@ -5825,7 +5566,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "1d8f2d34-9009-49a6-8d70-afdfeb2d2647")
 		)
@@ -6153,7 +5894,23 @@
 				(xy 73.5 224.49) (xy 64.5 224.49)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
 				(at 69 215.324391 0)
 				(layer "User.9")
 				(uuid "650ceff6-60cd-49da-a189-20b79b59025f")
@@ -6164,6 +5921,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "9ec81330-678f-487e-afb2-2b38784e2c5f")
+			(pts
+				(xy 64 233.99) (xy 64 224.49)
+			)
+			(height -2)
 			(format
 				(prefix "")
 				(suffix "")
@@ -6175,18 +5941,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "9ec81330-678f-487e-afb2-2b38784e2c5f")
-			(pts
-				(xy 64 233.99) (xy 64 224.49)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -2)
-			(gr_text "9,5000 mm"
+			(gr_text "9.5000 mm"
 				(at 60.85 229.24 90)
 				(layer "User.9")
 				(uuid "9ec81330-678f-487e-afb2-2b38784e2c5f")
@@ -6197,6 +5957,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "a3519cf2-b140-4e4e-b4d2-a8eb44f394fd")
+			(pts
+				(xy 73.5 224.49) (xy 82.5 224.49)
+			)
+			(height -8)
 			(format
 				(prefix "")
 				(suffix "")
@@ -6208,18 +5977,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "a3519cf2-b140-4e4e-b4d2-a8eb44f394fd")
-			(pts
-				(xy 73.5 224.49) (xy 82.5 224.49)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -8)
-			(gr_text "9,0000 mm"
+			(gr_text "9.0000 mm"
 				(at 78 215.34 0)
 				(layer "User.9")
 				(uuid "a3519cf2-b140-4e4e-b4d2-a8eb44f394fd")
@@ -6230,19 +5993,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(dimension
 			(type aligned)
@@ -6252,17 +6002,6 @@
 				(xy 64 233.99) (xy 64 214.99)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 58.5 224.49 90)
-				(layer "User.9")
-				(uuid "d52b09c0-0622-4b03-bd0b-b931cf29ba67")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -6274,8 +6013,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 58.5 224.49 90)
+				(layer "User.9")
+				(uuid "d52b09c0-0622-4b03-bd0b-b931cf29ba67")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -6288,14 +6041,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d5937989-461a-49f3-80f1-363c362fec97")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "6b3966cc-8289-46b6-b892-35227a015d7a")
 		)
 		(pad "" np_thru_hole circle
@@ -6349,7 +6102,9 @@
 			(pintype "passive")
 			(uuid "a7dbf48a-d21a-4f95-b4ae-f95d6ef282ca")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6360,50 +6115,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -6435,18 +6155,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ksir 2022:SW_Alps_Matias_1.00u_cherry_LP"
-			(at -0.15 -13 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "00248182-1a9c-4da3-8802-4c3bba93cd87")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -6456,6 +6164,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -6468,6 +6177,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -6602,7 +6312,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "b2951af6-a6a1-4de6-bdb3-ddb1595d8bd4")
 		)
@@ -6613,7 +6323,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "2b301bac-c321-4125-ac21-257446c986c8")
 		)
@@ -6941,7 +6651,23 @@
 				(xy 139 209) (xy 139 199.5)
 			)
 			(height -2)
-			(gr_text "9,5000 mm"
+			(format
+				(prefix "")
+				(suffix "")
+				(units 3)
+				(units_format 1)
+				(precision 4)
+			)
+			(style
+				(thickness 0.1)
+				(arrow_length 1.27)
+				(text_position_mode 0)
+				(arrow_direction outward)
+				(extension_height 0.58642)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.5000 mm"
 				(at 135.85 204.25 90)
 				(layer "User.9")
 				(uuid "2773836d-5518-448e-8ed6-336013078965")
@@ -6952,6 +6678,15 @@
 					)
 				)
 			)
+		)
+		(dimension
+			(type aligned)
+			(layer "User.9")
+			(uuid "9e764c6e-c15d-4623-b080-a172d321e236")
+			(pts
+				(xy 148.5 199.5) (xy 157.5 199.5)
+			)
+			(height -8)
 			(format
 				(prefix "")
 				(suffix "")
@@ -6963,18 +6698,12 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
-		)
-		(dimension
-			(type aligned)
-			(layer "User.9")
-			(uuid "9e764c6e-c15d-4623-b080-a172d321e236")
-			(pts
-				(xy 148.5 199.5) (xy 157.5 199.5)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
 			)
-			(height -8)
-			(gr_text "9,0000 mm"
+			(gr_text "9.0000 mm"
 				(at 153 190.35 0)
 				(layer "User.9")
 				(uuid "9e764c6e-c15d-4623-b080-a172d321e236")
@@ -6985,19 +6714,6 @@
 					)
 				)
 			)
-			(format
-				(prefix "")
-				(suffix "")
-				(units 3)
-				(units_format 1)
-				(precision 4)
-			)
-			(style
-				(thickness 0.1)
-				(arrow_length 1.27)
-				(text_position_mode 0)
-				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
 		)
 		(dimension
 			(type aligned)
@@ -7007,17 +6723,6 @@
 				(xy 139 209) (xy 139 190)
 			)
 			(height -4.5)
-			(gr_text "19,0000 mm"
-				(at 133.5 199.5 90)
-				(layer "User.9")
-				(uuid "d1e3794b-5556-44d6-bddd-5ce3823c0bb7")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -7029,8 +6734,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 2)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "19.0000 mm"
+				(at 133.5 199.5 90)
+				(layer "User.9")
+				(uuid "d1e3794b-5556-44d6-bddd-5ce3823c0bb7")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(dimension
 			(type aligned)
@@ -7040,17 +6759,6 @@
 				(xy 148.5 199.5) (xy 139.5 199.5)
 			)
 			(height 8.015609)
-			(gr_text "9,0000 mm"
-				(at 144 190.334391 0)
-				(layer "User.9")
-				(uuid "dbed7a85-7d93-4664-9158-52c328acdc2b")
-				(effects
-					(font
-						(size 1 1)
-						(thickness 0.15)
-					)
-				)
-			)
 			(format
 				(prefix "")
 				(suffix "")
@@ -7062,8 +6770,22 @@
 				(thickness 0.1)
 				(arrow_length 1.27)
 				(text_position_mode 0)
+				(arrow_direction outward)
 				(extension_height 0.58642)
-				(extension_offset 0.5) keep_text_aligned)
+				(extension_offset 0.5)
+				(keep_text_aligned yes)
+			)
+			(gr_text "9.0000 mm"
+				(at 144 190.334391 0)
+				(layer "User.9")
+				(uuid "dbed7a85-7d93-4664-9158-52c328acdc2b")
+				(effects
+					(font
+						(size 1 1)
+						(thickness 0.15)
+					)
+				)
+			)
 		)
 		(pad "" np_thru_hole circle
 			(at -5.08 0 180)
@@ -7076,14 +6798,14 @@
 			(at 0 0 180)
 			(size 6.5 6.5)
 			(drill 6.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "83254482-d698-44f6-9543-b3169bed149e")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 3.7 180)
 			(size 2.5 2.5)
 			(drill 2.5)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d04f9841-6938-400d-a7bf-19be161c0454")
 		)
 		(pad "" np_thru_hole circle
@@ -7137,7 +6859,9 @@
 			(pintype "passive")
 			(uuid "c33a556c-e762-46f7-890d-4f125ca96e8b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Alps_Matias.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7148,50 +6872,15 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "C:/Users/papaya/Downloads/Matias_Switch_3D/Matias Switch - 3D Simplified.STEP"
-			(opacity 0.6300)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/switch.step"
 			(offset
-				(xyz 0 0 11.5)
+				(xyz 0 1 5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 -90)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/low-profile-cherry-mx-red-1.snapshot.12/[high detail] Low Profile Cherry MX Red.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 180)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/beschr. Kappe.step"
-			(opacity 0.7900)
-			(offset
-				(xyz 0 0 19)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-		(model "C:/Users/papaya/Downloads/Kailh Polia.step"
-			(offset
-				(xyz 0 0 5)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 90)
+				(xyz -90 -0 -180)
 			)
 		)
 	)
@@ -7224,18 +6913,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a5b8ccf9-7338-4e59-9a8f-ead9e52b22bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -7245,6 +6922,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7257,6 +6935,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7272,7 +6951,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "bf7a9415-8588-4481-9f76-b589cc8ff01d")
 		)
@@ -7283,7 +6962,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "16a3ab1a-74d3-4daa-9c33-17287af313c4")
 		)
@@ -7305,6 +6984,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "8e64bf69-2730-41e5-bb91-aa224b8fc8f3")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "ksir 2022:SK6812-MINI-E"
 		(layer "B.Cu")
@@ -7338,18 +7018,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eea3a20d-3fcf-46da-85c9-e28ee4e98448")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -7359,6 +7027,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7371,6 +7040,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7425,7 +7095,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "f1894a74-1b74-41fa-a221-0be80d19669e")
 		)
@@ -7512,7 +7182,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -7521,7 +7191,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 34 "Net-(D7-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -7530,7 +7200,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -7540,21 +7210,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 10 "Net-(D6-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "52e86242-7bc1-43be-a583-b088caf3d775")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -7590,18 +7261,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "010793b6-90ed-4d69-b4a1-08a6eb25fbd9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -7611,6 +7270,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7623,6 +7283,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7677,7 +7338,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "6e92287f-98f3-480c-a687-662270fce979")
 		)
@@ -7764,7 +7425,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -7773,7 +7434,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 7 "Net-(D3-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -7782,7 +7443,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -7792,21 +7453,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "Net-(D2-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "e0cf99ca-a6b8-47e7-aac5-b43ddf0a239b")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -7829,7 +7491,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 0 -1.85 -90)
+			(at 0 -1.85 270)
 			(layer "B.Fab")
 			(uuid "772075e9-8560-48f7-a54c-108ef9282413")
 			(effects
@@ -7840,21 +7502,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "294d0060-ab40-4744-9497-c21b53594554")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -7862,12 +7511,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -7875,6 +7525,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8011,7 +7662,7 @@
 			(uuid "d07d7442-1df5-4c66-a6c3-c2ee9d7e01df")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(uuid "2069ce0a-8cfb-4eb2-864e-98e1ceffa02e")
 			(effects
@@ -8025,7 +7676,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -8034,12 +7685,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "11ba821e-35ce-48ab-a2a8-3efd59413628")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8082,19 +7734,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "b1d28ce4-b1dd-4046-a8c6-c75933ffad6b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -8104,6 +7743,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8117,6 +7757,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8277,7 +7918,7 @@
 			(uuid "1cffe5df-dcbe-42a0-bd8d-34c01315f196")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.27 -90)
+			(at 0 -1.27 270)
 			(layer "B.Fab")
 			(uuid "1873f1a4-0f30-47b6-ad35-423eb32d3059")
 			(effects
@@ -8310,6 +7951,7 @@
 			(pintype "passive")
 			(uuid "c6b5b8ad-7485-48c0-a474-fd6225936e36")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8341,7 +7983,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 0 -1.85 -90)
+			(at 0 -1.85 270)
 			(layer "B.Fab")
 			(uuid "be1e383f-1665-4aba-8ea2-85296708cd1e")
 			(effects
@@ -8352,21 +7994,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7244bd4e-fa4c-4db2-90de-74560deb8930")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -8374,12 +8003,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -8387,6 +8017,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8523,7 +8154,7 @@
 			(uuid "c17ab27d-4025-48d1-8e9a-cc813a12469e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(uuid "641a78f9-4635-437b-8a99-fefee66069fb")
 			(effects
@@ -8537,7 +8168,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -8546,12 +8177,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "6a66aac3-cc8a-4bfb-8140-318dd91f89be")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8594,19 +8226,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a47eb4d0-bfe9-445d-9877-79a1add58bfb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -8616,6 +8235,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -8629,6 +8249,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9108,6 +8729,7 @@
 			(pintype "passive")
 			(uuid "f86a5611-ebb2-4c22-a3f1-9c8931d91f45")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9152,18 +8774,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d58e205b-33f6-443d-aa73-c3bce187160a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -9173,6 +8783,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9185,6 +8796,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9239,7 +8851,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "96ed3fdd-7c96-4e00-bf90-40c6317dcbc0")
 		)
@@ -9326,7 +8938,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -9335,7 +8947,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 8 "Net-(D4-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -9344,7 +8956,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -9354,21 +8966,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 7 "Net-(D3-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "d4fc152d-ce52-4765-ae9b-81796288612f")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -9404,18 +9017,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5871fa72-a968-4de6-8d7a-cf6b33c1aca5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -9425,6 +9026,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9437,6 +9039,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9491,7 +9094,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "637ac480-d96d-468c-a002-4cf5cbc530a5")
 		)
@@ -9578,7 +9181,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -9587,7 +9190,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 6 "Net-(D2-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -9596,7 +9199,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -9606,21 +9209,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 5 "Net-(D1-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "88b99c0c-2bf1-4909-ac37-d84a5a3bcca1")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -9654,19 +9258,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "95f44006-6680-4c35-b00c-bceebaa4ce43")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -9676,6 +9267,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -9689,6 +9281,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10154,6 +9747,7 @@
 			(pintype "passive")
 			(uuid "e6132225-d5f9-43e4-8449-9fa693c83bdb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10198,18 +9792,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "562003cd-2bb8-4738-b4a9-318f97773501")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -10219,6 +9801,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -10231,6 +9814,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -10285,7 +9869,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "ceefc3b5-dc80-47f4-a911-d4652ea7c8f3")
 		)
@@ -10372,7 +9956,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -10381,7 +9965,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 10 "Net-(D6-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -10390,7 +9974,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -10400,21 +9984,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 9 "Net-(D5-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "ee83a00a-e2a4-4305-9a08-b46bfd6289b6")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -10425,7 +10010,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at -3.125 -0.05 -90)
+			(at -3.125 -0.05 270)
 			(layer "B.SilkS")
 			(uuid "c768c3b8-e8cc-42a3-b39a-aa8dd95556e0")
 			(effects
@@ -10448,19 +10033,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "31c36a02-ca38-4cba-a572-ebb2cae70af8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -10470,6 +10042,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10483,12 +10056,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Champ4" "TCC1206X7R104M500DT"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "f4b3009c-24b4-4379-9091-537ad1a2ac36")
@@ -10501,7 +10075,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C377067"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "0db09556-6a33-4139-8058-c84ca6b520d4")
@@ -10633,7 +10207,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 180)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -10642,12 +10216,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 180)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "be277548-f9f6-4ece-8159-ae0af4c84109")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10679,7 +10254,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 0 -1.85 -90)
+			(at 0 -1.85 270)
 			(layer "B.Fab")
 			(uuid "69fde708-236b-48b6-92c7-5990884f77c3")
 			(effects
@@ -10690,21 +10265,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "f449b7ca-26ee-4947-a0c2-14b7b0f57e9d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -10712,12 +10274,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -10725,6 +10288,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -10861,7 +10425,7 @@
 			(uuid "43c0b999-daf9-4575-bdcf-19960c02fcb6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(uuid "62fbb2f2-3a3c-4914-8a5b-ec2ebe5ed2b9")
 			(effects
@@ -10875,7 +10439,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -10884,12 +10448,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "2728985d-a40d-4326-b03d-c9c8bdcc26db")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10934,18 +10499,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef61d228-9fa4-4033-8471-ea7cbeb0cd0e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -10955,6 +10508,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -10967,6 +10521,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11021,7 +10576,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "9d830bb4-f28e-4396-90ad-9d68e38361fd")
 		)
@@ -11108,7 +10663,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -11117,7 +10672,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 5 "Net-(D1-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -11126,7 +10681,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -11136,21 +10691,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 4 "Net-(D0-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "82239d2f-8c69-4ed1-996b-8dc4ff122ab8")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -11186,18 +10742,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "246593ef-a805-4980-8f16-5f9e86b44670")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -11207,6 +10751,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11219,6 +10764,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11273,7 +10819,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "04c8d17b-0e94-4d06-8ad6-9080a7b192cf")
 		)
@@ -11360,7 +10906,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -11369,7 +10915,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 4 "Net-(D0-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -11378,7 +10924,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -11388,21 +10934,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 3 "Net-(D0-DI)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "4907158a-4255-4e67-9a54-11605964a27b")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -11425,7 +10972,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 0 -1.85 -90)
+			(at 0 -1.85 270)
 			(layer "B.Fab")
 			(uuid "420f3efc-c0b1-423e-b26d-265d032077f2")
 			(effects
@@ -11436,21 +10983,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "0485640a-456a-4f82-8eba-e02ca632cedf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -11458,12 +10992,13 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -11471,6 +11006,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11607,7 +11143,7 @@
 			(uuid "cdb5f77d-b3b5-4d7d-a7c5-49fa4a308788")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "B.Fab")
 			(uuid "fac4589c-8a60-4b83-9b12-78793be15332")
 			(effects
@@ -11621,7 +11157,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -11630,12 +11166,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 90)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "84576e80-7353-46a7-b827-dcd94ca494df")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11678,19 +11215,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "ae97bb99-636c-47c0-9b14-d1126a553aae")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -11700,6 +11224,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11713,6 +11238,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11863,7 +11389,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 270)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -11872,12 +11398,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 270)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "dfb66b3a-9a31-4c42-b856-0773d2c92db9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11920,19 +11447,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "8d0f6937-c8d6-4622-810f-28b654bab2dd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -11942,6 +11456,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -11955,6 +11470,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12105,7 +11621,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 270)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -12114,12 +11630,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 270)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "5a226a9e-d4ee-4e48-b5e6-a4c76762c759")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12164,18 +11681,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ksir 2022:SK6812-MINI-E"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9d4761bf-c5f6-4b39-9c30-bbaefcd50b4b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -12185,6 +11690,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12197,6 +11703,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12251,7 +11758,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "896786d3-fb12-4ebe-bc91-ec71272b3e8e")
 		)
@@ -12338,7 +11845,7 @@
 		(pad "1" smd rect
 			(at -2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 18 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
@@ -12347,7 +11854,7 @@
 		(pad "2" smd rect
 			(at -2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 9 "Net-(D5-DO)")
 			(pinfunction "DO")
 			(pintype "output")
@@ -12356,7 +11863,7 @@
 		(pad "3" smd roundrect
 			(at 2.55 0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pinfunction "GND")
@@ -12366,21 +11873,22 @@
 		(pad "4" smd rect
 			(at 2.55 -0.75 180)
 			(size 1.7 0.82)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 8 "Net-(D4-DO)")
 			(pinfunction "DI")
 			(pintype "input")
 			(uuid "9729ed94-bc9f-4798-93aa-3c85b09863c8")
 		)
-		(model "C:/Users/papaya/Downloads/sk6812mini-e-1.snapshot.3/LED_SK6812MINI-E.step"
+		(embedded_fonts no)
+		(model "/Volumes/Sans titre/Projets/MB_ModulBox_NG/Mes_Librairies_KiCad/3d/LED_SK6812MINI-E_3.2x2.8mm_P1.5mm.step"
 			(offset
-				(xyz 0 -5.09 -1.7)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 -180 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -12414,19 +11922,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "0d9d0bc9-1921-49d4-a5d2-0470a58fba9b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -12436,6 +11931,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12449,6 +11945,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -12927,6 +12424,7 @@
 			(pintype "passive")
 			(uuid "ecc70be7-b67c-4c78-ae7d-bfef2ae17234")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12969,19 +12467,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "d0eebc4e-aac2-4733-b6c6-3d36df0cdb36")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -12991,6 +12476,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13004,6 +12490,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -13154,7 +12641,7 @@
 		(pad "1" smd roundrect
 			(at -1.475 0 270)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 1 "GND")
 			(pintype "passive")
@@ -13163,12 +12650,13 @@
 		(pad "2" smd roundrect
 			(at 1.475 0 270)
 			(size 1.15 1.8)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.217391)
 			(net 18 "+5V")
 			(pintype "passive")
 			(uuid "1e0f4da7-b88b-4852-8d18-6a2f4ff973e2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13189,7 +12677,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "6153bc25-29a2-4edf-9811-c378f58a3d83")
 	)
@@ -13309,7 +12797,23 @@
 			(xy 148.5 184.5) (xy 136 184.5)
 		)
 		(height 0.5)
-		(gr_text "12,5000 mm"
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "12.5000 mm"
 			(at 142.25 182.85 0)
 			(layer "Eco2.User")
 			(uuid "07467f18-97b1-42ee-b557-4a5665bb18ad")
@@ -13320,6 +12824,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "1e8ee1b1-e7f5-4b7e-a195-1abcf1cbeca5")
+		(pts
+			(xy 61 212) (xy 61 192.5)
+		)
+		(height -4.1)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13331,18 +12844,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "1e8ee1b1-e7f5-4b7e-a195-1abcf1cbeca5")
-		(pts
-			(xy 61 212) (xy 61 192.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -4.1)
-		(gr_text "19,5000 mm"
+		(gr_text "19.5000 mm"
 			(at 55.75 202.25 90)
 			(layer "Eco2.User")
 			(uuid "1e8ee1b1-e7f5-4b7e-a195-1abcf1cbeca5")
@@ -13353,6 +12860,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "20dc22dc-7f2e-4df3-ad83-672937307d40")
+		(pts
+			(xy 162.5 199.5) (xy 162.5 224.5)
+		)
+		(height -3.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13364,18 +12880,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "20dc22dc-7f2e-4df3-ad83-672937307d40")
-		(pts
-			(xy 162.5 199.5) (xy 162.5 224.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -3.5)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 164.85 212 90)
 			(layer "Eco2.User")
 			(uuid "20dc22dc-7f2e-4df3-ad83-672937307d40")
@@ -13386,6 +12896,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "222bd582-153e-4ad6-bf60-f4a0ea000dda")
+		(pts
+			(xy 123.5 185) (xy 148.5 185)
+		)
+		(height 79.8)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13396,19 +12915,13 @@
 		(style
 			(thickness 0.1)
 			(arrow_length 1.27)
-			(text_position_mode 0)
+			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "222bd582-153e-4ad6-bf60-f4a0ea000dda")
-		(pts
-			(xy 123.5 185) (xy 148.5 185)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 79.8)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 136.6 263.4 0)
 			(layer "Eco2.User")
 			(uuid "222bd582-153e-4ad6-bf60-f4a0ea000dda")
@@ -13419,6 +12932,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "34af17b1-2a8c-432e-ad84-53161bb7974c")
+		(pts
+			(xy 98.5 184.5) (xy 123.5 184.5)
+		)
+		(height 73.1)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13429,19 +12951,13 @@
 		(style
 			(thickness 0.1)
 			(arrow_length 1.27)
-			(text_position_mode 2)
+			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "34af17b1-2a8c-432e-ad84-53161bb7974c")
-		(pts
-			(xy 98.5 184.5) (xy 123.5 184.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 73.1)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 111 256.45 0)
 			(layer "Eco2.User")
 			(uuid "34af17b1-2a8c-432e-ad84-53161bb7974c")
@@ -13452,6 +12968,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "3ead7d84-192c-41f3-b179-6015e03546e7")
+		(pts
+			(xy 63.5 212) (xy 63.5 193.5)
+		)
+		(height -12)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13463,18 +12988,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "3ead7d84-192c-41f3-b179-6015e03546e7")
-		(pts
-			(xy 63.5 212) (xy 63.5 193.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -12)
-		(gr_text "18,5000 mm"
+		(gr_text "18.5000 mm"
 			(at 50.35 202.75 90)
 			(layer "Eco2.User")
 			(uuid "3ead7d84-192c-41f3-b179-6015e03546e7")
@@ -13485,6 +13004,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "3f59f711-82e9-438b-bf74-fec7bf2bb9eb")
+		(pts
+			(xy 148.5 184.5) (xy 161 184.5)
+		)
+		(height 71.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13496,18 +13024,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "3f59f711-82e9-438b-bf74-fec7bf2bb9eb")
-		(pts
-			(xy 148.5 184.5) (xy 161 184.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 71.5)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 154.75 254.85 0)
 			(layer "Eco2.User")
 			(uuid "3f59f711-82e9-438b-bf74-fec7bf2bb9eb")
@@ -13518,6 +13040,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "406f3da0-f7d4-4506-8f41-722f76ddbeb4")
+		(pts
+			(xy 157.25 237) (xy 157.25 233.5)
+		)
+		(height -106)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13529,18 +13060,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "406f3da0-f7d4-4506-8f41-722f76ddbeb4")
-		(pts
-			(xy 157.25 237) (xy 157.25 233.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -106)
-		(gr_text "3,5000 mm"
+		(gr_text "3.5000 mm"
 			(at 50.1 235.25 90)
 			(layer "Eco2.User")
 			(uuid "406f3da0-f7d4-4506-8f41-722f76ddbeb4")
@@ -13551,6 +13076,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "4bac4542-3512-48b3-a7d0-684158a5a578")
+		(pts
+			(xy 163 224.5) (xy 163 237)
+		)
+		(height 115.25)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13562,18 +13096,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "4bac4542-3512-48b3-a7d0-684158a5a578")
-		(pts
-			(xy 163 224.5) (xy 163 237)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 115.25)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 46.6 230.75 90)
 			(layer "Eco2.User")
 			(uuid "4bac4542-3512-48b3-a7d0-684158a5a578")
@@ -13584,6 +13112,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "51f6261b-8b1e-44e1-a2d8-b395c179f25e")
+		(pts
+			(xy 61 185) (xy 73.5 185)
+		)
+		(height 81.6)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13594,19 +13131,13 @@
 		(style
 			(thickness 0.1)
 			(arrow_length 1.27)
-			(text_position_mode 0)
+			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "51f6261b-8b1e-44e1-a2d8-b395c179f25e")
-		(pts
-			(xy 61 185) (xy 73.5 185)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 81.6)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 65.8 177.6 0)
 			(layer "Eco2.User")
 			(uuid "51f6261b-8b1e-44e1-a2d8-b395c179f25e")
@@ -13617,6 +13148,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "5946da97-0dbf-4579-a096-302ff7d7467c")
+		(pts
+			(xy 157.5 190.5) (xy 161 190.5)
+		)
+		(height -5.25)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13627,19 +13167,13 @@
 		(style
 			(thickness 0.1)
 			(arrow_length 1.27)
-			(text_position_mode 2)
+			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "5946da97-0dbf-4579-a096-302ff7d7467c")
-		(pts
-			(xy 157.5 190.5) (xy 161 190.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -5.25)
-		(gr_text "3,5000 mm"
+		(gr_text "3.5000 mm"
 			(at 159.25 184.1 0)
 			(layer "Eco2.User")
 			(uuid "5946da97-0dbf-4579-a096-302ff7d7467c")
@@ -13650,6 +13184,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "6176775d-b4e3-4e39-a8d7-46ffbac77cc5")
+		(pts
+			(xy 73.5 185) (xy 86 185)
+		)
+		(height -1.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13661,18 +13204,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "6176775d-b4e3-4e39-a8d7-46ffbac77cc5")
-		(pts
-			(xy 73.5 185) (xy 86 185)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -1.5)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 79.75 182.35 0)
 			(layer "Eco2.User")
 			(uuid "6176775d-b4e3-4e39-a8d7-46ffbac77cc5")
@@ -13683,6 +13220,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "64cab92a-3f0d-47a8-9c6d-b705d63004a2")
+		(pts
+			(xy 161 187) (xy 136 187)
+		)
+		(height -69)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13694,18 +13240,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "64cab92a-3f0d-47a8-9c6d-b705d63004a2")
-		(pts
-			(xy 161 187) (xy 136 187)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -69)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 148.5 254.85 0)
 			(layer "Eco2.User")
 			(uuid "64cab92a-3f0d-47a8-9c6d-b705d63004a2")
@@ -13716,6 +13256,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "6c3aaaa8-df56-4de6-84ae-62568177562c")
+		(pts
+			(xy 64.5 190.5) (xy 64.5 212)
+		)
+		(height 9.25)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13727,18 +13276,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "6c3aaaa8-df56-4de6-84ae-62568177562c")
-		(pts
-			(xy 64.5 190.5) (xy 64.5 212)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 9.25)
-		(gr_text "21,5000 mm"
+		(gr_text "21.5000 mm"
 			(at 54.1 201.25 90)
 			(layer "Eco2.User")
 			(uuid "6c3aaaa8-df56-4de6-84ae-62568177562c")
@@ -13749,6 +13292,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "6df86b89-f012-4d22-80f7-c14e65283d9e")
+		(pts
+			(xy 73.5 185) (xy 98.5 185)
+		)
+		(height 79.8)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13760,18 +13312,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "6df86b89-f012-4d22-80f7-c14e65283d9e")
-		(pts
-			(xy 73.5 185) (xy 98.5 185)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 79.8)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 86 263.65 0)
 			(layer "Eco2.User")
 			(uuid "6df86b89-f012-4d22-80f7-c14e65283d9e")
@@ -13782,6 +13328,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "6eb3fced-bf46-462b-a96e-0f73c31dbf7b")
+		(pts
+			(xy 162.5 199.5) (xy 162.5 212)
+		)
+		(height -1.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13793,18 +13348,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "6eb3fced-bf46-462b-a96e-0f73c31dbf7b")
-		(pts
-			(xy 162.5 199.5) (xy 162.5 212)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -1.5)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 162.85 205.75 90)
 			(layer "Eco2.User")
 			(uuid "6eb3fced-bf46-462b-a96e-0f73c31dbf7b")
@@ -13815,6 +13364,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "7697124d-2b7e-41b3-9df7-3b2a5d95d6b0")
+		(pts
+			(xy 61 187) (xy 61 212)
+		)
+		(height 14)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13826,18 +13384,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "7697124d-2b7e-41b3-9df7-3b2a5d95d6b0")
-		(pts
-			(xy 61 187) (xy 61 212)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 14)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 45.85 199.5 90)
 			(layer "Eco2.User")
 			(uuid "7697124d-2b7e-41b3-9df7-3b2a5d95d6b0")
@@ -13848,6 +13400,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "76a93fc0-2b47-4195-9037-61634cdae7fd")
+		(pts
+			(xy 61 212) (xy 61 193)
+		)
+		(height -2.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13859,18 +13420,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "76a93fc0-2b47-4195-9037-61634cdae7fd")
-		(pts
-			(xy 61 212) (xy 61 193)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -2.5)
-		(gr_text "19,0000 mm"
+		(gr_text "19.0000 mm"
 			(at 57.35 202.5 90)
 			(layer "Eco2.User")
 			(uuid "76a93fc0-2b47-4195-9037-61634cdae7fd")
@@ -13881,6 +13436,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "962800d8-a7a5-436f-8d72-b3234b130d76")
+		(pts
+			(xy 63.975 211.445) (xy 63.975 212.475)
+		)
+		(height 4.775)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13892,18 +13456,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "962800d8-a7a5-436f-8d72-b3234b130d76")
-		(pts
-			(xy 63.975 211.445) (xy 63.975 212.475)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 4.775)
-		(gr_text "1,0300 mm"
+		(gr_text "1.0300 mm"
 			(at 58.05 211.96 90)
 			(layer "Eco2.User")
 			(uuid "962800d8-a7a5-436f-8d72-b3234b130d76")
@@ -13914,6 +13472,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "9a19ac06-d395-4dd7-bf8d-8c688d332977")
+		(pts
+			(xy 61 212) (xy 61 231)
+		)
+		(height 2)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13925,18 +13492,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "9a19ac06-d395-4dd7-bf8d-8c688d332977")
-		(pts
-			(xy 61 212) (xy 61 231)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 2)
-		(gr_text "19,0000 mm"
+		(gr_text "19.0000 mm"
 			(at 57.85 221.5 90)
 			(layer "Eco2.User")
 			(uuid "9a19ac06-d395-4dd7-bf8d-8c688d332977")
@@ -13947,6 +13508,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "abea17f8-2a54-4b38-82f8-2313d05c3e5d")
+		(pts
+			(xy 162 187) (xy 162 199.5)
+		)
+		(height -4.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13958,18 +13528,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "abea17f8-2a54-4b38-82f8-2313d05c3e5d")
-		(pts
-			(xy 162 187) (xy 162 199.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -4.5)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 165.35 193.25 90)
 			(layer "Eco2.User")
 			(uuid "abea17f8-2a54-4b38-82f8-2313d05c3e5d")
@@ -13980,6 +13544,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "c47859ec-f4b0-4027-b647-142f86e70ce0")
+		(pts
+			(xy 157.5 190.5) (xy 157.5 187)
+		)
+		(height -107)
 		(format
 			(prefix "")
 			(suffix "")
@@ -13991,18 +13564,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "c47859ec-f4b0-4027-b647-142f86e70ce0")
-		(pts
-			(xy 157.5 190.5) (xy 157.5 187)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -107)
-		(gr_text "3,5000 mm"
+		(gr_text "3.5000 mm"
 			(at 49.35 188.75 90)
 			(layer "Eco2.User")
 			(uuid "c47859ec-f4b0-4027-b647-142f86e70ce0")
@@ -14013,6 +13580,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "c95e62f5-d104-4e0c-9984-e96bc2b42d73")
+		(pts
+			(xy 161 237) (xy 161 202)
+		)
+		(height 25.2)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14024,18 +13600,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "c95e62f5-d104-4e0c-9984-e96bc2b42d73")
-		(pts
-			(xy 161 237) (xy 161 202)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 25.2)
-		(gr_text "35,0000 mm"
+		(gr_text "35.0000 mm"
 			(at 185.05 219.5 90)
 			(layer "Eco2.User")
 			(uuid "c95e62f5-d104-4e0c-9984-e96bc2b42d73")
@@ -14046,6 +13616,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "d97f5db0-1f0b-4ed3-a0e0-c9c27184a8b1")
+		(pts
+			(xy 161 212) (xy 161 199.5)
+		)
+		(height -123)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14057,18 +13636,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "d97f5db0-1f0b-4ed3-a0e0-c9c27184a8b1")
-		(pts
-			(xy 161 212) (xy 161 199.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -123)
-		(gr_text "12,5000 mm"
+		(gr_text "12.5000 mm"
 			(at 36.85 205.75 90)
 			(layer "Eco2.User")
 			(uuid "d97f5db0-1f0b-4ed3-a0e0-c9c27184a8b1")
@@ -14079,6 +13652,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Eco2.User")
+		(uuid "ebd1fbcf-cbe8-4e35-83d9-7e509a41e599")
+		(pts
+			(xy 61 187) (xy 86 187)
+		)
+		(height 64.25)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14090,18 +13672,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Eco2.User")
-		(uuid "ebd1fbcf-cbe8-4e35-83d9-7e509a41e599")
-		(pts
-			(xy 61 187) (xy 86 187)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 64.25)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 73.5 250.1 0)
 			(layer "Eco2.User")
 			(uuid "ebd1fbcf-cbe8-4e35-83d9-7e509a41e599")
@@ -14112,6 +13688,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.2")
+		(uuid "055977d9-59c5-4bd1-aac2-249ee2f93e36")
+		(pts
+			(xy 161 237) (xy 161 233.5)
+		)
+		(height -10.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14123,18 +13708,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "User.2")
-		(uuid "055977d9-59c5-4bd1-aac2-249ee2f93e36")
-		(pts
-			(xy 161 237) (xy 161 233.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -10.5)
-		(gr_text "3,5000 mm"
+		(gr_text "3.5000 mm"
 			(at 149.35 235.25 90)
 			(layer "User.2")
 			(uuid "055977d9-59c5-4bd1-aac2-249ee2f93e36")
@@ -14145,6 +13724,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.2")
+		(uuid "39bdcccf-7e5a-4217-bbaa-49a28d1c7a32")
+		(pts
+			(xy 61 187) (xy 61 212)
+		)
+		(height -112.5)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14156,18 +13744,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "User.2")
-		(uuid "39bdcccf-7e5a-4217-bbaa-49a28d1c7a32")
-		(pts
-			(xy 61 187) (xy 61 212)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -112.5)
-		(gr_text "25,0000 mm"
+		(gr_text "25.0000 mm"
 			(at 172.35 199.5 90)
 			(layer "User.2")
 			(uuid "39bdcccf-7e5a-4217-bbaa-49a28d1c7a32")
@@ -14178,19 +13760,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(dimension
 		(type aligned)
@@ -14200,17 +13769,6 @@
 			(xy 61 237) (xy 64.5 237)
 		)
 		(height 4.325)
-		(gr_text "3,5000 mm"
-			(at 62.8 243.3 0)
-			(layer "User.2")
-			(uuid "aad30740-2436-4ccb-a346-2e3840f7d11b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14222,8 +13780,22 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 2)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "3.5000 mm"
+			(at 62.8 243.3 0)
+			(layer "User.2")
+			(uuid "aad30740-2436-4ccb-a346-2e3840f7d11b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 	)
 	(dimension
 		(type aligned)
@@ -14233,7 +13805,23 @@
 			(xy 161 237) (xy 157.5 237)
 		)
 		(height 8)
-		(gr_text "3,5000 mm"
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "3.5000 mm"
 			(at 159.25 227.85 0)
 			(layer "User.2")
 			(uuid "ba280e8a-f7a1-48af-88ab-db80900a6bb6")
@@ -14244,6 +13832,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.2")
+		(uuid "bf0cc88e-f16e-4e90-9730-a0eb8f2ef141")
+		(pts
+			(xy 161 187) (xy 111 187)
+		)
+		(height -54)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14255,18 +13852,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "User.2")
-		(uuid "bf0cc88e-f16e-4e90-9730-a0eb8f2ef141")
-		(pts
-			(xy 161 187) (xy 111 187)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -54)
-		(gr_text "50,0000 mm"
+		(gr_text "50.0000 mm"
 			(at 136 239.85 0)
 			(layer "User.2")
 			(uuid "bf0cc88e-f16e-4e90-9730-a0eb8f2ef141")
@@ -14277,6 +13868,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "User.2")
+		(uuid "edc4b9d7-5c55-464e-ac25-e69fd8ee0d84")
+		(pts
+			(xy 61 237) (xy 61 233.5)
+		)
+		(height 8)
 		(format
 			(prefix "")
 			(suffix "")
@@ -14288,18 +13888,12 @@
 			(thickness 0.1)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "User.2")
-		(uuid "edc4b9d7-5c55-464e-ac25-e69fd8ee0d84")
-		(pts
-			(xy 61 237) (xy 61 233.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height 8)
-		(gr_text "3,5000 mm"
+		(gr_text "3.5000 mm"
 			(at 67.85 235.25 90)
 			(layer "User.2")
 			(uuid "edc4b9d7-5c55-464e-ac25-e69fd8ee0d84")
@@ -14310,19 +13904,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 134.71 217.04)
@@ -18163,4 +17744,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )

@@ -43,7 +43,7 @@
       (net 1 "GND") (pintype "passive") (tstamp bc864d0a-7787-4179-bf1e-c59bb39b65d6))
     (pad "2" smd rect (at 0.46 0) (size 0.6 0.62) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "+5V") (pintype "passive") (tstamp 4dfce689-77ae-40dd-b8c0-e77537e0ac31))
-    (model "C:/Users/papaya/Downloads/LIB_CL05B104KO5NNNC/CL05B104KO5NNNC/3D/CL05B104KO5NNNC.stp"
+    (model "${KIPRJMOD}/../../3d/CL05B104KO5NNNC.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

@@ -58,7 +58,7 @@
       (net 159 "Net-(D105-DO)") (pinfunction "DI") (pintype "input") (tstamp 19c96593-e7d5-4bab-baf8-c3665a43b7ff))
     (pad "4" smd rect (at 0.915 -0.55 247.5) (size 0.7 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "+5V") (pinfunction "VDD") (pintype "power_in") (tstamp d9de4ce4-cfba-4f92-8738-71036d7de0c3))
-    (model "C:/Users/papaya/Downloads/WS2812-2020.STEP"
+    (model "${KIPRJMOD}/../../3d/WS2812-2020.step"
       (offset (xyz 0 0 0.28))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))

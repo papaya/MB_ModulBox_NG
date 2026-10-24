@@ -150,17 +150,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp f82581e6-6f2b-4789-a4ca-add09057c86a))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp b783856d-4a30-461c-9356-ac13cdcba694))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp bd6063e0-46f9-4024-bd07-4a874fe3696c))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -222,17 +222,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 3d22b88a-c826-4b11-a473-bd75ca956026))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 85360f4d-a036-4f1c-99a9-d4d5415474df))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 40e938bc-4d00-4207-bff5-3e7cfc3475ac))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -294,17 +294,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 88691264-c3bb-4dbc-8ac2-dd361d2bdefe))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp a0bda858-7490-4cb6-9955-a253670fa91e))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 973618f4-3122-4af8-8576-10b896664556))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -366,17 +366,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp c9cb8d71-dd93-4f15-bebd-64dd79e9852c))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp d68767bd-0836-43d6-afb1-cf1ca273a0cf))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 74940ff6-5ce2-41ac-90ae-084d1c34ed9e))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -438,17 +438,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 9b615010-b501-47ff-8ddb-4abb3874d66a))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 4093d6e8-c9e3-408a-b110-86a71d2df776))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 74de0116-5859-4931-974e-166213f8489c))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -510,17 +510,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 164b9d1d-ae6b-43bf-b0b7-499368b66a5f))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 081121e2-e712-4db4-bc0b-12abf4bbd5a6))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp e6663047-4e7a-48ff-b053-353ce2ff87e0))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -582,17 +582,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp dc4d110a-d1b7-4562-a24a-6d51327c65aa))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp a3a919a0-2c86-4399-8513-b230ff736d5f))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 5db246ed-a44f-469d-aba9-40f69451fc81))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -654,17 +654,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp ec6bec64-60f6-4b6d-8ccc-ee4814029274))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 6a3647af-f887-4874-9ca6-71b14edb4ff2))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp aadc0a8c-8ede-4532-a68b-ea67a5e073d6))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -726,17 +726,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp dc8dcbd2-c558-4149-8274-645d537e87ad))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 7b050d36-7aac-4a8d-bd67-928199e30e95))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 4004d63d-499d-44fb-92eb-e4706326a662))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -828,17 +828,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 80fe75cb-aaaf-4d53-8040-a9077dc4b3fc))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp c16fc58a-b59e-4493-af69-f24e95819222))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp fc9e5514-dc5d-448e-b38f-298349ab9457))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -900,17 +900,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 5fdb1ea1-aa95-41eb-84bd-20cb11a0369f))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 47541e00-ecb8-4b88-a846-1cd3321ade90))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 6eee657c-4613-48d7-b06b-1ea81976025b))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -1092,17 +1092,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp c154ca1f-2f0f-4651-861a-83b2eedf8f76))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 3a8a4e53-0957-426a-8ad1-26d180cfacbc))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp dd02f764-11ee-4f3a-a3ca-f591730ff7bb))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -1276,17 +1276,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 577a85bf-197c-45db-9494-3c9e347de185))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 924efbc7-72d8-4717-bc91-9db0358feec1))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp a19de2eb-c19f-4fe9-8a57-cc4ea3766f9d))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -1456,17 +1456,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp a0421a20-46f8-4164-926a-38776327d744))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 256e61a3-facf-43c9-8f2f-0bd5116bc50d))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 38c7841a-5746-4be6-9f80-969b1f737619))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -1606,17 +1606,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp 57b8f773-5fd5-4547-9d59-f71c5216c53e))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 2978d802-f941-4e36-8c6d-42a19e252fd0))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 53b45795-5c50-4965-b84e-fe2e174d96ea))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
@@ -1858,17 +1858,17 @@
       (net 1 "VDD") (pinfunction "vd") (pintype "passive") (tstamp cc0a833f-5299-4648-98aa-1fceda0e6073))
     (pad "4" thru_hole oval locked (at -4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp 3d6723b7-57d6-4354-92ae-a11556f56226))
     (pad "4" thru_hole oval locked (at 4.9 0 90) (size 3.3 3.6) (drill oval 2.2 2.8) (layers "*.Cu" "*.Mask") (tstamp bdfed678-e01f-459c-ac35-b5958f5e400c))
-    (model "C:/Users/papaya/Downloads/133012769-659-rk09d1130c1b/rk09d1130c1b.stp"
+    (model ""
       (offset (xyz 0 0 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model "C:/Users/papaya/Downloads/133381454-659-3_03_dr110-006_237_224/3_03_dr110-006_237_224.stp"
+    (model ""
       (offset (xyz 0 0 12))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 -90))
     )
-    (model "C:/Users/papaya/Downloads/133012337-659-rk09l114001t/rk09l114001t.stp" hide
+    (model "" hide
       (offset (xyz 0 0 7.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))

@@ -557,12 +557,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp"
+    (model ""
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -777,12 +777,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp" hide
+    (model "" hide
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -884,12 +884,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp" hide
+    (model "" hide
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -1048,12 +1048,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp"
+    (model ""
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -1150,12 +1150,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp"
+    (model ""
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -1553,12 +1553,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp" hide
+    (model "" hide
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -1901,12 +1901,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp" hide
+    (model "" hide
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -2003,12 +2003,12 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_4116R-1-221LF (1)/4116R-1-221LF/3D/4116R-1-221LF.stp"
+    (model ""
       (offset (xyz 3.7 -8.9 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "C:/Users/papaya/Downloads/LIB_1-2199298-4 (1)/1-2199298-4/3D/1-2199298-4.stp"
+    (model ""
       (offset (xyz 3.8 -8.9 5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))

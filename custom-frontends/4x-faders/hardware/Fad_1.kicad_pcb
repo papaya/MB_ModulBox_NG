@@ -205,12 +205,12 @@
       (net 6 "Net-(J3-A0)") (pinfunction "2") (pintype "passive") (tstamp b02de434-ed6e-479a-8d9a-26d101bb337a))
     (pad "3" thru_hole oval (at 8.5 -80) (size 3 6) (drill oval 2 4) (layers "*.Cu" "*.Mask" "F.SilkS")
       (net 3 "+3V0") (pinfunction "vd") (pintype "passive") (tstamp e9c6a61c-9e41-4d8e-9122-ae4665390082))
-    (model "C:/Users/papaya/Downloads/LIB_RA6020F-10-15F2-B10K/RA6020F-10-15F2-B10K/3D/RA6020F-10-15F2-B10K.stp"
+    (model ""
       (offset (xyz 6 45 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -180 -90))
     )
-    (model "C:/Users/papaya/Downloads/alps-fader-knob-1.snapshot.3/ALPS Fader Knob.step"
+    (model ""
       (offset (xyz 6 15 21))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -288,12 +288,12 @@
       (net 1 "Net-(J3-A2)") (pinfunction "2") (pintype "passive") (tstamp 3f84b6a5-12e6-43ea-b89d-4e00283c706b))
     (pad "3" thru_hole oval (at 8.5 -80) (size 3 6) (drill oval 2 4) (layers "*.Cu" "*.Mask" "F.SilkS")
       (net 3 "+3V0") (pinfunction "vd") (pintype "passive") (tstamp c44f3bb3-cdc3-4e4d-8cfb-23a621629011))
-    (model "C:/Users/papaya/Downloads/LIB_RA6020F-10-15F2-B10K/RA6020F-10-15F2-B10K/3D/RA6020F-10-15F2-B10K.stp"
+    (model ""
       (offset (xyz 6 45 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -180 -90))
     )
-    (model "C:/Users/papaya/Downloads/alps-fader-knob-1.snapshot.3/ALPS Fader Knob.step"
+    (model ""
       (offset (xyz 6 15 21))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -371,12 +371,12 @@
       (net 5 "Net-(J3-A1)") (pinfunction "2") (pintype "passive") (tstamp 573689d8-f350-4fbb-964b-b3468c8bccc0))
     (pad "3" thru_hole oval (at 8.5 -80) (size 3 6) (drill oval 2 4) (layers "*.Cu" "*.Mask" "F.SilkS")
       (net 3 "+3V0") (pinfunction "vd") (pintype "passive") (tstamp 99a409e2-e5cf-456d-8760-7f01bc93e697))
-    (model "C:/Users/papaya/Downloads/LIB_RA6020F-10-15F2-B10K/RA6020F-10-15F2-B10K/3D/RA6020F-10-15F2-B10K.stp"
+    (model ""
       (offset (xyz 6 45 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -180 -90))
     )
-    (model "C:/Users/papaya/Downloads/alps-fader-knob-1.snapshot.3/ALPS Fader Knob.step"
+    (model ""
       (offset (xyz 6 15 21))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -424,12 +424,12 @@
       (net 2 "Net-(J3-A3)") (pinfunction "2") (pintype "passive") (tstamp d9165262-f99a-43fe-9c2e-75928140bc72))
     (pad "3" thru_hole oval (at 8.5 -80) (size 3 6) (drill oval 2 4) (layers "*.Cu" "*.Mask" "F.SilkS")
       (net 3 "+3V0") (pinfunction "vd") (pintype "passive") (tstamp 870228f2-8c69-4186-854c-0ed89acafbb6))
-    (model "C:/Users/papaya/Downloads/LIB_RA6020F-10-15F2-B10K/RA6020F-10-15F2-B10K/3D/RA6020F-10-15F2-B10K.stp"
+    (model ""
       (offset (xyz 6 45 6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -180 -90))
     )
-    (model "C:/Users/papaya/Downloads/alps-fader-knob-1.snapshot.3/ALPS Fader Knob.step"
+    (model ""
       (offset (xyz 6 15 21))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))

@@ -12988,7 +12988,7 @@
 			(remove_unused_layers no)
 			(uuid "3f4b25e1-7333-480f-b649-be36a861e0e9")
 		)
-		(model "C:/Users/papaya/Downloads/LIB_SD-RSMT-2-MQ/SD-RSMT-2-MQ/3D/SD-RSMT-2-MQ.stp"
+		(model ""
 			(offset
 				(xyz 0 0 0)
 			)
