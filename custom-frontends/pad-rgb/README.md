@@ -1,10 +1,13 @@
-# pad-rgb — Carte pads retroeclaires RGB (DIN + WS2812 en cascade)
+# pad-rgb — Module custom pads rétroéclairés RGB (DIN + WS2812 en cascade)
 
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
 
 ## Description
-Carte de front-end integrant des pads (boutons sensibles) retroeclaires RGB (WS2812B) pour le declenchement d'evenements MIDI avec retour visuel couleur. Chaque pad genere un evenement MIDI sur le **bus DIN**, et l'eclairage RGB est commande par **une seule ligne de donnees WS2812** qui traverse la carte. Les **LED WS2812B sont adressables individuellement** : chaque pixel peut afficher sa propre couleur. La ligne de donnees traverse la chaine (câblage en serie) mais aucune limitation d'adressage.
+Carte de front-end intégrant des pads (boutons sensibles) rétroéclairés RGB (WS2812B) pour le declenchement d'evenements MIDI avec retour visuel couleur. Chaque pad genere un evenement MIDI sur le **bus DIN**, et l'eclairage RGB est commande par **une seule ligne de donnees WS2812** qui traverse la carte. Les **LED WS2812B sont adressables individuellement** : chaque pixel peut afficher sa propre couleur. La ligne de donnees traverse la chaine (câblage en serie) mais aucune limitation d'adressage.
 
 📖 **Article de référence :** [4X2-PADS-RGB](https://ksir-diy.blogspot.com/) sur le blog Ksir DIY'S — modèle PAD4X2.
+
+Ce module est une **conception originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
 > ⚠️ **Les LED WS2812B ne se connectent PAS sur le bus DOUT (74HC595).** Elles recoivent une ligne de donnees specifique d'une sortie WS2812 du **Core32F4** (`J4A` / `J4B`). Le bus DOUT (74HC595) est reserve aux LEDs standards non adressables.
 >
@@ -100,7 +103,7 @@ Core (J4A/J4B, WS2812)  ->  J2 (broche 6)  ->  D501 -> D502 -> ... -> D508  ->  
 
 Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
-> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> **Origine et usage :** conception originale MB MODULBOX NG, prévue pour le DIY/personnel. Aucune licence formelle n'est publiée dans le dépôt ; voir le README racine. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
 🔋 **Gestion de la puissance** : La gestion de la puissance des LED est indispensable, j'ai paramétré les LED à 10% de puissance.
-**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
+Conception originale MB MODULBOX NG. > ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

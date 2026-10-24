@@ -1,0 +1,42 @@
+name: Défaut matériel ou documentation
+description: Signaler un problème reproductible dans un module, un PCB ou ses fichiers de fabrication.
+title: "[Hardware] "
+labels:
+  - hardware
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module et chemin
+      description: Nom du module et chemin du projet/fichier concerné.
+      placeholder: custom-frontends/...
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Révision du matériel
+      placeholder: "Nom de fichier / version de PCB"
+    validations:
+      required: true
+  - type: input
+    id: kicad
+    attributes:
+      label: Version KiCad
+      placeholder: "Ex. 9.0.2"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problème observé
+      description: Décrire le résultat attendu et le résultat obtenu.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Rapports et vérifications
+      description: Joindre les extraits ERC/DRC ou les fichiers de fabrication concernés.
+    validations:
+      required: false

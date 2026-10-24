@@ -1,14 +1,17 @@
-# surface-control — Surface de controle (SCS du Core32F4)
+# surface-control — Module custom surface de contrôle (SCS du Core32F4)
 
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
 
 ## Description
-Carte de surface de controle pour le **Core32F4**, qui reproduit la **Standard Control Surface (SCS)** officielle de MIDIbox NG : **1 encodeur rotatif** + **6 boutons poussoirs**. Elle se branche directement sur les **GPIO du Core**, sans passer par les registres 74HC165 / 74HC595.
+Carte de surface de contrôle pour le **Core32F4**, qui reproduit la **Standard Control Surface (SCS)** officielle de MIDIbox NG : **1 encodeur rotatif** + **6 boutons poussoirs**. Elle se branche directement sur les **GPIO du Core**, sans passer par les registres 74HC165 / 74HC595.
 
 > ⚠️ **Correction majeure : les versions anterieures de cette page decrivaient une carte multi-bus (DIN + DOUT + AIN + WS2812).** Le schema `Surface Control V0.1.kicad_sch` ne contient **que 7 composants** : 1 encodeur (`ENC1`) et 6 boutons (`SWc1`..`SWc6`). Il n'y a **ni registre 74HC165 (DIN), ni 74HC595 (DOUT), ni AIN, ni WS2812** sur cette carte.
 >
 > ⚠️ **Carte prototype V0.1 non validee** : le PCB **n'est pas route** (0 piste, 21 pads non connectes). A router et a fabriquer en epreuve avant toute utilisation serieuse.
 
 📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
+Ce module est une **conception originale MB MODULBOX NG** (conception Ksir), **inspirée** de la Standard Control Surface officielle de la plateforme **MIDIbox (MBHP)** de Thorsten Klose / ucapps.de, mais **ce n'est pas** une réimplémentation officielle : le schéma, le connecteur et l'implantation sont originaux.
 
 ## Spécifications techniques
 - 1 encodeur rotatif avec poussoir (`EC12E24204A8`) : 2 phases + poussoir = **3 signaux**
@@ -41,12 +44,12 @@ Carte de surface de controle pour le **Core32F4**, qui reproduit la **Standard C
 | 9 | `J2-D1` | `SWc2` | Bouton **soft 4** |
 | 10 | `J2-D0` | `SWc1` | Bouton **shift** |
 
-> L'encodeur `ENC1` dispose de 3 contacts : broche 1 = phase A, broche 2 = **GND** (poussoir), broche 3 = phase B. Les phases A/B sont les entrees d'un **compteur de quadrature** pilote directement par le microcontroleur.
+> L'encodeur `ENC1` dispose de 3 contacts : broche 1 = phase A, broche 2 = **GND** (poussoir), broche 3 = phase B. Les phases A/B sont les entrees d'un **compteur de quadrature** pilote directement par le microcontrôleur.
 >
 > Chaque bouton est un contact **entre sa broche `J2-Dx` et GND** (broche 1) : la lecture se fait par lecture directe du GPIO (avec pull-up interne du STM32 ou resistance externe si necessaire).
 
 ### Correspondance avec les GPIO du Core32F4
-La surface de controle officielle de MIDIbox NG est cablee sur les connecteurs **`J10A` et `J10B`** du Core, exposes en GPIO via les fonctions `MIOS32_BOARD_J10*` :
+La surface de contrôle officielle de MIDIbox NG est cablee sur les connecteurs **`J10A` et `J10B`** du Core, exposes en GPIO via les fonctions `MIOS32_BOARD_J10*` :
 
 | Connecteur Core | Broche | GPIO | Utilisable pour |
 |------------------|--------|------|-----------------|
@@ -74,6 +77,6 @@ La surface de controle officielle de MIDIbox NG est cablee sur les connecteurs *
 
 Carte d'interface **originale MB MODULBOX NG** (conception Ksir), **inspiree** de la Standard Control Surface officielle de la plateforme **MIDIbox (MBHP)** de Thorsten Klose / ucapps.de, mais **ce n'est pas** une reimplementation officielle : le schema, le connecteur et l'implantation sont originaux.
 
-> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> **Origine et usage :** conception originale MB MODULBOX NG, prévue pour le DIY/personnel. Aucune licence formelle n'est publiée dans le dépôt ; voir le README racine. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
+Conception originale MB MODULBOX NG. > ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

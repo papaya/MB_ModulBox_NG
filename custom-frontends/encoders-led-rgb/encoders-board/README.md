@@ -1,34 +1,29 @@
-# Encoders Board — Carte Encodeurs (8 × PEC16)
+# Encoders Board — carte de 8 encodeurs PEC16
 
-## Description
+![alt text](../assets/En_3Quart.png)
+Carte custom du système **MB MODULBOX NG** accueillant 8 encodeurs avec poussoirs. Le PCB présent comporte 8 empreintes PEC16 et des connecteurs de report ; il ne comporte pas de 74HC165. La lecture des signaux est assurée hors de cette carte.
 
-La **Encoders Board** est la carte qui héberge physiquement les 8 encodeurs PEC16 avec leurs poussoirs.
+## Connectique relevée dans le PCB
 
-## Composants principaux
+Les 4 connecteurs 1x06 femelles sont raccordés broche à broche aux connecteurs `J30`..`J33` de la Control Board :
 
-| Type | Dénomination | Qté |
-|------|-------------|-----|
-| Encodeur rotatif | PEC16 (PEC164120FS0012) | 8 |
-| Registre d'entrée | SN74HC165N | 3 |
-| Condensateur découpling | C 100 nF | 8 |
+| Connecteur encodeurs | Broches 1 à 6 |
+|---|---|
+| `J20` | `SW1`, `SW2`, `ENC1B`, `ENC1A`, `ENC2B`, `ENC2A` |
+| `J21` | `ENC3B`, `ENC3A`, `ENC4B`, `ENC4A`, `SW3`, `SW4` |
+| `J22` | `ENC5B`, `ENC5A`, `ENC6B`, `ENC6A`, `SW5`, `SW6` |
+| `J23` | `SW7`, `SW8`, `ENC7B`, `ENC7A`, `ENC8B`, `ENC8A` |
 
-## Brochage
+Les huit contacts poussoir et les seize phases A/B sortent ainsi sur 24 nets distincts. Les connecteurs `J14`/`J15` et `J24`/`J25` portent des nets non nommés dans le PCB ; ne pas les utiliser comme interface définie sans vérification.
 
-| Connecteur | Signal | Description |
-|------------|--------|-------------|
-| J1-J3 | IDC 2x05 | 8× poussoir (vers Control Board J11) |
-| J4-J6 | IDC 1x06 | 8× phases A/B (vers Control Board J15) |
+## Projet et limites
 
-## Architecture
+- PCB : [`hardware/En.kicad_pcb`](hardware/En.kicad_pcb)
+- Projet KiCad associé : [`hardware/En.kicad_pro`](hardware/En.kicad_pro)
+- Schéma autonome : absent. La seule source schématique disponible est le projet historique [`../hardware/PEC_16_V0.2.kicad_sch`](../hardware/PEC_16_V0.2.kicad_sch), qui décrit l'ensemble du système et n'a pas été séparé en schémas autonomes vérifiés.
+- Fabrication : aucun jeu Gerber propre à cette carte n'est versionné.
+- Les modèles 3D custom ne sont pas inclus dans Git ; les chemins absolus existants ne sont donc pas portables.
 
-- 8 × PEC16 avec poussoir : 24 entrées DIN (8× A, 8× B, 8× poussoir)
-- 3 × 74HC165 : lecture des 24 entrées via 3 registres de décalage
-- 8 × C 100 nF : découpling par encodeur
+Les références et les nets ci-dessus ont été relevés dans le PCB KiCad. Ce brochage n'a pas été validé par un schéma indépendant ou par un prototype. Contrôler l'orientation des connecteurs et la continuité avant raccordement.
 
-## Production
-
-- `encoders-board/production/` : Gerbers, BOM, positions, netlist
-
----
-
-> ⚠️ Document créé lors de la séparation en 3 sous-projets (23/10/2026). Contenu à compléter avec les sources KiCad réelles après extraction du schéma original.
+Cette carte est une création originale pour MB MODULBOX NG. Voir le README parent pour les conditions d'utilisation et l'état de licence du dépôt.

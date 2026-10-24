@@ -1,0 +1,137 @@
+Rapport ERC (2026-10-24T13:27:03+0200, Encodage UTF8)
+
+***** Feuille /
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(67.31 mm, 59.69 mm): Symbole #PWR01 [GND]
+[lib_symbol_mismatch]: Le symbole 'IDC-Header_2x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'ksir_2023'
+    ; warning
+    @(74.93 mm, 52.07 mm): Symbole J3 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(40.64 mm, 95.25 mm): Symbole #PWR03 [GND]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(72.39 mm, 77.47 mm): Symbole #PWR04 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(40.64 mm, 99.06 mm): Symbole #PWR02 [+5V]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(66.04 mm, 87.63 mm): Symbole #PWR07 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(71.12 mm, 87.63 mm): Symbole #PWR05 [+5V]
+[footprint_link_issues]: Empreinte 'IDC-Header_2x05_P2.54mm_Vertical_ksr_TO_J8_J9' introuvable dans la librairie 'lib 2022 ksir'.
+    ; warning
+    @(48.26 mm, 102.87 mm): Symbole J1 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'IDC-Header_2x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'ksir_2023'
+    ; warning
+    @(48.26 mm, 102.87 mm): Symbole J1 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(96.52 mm, 68.58 mm): Symbole #PWR08 [+5V]
+[lib_symbol_mismatch]: Le symbole '74HC165' ne correspond pas à la copie en librairie '74xx'
+    ; warning
+    @(80.01 mm, 99.06 mm): Symbole IC1 [74HC165]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(115.57 mm, 59.69 mm): Symbole #PWR09 [GND]
+[lib_symbol_mismatch]: Le symbole 'IDC-Header_2x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'ksir_2023'
+    ; warning
+    @(123.19 mm, 52.07 mm): Symbole J4 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(72.39 mm, 113.03 mm): Symbole #PWR06 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(96.52 mm, 96.52 mm): Symbole #PWR029 [+5V]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(120.65 mm, 77.47 mm): Symbole #PWR011 [GND]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(114.30 mm, 87.63 mm): Symbole #PWR012 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(119.38 mm, 87.63 mm): Symbole #PWR013 [+5V]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(144.78 mm, 68.58 mm): Symbole #PWR010 [+5V]
+[lib_symbol_mismatch]: Le symbole '74HC165' ne correspond pas à la copie en librairie '74xx'
+    ; warning
+    @(128.27 mm, 99.06 mm): Symbole IC2 [74HC165]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(120.65 mm, 113.03 mm): Symbole #PWR015 [GND]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(161.29 mm, 59.69 mm): Symbole #PWR016 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(144.78 mm, 96.52 mm): Symbole #PWR014 [+5V]
+[lib_symbol_mismatch]: Le symbole 'IDC-Header_2x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'ksir_2023'
+    ; warning
+    @(168.91 mm, 52.07 mm): Symbole J5 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(160.02 mm, 87.63 mm): Symbole #PWR019 [GND]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(166.37 mm, 77.47 mm): Symbole #PWR018 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(165.10 mm, 87.63 mm): Symbole #PWR020 [+5V]
+[lib_symbol_mismatch]: Le symbole '74HC165' ne correspond pas à la copie en librairie '74xx'
+    ; warning
+    @(173.99 mm, 99.06 mm): Symbole IC3 [74HC165]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(166.37 mm, 113.03 mm): Symbole #PWR022 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(190.50 mm, 68.58 mm): Symbole #PWR017 [+5V]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(190.50 mm, 96.52 mm): Symbole #PWR021 [+5V]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(207.01 mm, 60.96 mm): Symbole #PWR023 [GND]
+[lib_symbol_mismatch]: Le symbole 'IDC-Header_2x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'ksir_2023'
+    ; warning
+    @(214.63 mm, 53.34 mm): Symbole J6 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(205.74 mm, 88.90 mm): Symbole #PWR026 [GND]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(212.09 mm, 78.74 mm): Symbole #PWR025 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(210.82 mm, 88.90 mm): Symbole #PWR030 [+5V]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(212.09 mm, 114.30 mm): Symbole #PWR032 [GND]
+[lib_symbol_mismatch]: Le symbole '74HC165' ne correspond pas à la copie en librairie '74xx'
+    ; warning
+    @(219.71 mm, 100.33 mm): Symbole IC4 [74HC165]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(236.22 mm, 69.85 mm): Symbole #PWR024 [+5V]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(236.22 mm, 97.79 mm): Symbole #PWR031 [+5V]
+[footprint_link_issues]: Empreinte 'IDC-Header_2x05_P2.54mm_Vertical_ksr_TO_J8_J9' introuvable dans la librairie 'lib 2022 ksir'.
+    ; warning
+    @(256.54 mm, 105.41 mm): Symbole J2 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'IDC-Header_2x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'ksir_2023'
+    ; warning
+    @(256.54 mm, 105.41 mm): Symbole J2 [IDC-Header_2x05_P2.54mm_Vertical]
+[lib_symbol_mismatch]: Le symbole 'GND' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(266.70 mm, 97.79 mm): Symbole #PWR028 [GND]
+[lib_symbol_mismatch]: Le symbole '+5V' ne correspond pas à la copie en librairie 'power'
+    ; warning
+    @(266.70 mm, 101.60 mm): Symbole #PWR027 [+5V]
+
+** messages ERC: 44  Erreurs 0  Avertissements 44

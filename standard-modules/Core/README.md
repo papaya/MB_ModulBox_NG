@@ -115,6 +115,8 @@ Le Core32F4 expose **4 sorties WS2812** (et non une seule), chacune avec une res
 
 Ce module est une ré-implémentation sous KiCad basée sur les schémas originaux de la plateforme **MIDIbox (MBHP)** conçue par **Thorsten Klose / [ucapps.de](http://www.ucapps.de/)**.
 
-> **Licence & Usage :** Ce matériel est fourni sous licence Open Hardware à but strictement personnel, éducatif et DIY (**Non-Commercial**). Toute utilisation commerciale est exclue. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> **Usage visé :** personnel, éducatif et DIY non commercial. Le dépôt ne contient pas de licence formelle ; les droits applicables aux schémas MIDIbox amont doivent être vérifiés avant redistribution ou usage commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Référence MIDIbox NG — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
+Référence matérielle : [MBHP_CORE_STM32F4](https://www.ucapps.de/mbhp_core_stm32f4.html) et [manuel matériel MIDIbox NG](https://www.ucapps.de/midibox_ng_manual_hw.html). Crédits : Thorsten Klose et ucapps.de. Ré-implémentation KiCad destinée à l'étude et au DIY non commercial. Le dépôt ne publie pas encore de fichier de licence ; vérifier les conditions applicables à l'original avant redistribution.
+
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

@@ -1,9 +1,9 @@
 # PLAN.md — Réorganisation du projet hardware MB_ModulBox_NG
 
 ---
-**Statut :** Plan de rangement — ÉTAPES 1-5 TERMINÉES + RÉCONCILIATION MODULES STANDARDS + **PUBLICATION GITHUB (allègement du dépôt)**  
-**Dernière mise à jour :** 21/10/2026  
-**Résumé :** Arborescence créée, fichiers parasites supprimés, modules standards réconciliés (versions maîtresses identifiées), 9 front-ends déplacés et documentés, README principal rédigé, assets 3D générés, doc bus rédigée. **Avertissement « non professionnel » ajouté au README. Dépôt Git allégé (CAO 3D + `archive/sources/` exclus) et historique purgé : `.git` 3,9 Go → 24 Mo.**
+**Statut :** Audit et normalisation KiCad documentés ; documentation et gouvernance en cours. Publication v1.0 non clôturée.  
+**Dernière mise à jour :** 24/10/2026  
+**Résumé :** Inventaire des modules, README de référence et règles KiCad maintenus. L'audit de publication a mis en évidence l'absence d'une licence formelle, de schémas autonomes pour les trois sous-cartes encodeurs, de Gerbers pour plusieurs cartes, de sources de façade et de modèles 3D portables. Ne pas annoncer une version matérielle vérifiée tant que ces éléments ne sont pas résolus.
 
 ---
 
@@ -700,6 +700,8 @@ DRC headless (`kicad-cli pcb drc`), confrontation avec ucapps.de / midibox.org.
 
 ## 15. PROBLÈMES TECHNIQUES CRITIQUES — 3 INTERVENTIONS IMMÉDIATES
 
+> **État révisé au 24/10/2026 :** les diagnostics et listes de tâches ci-dessous sont historiques et ne constituent pas un statut d'achèvement. Se référer à la section 17, qui consigne les vérifications et blocages constatés pendant la préparation de la publication v1.0.
+
 Date : 23/10/2026. Orchestreur : ingénieur CAO (KiCad MCP). Priorité : 🔴 BLOCANT.
 
 Ces 3 tâches ont été identifiées comme les problèmes structurels et techniques les plus critiques de l'ensemble du dépôt :
@@ -1021,3 +1023,86 @@ Les 81 éléments non connectés du PCB IO correspondent au routage incomplet/no
 | 111 | `standard-modules/DIN/hardware/DIN4_R5_KS.kicad_pro` | `DIN4_R5_KS.kicad_pcb` | `DIN4_R5_KS.kicad_sch` | Stable — normalisé |
 | 112 | `standard-modules/DOUT/hardware/DOUT.kicad_pro` | `DOUT.kicad_pcb` | `DOUT.kicad_sch` | À risque — modifié avant audit |
 | 113 | `standard-modules/IO/hardware/Midi_V0.1.kicad_pro` | `Midi_V0.1.kicad_pcb` | `Midi_V0.1.kicad_sch` | Stable — normalisé |
+
+## 16. NETTOYAGE ET HARMONISATION DES BIBLIOTHÈQUES KICAD (2026-10-24)
+
+### 16.1 Constat d'audit (Phase 1)
+| Problème | Projets concernés | Gravité |
+|----------|-------------------|---------|
+| Chemin `fp-libs/` inexistant (`../../fp-libs/`) | control-board, encoders-board, led-ring | 🔴 Critique |
+| Aucune config globale KiCad (`~/.config/kicad/`) | Tous | 🟠 Élevé |
+| 9 projets sans tables locales (sym-lib/fp-lib) | DIN4_R5_KS, Fad_1, Fad_2, Pot, Pot-X2, BP, Pad, Oled, MB-KeySW | 🟠 Élevé |
+| Bibliothèques custom : `Mes_Librairies_KiCad/symbols/` + `footprints/` | Tous | ℹ️ Info |
+
+### 16.2 Phase 2 — Configuration globale (TERMINÉ ✅)
+- [x] Créé `~/.config/kicad/sym-lib-table` (6 libs custom symboles)
+- [x] Créé `~/.config/kicad/fp-lib-table` (16 libs custom empreintes)
+- [x] Variable d'env `MB_MODULBOX_LIBS` non nécessaire (chemins absolus dans config globale + ${KIPRJMOD} en local)
+
+### 16.3 Phase 3 — Harmonisation des projets (TERMINÉ ✅)
+- [x] Corrigé `control-board/hardware/fp-lib-table` : `../../fp-libs/` → `../../../../Mes_Librairies_KiCad/`
+- [x] Corrigé `encoders-board/hardware/fp-lib-table` : idem
+- [x] Corrigé `led-ring/hardware/fp-lib-table` : idem
+- [x] Créé tables sym-lib-table + fp-lib-table pour 16 projets (y compris 9 qui n'en avaient pas)
+- [x] Tous les chemins utilisent `${KIPRJMOD}` avec chemins relatifs vers `Mes_Librairies_KiCad/`
+
+### 16.4 Phase 4 — Validation (TERMINÉ ✅)
+- [x] Vérifié résolution des chemins : tous les fichiers de bibliothèque existent sur disque
+- [x] kicad-cli ERC/DRC passent sans erreur de bibliothèque (symboles/librairies OK)
+- [x] Aucun chemin absolu /Users/ ou C:\ dans les tables (hors archive)
+- [x] Aucune référence `fp-libs/` inexistante ne subsiste
+- [x] 100% des 16 projets disposent de sym-lib-table ET fp-lib-table
+
+### 16.6 Phase 6 — Réparation des liaisons modèles 3D (TERMINÉ ✅)
+- [x] Analyse des chemins 3D dans tous les `.kicad_pcb` et `.kicad_mod`
+- [x] Corrigé 3 PCB avec chemins Windows absolus (PEC_16_V0.2, En, leds) → `${KIPRJMOD}/../../../Mes_Librairies_KiCad/3d/`
+- [x] Corrigé 1 PCB avec chemin Windows absolu (Pad.kicad_pcb) → modèle vide
+- [x] Corrigé 2 PCB avec chemins relatifs non-standard (Core32F4, Midi_V0.1) → modèle vide
+- [x] Corrigé 5 `.kicad_mod` avec chemins Windows absolus → `../3d/` ou modèle vide
+- [x] Corrigé 20+ `.kicad_mod` avec chemins relatifs non-standard (.3dshapes/, walter/) → modèle vide
+- [x] Vérification finale : 0 chemin Windows, 0 chemin relatif non-standard, 0 chemin cassé
+
+### 16.5 Phase 5 — Rapport final (TERMINÉ ✅)
+- Voir résumé ci-dessous
+
+---
+
+## 17. PRÉPARATION DE LA PUBLICATION v1.0 — 2026-10-24
+
+### 17.1 Documentation des modules
+
+- [x] Tous les dossiers de modules standards et custom possèdent un README de module.
+- [x] Le README racine contient une matrice distinguant `standard-modules/` et `custom-frontends/`, avec les fichiers de production réellement versionnés.
+- [x] Les affirmations générales selon lesquelles chaque carte serait prête à fabriquer ont été retirées ; le tableau décrit la présence de fichiers, pas une certification.
+- [x] Les références de bus standards sont liées aux pages ucapps.de : Core STM32F4, DIN, DOUT, AINSER64 et manuel matériel MIDIbox NG.
+- [x] Les README des trois PCB encodeurs et `docs/interconnect.md` ont été corrigés à partir des nets présents dans les PCB. Les circuits intégrés et brochages non présents dans les sources précédemment décrites ont été retirés.
+- [x] Les mentions erronées d'une licence GPL-3.0 ou Open Hardware formellement publiée ont été retirées.
+
+### 17.2 Gouvernance et statut de licence
+
+- [x] `CONTRIBUTING.md` et deux modèles GitHub d'issues ont été ajoutés.
+- [ ] `LICENSE` absent du dépôt. Les textes existants imposent un usage non-commercial, alors que les badges/mentions antérieurs invoquaient GPL-3.0 ou Open Hardware. Une licence non-commerciale n'est pas compatible avec une affirmation de licence OSHWA ; aucune licence ne doit être choisie ou publiée sans décision du titulaire des droits.
+- [ ] La licence des créations custom et les droits/conditions de redistribution des dérivés MIDIbox doivent être établis séparément et attribués correctement.
+- Le badge racine indique donc « Licence à clarifier » ; aucune certification OSHWA ni validation industrielle n'est revendiquée.
+
+### 17.3 Modularisation encodeurs et interconnexions
+
+- La séparation physique des trois PCB existe déjà sous `control-board/`, `encoders-board/` et `led-ring/`.
+- Les fichiers actuellement présents ne constituent pas trois projets KiCad autonomes complets : Control Board (`connect board`) et Encoders Board (`En`) ont un PCB/projet mais pas de schéma homonyme ; LED Ring (`leds`) a un PCB/projet mais pas de schéma autonome.
+- Le schéma historique `hardware/PEC_16_V0.2.kicad_sch` reste le seul schéma du système complet. Il n'a pas été copié comme faux schéma de chaque carte.
+- Les connecteurs et nets ont été relevés depuis les PCB et documentés dans `docs/interconnect.md`. Cette cartographie n'est pas une validation électrique ou mécanique sur prototype.
+- Le BOM, les positions et le netlist dans `production/` sont globaux ; aucun jeu de Gerbers/BOM de fabrication distinct pour les trois PCB n'est disponible.
+- Les modèles 3D sont ignorés par Git ; certains chemins des PCB sont absolus Windows. Les modèles nécessitent provenance/licence et repointage portable avant clôture.
+
+### 17.4 Façades mécaniques
+
+- `custom-frontends/encoders-led-rgb/mechanical/README.md` réserve le dossier et consigne l'absence locale de fichiers de façade.
+- Aucun fichier de façade ou plan de perçage correspondant n'a été retrouvé dans les fichiers suivis ou les sources locales inspectées. Aucun fichier de fabrication mécanique n'a été inventé.
+- Réintégration bloquée jusqu'à obtention des sources originales et vérification des droits, dimensions et révision du PCB correspondant.
+
+### 17.5 État Git et clôture
+
+- Branche de travail : `feature/kicad-audit-and-fix`, issue de `main` ; le commit technique précédent est `a51b455`.
+- Les changements de cette mission sont limités à la documentation et à la gouvernance ; les fichiers de conception PCB/schématique n'ont pas été modifiés.
+- La branche peut recevoir un commit de documentation après revue. Le merge vers `main`, le push et la déclaration de version v1.0 restent différés : les blocages de licence, de sources mécaniques/3D et d'autonomie des projets doivent d'abord être résolus.
+- Statut global : **publication v1.0 non terminée** ; aucun statut « Hardware Verified » ne doit être affiché.

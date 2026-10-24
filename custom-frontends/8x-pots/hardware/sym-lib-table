@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name "ksir_2023")(type "KiCad")(uri "${KIPRJMOD}/../../../Mes_Librairies_KiCad/symbols/ksir_2023.kicad_sym")(options "")(descr "Bibliothèque symboles MIDIbox ksir_2023"))
+  (lib (name "midibox-rescue")(type "KiCad")(uri "${KIPRJMOD}/../../../Mes_Librairies_KiCad/symbols/midibox-rescue.kicad_sym")(options "")(descr "Symboles sauvetage MIDIbox"))
+  (lib (name "SN74AHCT125N")(type "KiCad")(uri "${KIPRJMOD}/../../../Mes_Librairies_KiCad/symbols/SN74AHCT125N.kicad_sym")(options "")(descr "Symbole TI SN74AHCT125N"))
+  (lib (name "core-rescue")(type "KiCad")(uri "${KIPRJMOD}/../../../Mes_Librairies_KiCad/symbols/core-rescue.kicad_sym")(options "")(descr "Symboles projet Core"))
+  (lib (name "ksir")(type "KiCad")(uri "${KIPRJMOD}/../../../Mes_Librairies_KiCad/symbols/ksir.kicad_sym")(options "")(descr "Symboles ksir"))
+  (lib (name "SN74HC595N")(type "KiCad")(uri "${KIPRJMOD}/../../../Mes_Librairies_KiCad/symbols/SN74HC595N.kicad_sym")(options "")(descr "Décaleur 74HC595"))
+)

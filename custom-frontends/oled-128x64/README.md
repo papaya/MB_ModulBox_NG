@@ -1,8 +1,9 @@
-# oled-128x64 — Carte afficheur OLED 128x64 SSD1309 (SPI)
+# oled-128x64 — Module custom afficheur OLED 128x64 SSD1309 (SPI)
 
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
 
 ## Description
-Carte de front-end integrant un afficheur OLED 128x64 pixels pour l'affichage d'informations MIDI (nom de piste, valeur de parametre, menu, etc.). L'afficheur est un **SSD1309** commande en **SPI** (4 fils + reset), et **non** en I2C.
+Carte de front-end intégrant un afficheur OLED 128x64 pixels pour l'affichage d'informations MIDI (nom de piste, valeur de paramètre, menu, etc.). L'afficheur est un **SSD1309** commandé en **SPI** (4 fils + reset), et **non** en I2C.
 
 > ⚠️ **Correction majeure : les versions anterieures de cette page indiquaient un bus I2C (SSD1306 / SH1106, adresses 0x3C / 0x3D).** Le schema KiCad `Oled_1309_x1_V0.0.kicad_sch` montre un **SSD1309 en SPI** avec les broches `D0` (SCLK), `D1` (SDATA), `DC`, `CS` et `RES`. Il n'y a **aucune broche SDA/SCL ni adresse I2C** sur cette carte.
 >
@@ -11,6 +12,8 @@ Carte de front-end integrant un afficheur OLED 128x64 pixels pour l'affichage d'
 > Le fait que le **nom du projet** soit `Oled_1309_x1_V0.0` (1309 = SSD1309, x1 = une voie SPI) confirme ce cablage.
 
 📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
+
+Ce module est une **conception originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
 ## Assets de visualisation
 | Type | Fichier | Description |
@@ -90,6 +93,6 @@ La ligne `D0`/`D1` se branche sur une interface **SPI** du microcontroleur. Sur 
 
 Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
-> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> **Origine et usage :** conception originale MB MODULBOX NG, prévue pour le DIY/personnel. Aucune licence formelle n'est publiée dans le dépôt ; voir le README racine. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
 
-**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
+Conception originale MB MODULBOX NG. > ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

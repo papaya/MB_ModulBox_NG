@@ -1,25 +1,19 @@
-# keysw-4x2 — Clavier 8 touches (DIN) + retroeclairage SK6812 en cascade
-
+# keysw-4x2 — Module custom clavier 8 touches (DIN) + rétroéclairage SK6812 en cascade
+![3D top](assets/MB-KeySW_4x2_V0.33quart.png)
 
 ## Description
-Carte de front-end integrant un clavier de **8 touches mecaniques** (Cherry MX) pour l'envoi d'evenements MIDI (notes, CC, etc.). Chaque touche est lue sur une entree digitale distincte du bus DIN. La carte embarque en outre **8 LED RGB SK6812MINI-E adressables** montees **en cascade serie** (chaque LED est adressable individuellement).
+Carte de front-end intégrant un clavier de **8 touches mécaniques** (Cherry MX) pour l'envoi d'evenements MIDI (notes, CC, etc.). Chaque touche est lue sur une entrée digitale distincte du bus DIN. La carte embarque en outre **8 LED RGB SK6812MINI-E adressables** montées **en cascade série** (chaque LED est adressable individuellement).
 
-📖 **Article de référence :** Aucun article dédié sur le blog ksir-diy.blogspot.com. Voir l'article global [ModulBox V2](https://ksir-diy.blogspot.com/2023/05/modulbox-v2.html).
-
-## Assets de visualisation
-| Type | Fichier | Description |
-|------|---------|-------------|
-| Top view | `3d-top.png` | Vue de dessus du PCB |
-| Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
-
-![3D top](assets/MB-KeySW_4x2_V0.3.png)
+Ce module est une **conception originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
 ## Specifications techniques
-- 8 touches mecaniques **Cherry MX Low Profile** (`CHERRY MX1B-52NA`)
+- 8 touches mécaniques **Cherry MX Low Profile** (`CHERRY MX1B-52NA`)
 - **Interface DIN : 8 touches = 8 entrees 1:1** d'un registre 74HC165 (aucune matrice colonnes/lignes)
 - **8 × SK6812MINI-E** en **cascade serie** : `J2` (entree DATA) -> D0 -> D1 -> ... -> D7 -> `J3` (sortie DATA)
 - 8 × condensateur de decoupling 100 nF (1206) sur chaque LED
 - Aucun registre a decalage, aucun CI de logique sur la carte
+
+![Photo](assets/keySwitch.png)
 
 ## Composants principaux
 | Type | Dénomination | Qté |
@@ -37,8 +31,8 @@ Carte de front-end integrant un clavier de **8 touches mecaniques** (Cherry MX) 
 > - Les LED SK6812 sont **adressees individuellement** : chaque pixel peut afficher sa propre couleur. Elles sont câblees en serie (chaine) pour le câblage physique, chacune decodifie sa propre couleur (R,G,B).
 
 ## Brochage / Mapping MIDIbox NG
-
-### `J1` — 8 entrees DIN (vers le module DIN 74HC165, chainage `J8`/`J9` du Core)
+![connexions](assets/keySwitch%20connexions.png)
+### `J1` —  entrees DIN (vers le module DIN 74HC165, chainage `J8`/`J9` du Core)
 | Broche | Signal | Description |
 |--------|--------|-------------|
 | 1 | `J1-vss` | Masse commune (reliee a `J4` et GND) |
@@ -92,13 +86,21 @@ Core (J4A/J4B, WS2812)  ->  J2 (broche 6)  ->  D0 -> D1 -> ... -> D7  ->  J3 (br
 - `hardware/3D/shapes3D/` : modèles 3D des touches et switchs (`.wrl`)
 - `production/` : Gerbers, BOM (`bom.csv`), fichiers de position, archives de fabrication
 
+## Assets de visualisation
+| Type | Fichier | Description |
+|------|---------|-------------|
+| Top view | `3d-top.png` | Vue de dessus du PCB |
+| Iso 3D | `3d-iso.png` | Vue isométrique avec composants |
+
+
 ---
 
 ## Conception & Compatibilité
 
 Carte d'interface **originale MB MODULBOX NG** (conception Ksir), compatible avec les bus et modules du système MIDIbox NG. Ce n'est **pas** un module officiel MIDIbox.
 
-> **Licence & Usage :** Ces fichiers hardware sont partagés sous licence Open-Source Hardware pour un usage DIY / personnel / non-commercial. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> **Origine et usage :** conception originale MB MODULBOX NG, prévue pour le DIY/personnel. Aucune licence formelle n'est publiée dans le dépôt ; voir le README racine. **Aucune garantie ni engagement** n'est fourni sur la justesse du câblage ou du routage.
+> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage, routage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension. Le détail complet de l'avertissement figure en fin de fichier.
 
 🔋 **Gestion de la puissance** : La gestion de la puissance des LED est indispensable, j'ai paramétré les LED à 10% de puissance.
-**Rétro-ingénierie par l'équipe — GPL-3.0**> ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.
+Conception originale MB MODULBOX NG. > ⚠️ **Avertissement :** documentation de passion, **non professionnelle**. Fournie **sans garantie ni engagement**, **sans support technique**. Des **erreurs sont possibles** (schémas, valeurs, câblage). À vos risques et périls : vérifiez tout avant de fabriquer et de mettre sous tension.

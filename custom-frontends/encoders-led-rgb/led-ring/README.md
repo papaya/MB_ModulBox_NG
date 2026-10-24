@@ -1,44 +1,28 @@
-# Led Ring — Carte Ring LEDs RGB (WS2812B)
+# LED Ring — carte de 128 LED RGB WS2812
+![led](../assets/leds_3Quart.png)
+Carte custom du système **MB MODULBOX NG** portant 128 LED RGB WS2812-2020 et un condensateur de découplage de 100 nF par LED. La chaîne de données traverse D1 à D128 : les pixels sont adressables individuellement.
 
-## Description
+## Brochage relevé dans le PCB
 
-La **Led Ring** est la carte qui héberge les 128 LED WS2812 en cascade et les connecte au contrôle du Core32F4 via la Control Board.
+| Connecteur | Broche 1 | Broche 2 | Broche 3 |
+|---|---|---|---|
+| `J4` | `+5V` | Entrée données (`D1-DI`) | `GND` |
+| `J5` | `+5V` | Sortie données (`D128-DO`) | `GND` |
 
-## Composants principaux
+La liaison de données doit venir d'une sortie WS2812 supportée par le Core ; la masse du Core et celle de l'alimentation externe doivent être communes. Les connecteurs sont des empreintes 1x06, mais seules les broches 1 à 3 sont affectées dans le PCB.
 
-| Type | Dénomination | Qté |
-|------|-------------|-----|
-| LED RGB adressable | WS2812-2020 (PLCC4) | 128 |
-| Condensateur découpling | C 100 nF | 128 |
+## Puissance
 
-## Brochage
+Ne dimensionnez pas l'alimentation à partir de la valeur « 10 % » mentionnée dans d'anciennes notes : ce réglage logiciel ne garantit pas le courant maximal. Dimensionnez l'alimentation, le câblage, les connecteurs et la distribution cuivre à partir de la fiche technique des LED réellement montées et de la luminosité maximale prévue. Le PCB conserve des problèmes DRC documentés dans le README parent et ne doit pas être considéré comme validé pour la pleine charge.
 
-| Connecteur | Signal | Description |
-|------------|--------|-------------|
-| J4 | IDC 1x03 | Donnée d'entrée (vers Control Board J20) |
-| J5 | IDC 1x03 | Donnée de sortie (vers Control Board J21) |
-| J6 | IDC 1x02 | Alimentation +5V (vers Control Board J21) |
+## Projet et limites
 
-## Architecture
+- PCB : [`leds.kicad_pcb`](leds.kicad_pcb)
+- Projet KiCad associé : [`leds.kicad_pro`](leds.kicad_pro)
+- Schéma autonome : absent. La seule source schématique disponible est [`../hardware/PEC_16_V0.2.kicad_sch`](../hardware/PEC_16_V0.2.kicad_sch), schéma historique de l'ensemble du système.
+- Fabrication : le dossier parent `../production/` contient BOM, positions et netlist, mais aucun Gerber distinct pour cette carte.
+- Les modèles 3D custom sont ignorés par Git ; le PCB contient encore des chemins absolus Windows vers des fichiers qui ne sont pas présents dans le dépôt.
 
-- **128 × WS2812-2020** en cascade : D1 → D2 → ... → D128
-- Contrôle par une seule ligne de données depuis la Control Board
-- Alimentation 5V séparée (pas via la ligne de données)
-- 300 mA max par LED, 40 mA par couleur
+Les références, valeurs, nets et brochages décrits ici sont issus du PCB. Ils n'ont pas été comparés à un schéma autonome ni validés sur prototype. La séparation en trois PCB existe dans l'arborescence, mais les projets ne sont pas encore autonomes au sens schéma/BOM/Gerbers.
 
-## Architecture de la Control Board
-
-La **Control Board** est la carte de interface entre le module encodeurs-led-rgb et le module **Core32F4** (MIOS32). Elle gère :
-- Shift Registers (74HC595) pour l'extension des lignes DIN/DOUT
-- 74HC165 (8 entrées par 74HC165) pour lire les encodeurs
-- Décodeur d'adresses (74HC138/139) pour sélectionner les périphériques
-- Réseaux de dérivation pour les lignes SPI
-- Alimentations : +5V (digital), +3V3, GND
-
-## Production
-
-- `led-ring/production/` : Gerbers, BOM, positions, netlist
-
----
-
-> ⚠️ Document créé lors de la séparation en 3 sous-projets (23/10/2026). Contenu à compléter avec les sources KiCad réelles après extraction du schéma original.
+Cette carte est une création originale pour MB MODULBOX NG. Voir le README parent pour les conditions d'utilisation et l'état de licence du dépôt.

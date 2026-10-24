@@ -1,0 +1,33 @@
+name: Demande de module ou d'amélioration
+description: Proposer une nouvelle carte ou une évolution d'un module existant.
+title: "[Module] "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module concerné
+      placeholder: Nom du module existant ou proposé
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin et cas d'utilisation
+      description: Décrire la fonction, les utilisateurs et le contexte d'intégration MIDIbox NG.
+    validations:
+      required: true
+  - type: textarea
+    id: interfaces
+    attributes:
+      label: Interfaces et contraintes
+      description: Décrire les bus, tensions, connecteurs, contraintes mécaniques et de fabrication connus.
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Références ou notes supplémentaires
+    validations:
+      required: false

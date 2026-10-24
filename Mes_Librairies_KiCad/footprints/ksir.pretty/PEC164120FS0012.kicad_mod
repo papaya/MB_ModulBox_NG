@@ -69,7 +69,7 @@
       (net 39 "GND1") (pinfunction "S1") (pintype "passive") (tstamp 7961ba02-e8da-4bec-acf3-83e898e8daa2))
     (pad "S2" thru_hole circle (at 7.5 -17.5 180) (size 1.95 1.95) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 47 "SW7") (pinfunction "S2") (pintype "passive") (tstamp 119271d0-7677-4e13-bc10-d20f7f46e678))
-    (model "C:/Users/papaya/Downloads/PEC16-4X20F-SXXXX.stp"
+    (model "${KIPRJMOD}/../../3d/PEC16-4X20F-SXXXX.wrl"
       (offset (xyz 5 10.5 5.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 180 180))
